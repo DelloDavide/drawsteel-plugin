@@ -2,9 +2,9 @@
   "name": "Draw Steel Abilities Viewer",
   "version": "1.0.0",
   "manifest_version": 1,
-  "script": "index.html",
+  "entry": "index.html",
   "action": {
-    "title": "Hello, World!",
+    "title": "Draw Steel Abilities Viewer",
     "icon": "/owl.svg",
     "popover": "/",
     "height": 600,
