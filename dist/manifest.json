@@ -1,0 +1,13 @@
+{
+  "id": "drawsteel-extension",
+  "name": "Draw Steel Abilities",
+  "version": "1.0.0",
+  "entry": "index.js",
+  "action": {
+    "title": "Draw Steel Abilities Viewer",
+    "icon": "/owl.svg",
+    "popover": "/",
+    "height": 600,
+    "width": 400
+  }
+}
