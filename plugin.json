@@ -1,5 +1,6 @@
 {
   "id": "drawsteel-abilities",
   "name": "Draw Steel Abilities Viewer",
-  "script": "index.html"
+  "script": "index.html",
+  "version": "1.0.0"
 }
