@@ -1,15 +1,16 @@
 {
-  "id": "drawsteel-extension",
   "name": "Draw Steel Abilities",
-  "title": "Draw Steel Extension",
-  "type": "plugin",
   "version": "1.0.0",
-  "entry": "index.html",
+  "manifest_version": 1,
+  "author": "Davide Dell'Oglio",
+  "homepage_url": "https://dellodavide.github.io/drawsteel-plugin/",
+  "icon": "/owl.svg",
+  "description": "A basic Draw Steel Abilities plugin for you and your players",
   "action": {
-    "title": "Draw Steel Abilities Viewer",
+    "title": "Draw Steel Abilities",
     "icon": "/owl.svg",
     "popover": "/",
-    "height": 600,
-    "width": 400
+    "height": 129,
+    "width": 250
   }
 }
