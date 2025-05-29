@@ -1,0 +1,19 @@
+{
+  "name": "drawsteel-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "homepage": "https://dellodavide.github.io/drawsteel-extension/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "^3.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
