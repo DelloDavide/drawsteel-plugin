@@ -1,8 +1,10 @@
 {
   "id": "drawsteel-extension",
   "name": "Draw Steel Abilities",
+  "title": "Draw Steel Extension",
+  "type": "plugin",
   "version": "1.0.0",
-  "entry": "index.js",
+  "entry": "index.html",
   "action": {
     "title": "Draw Steel Abilities Viewer",
     "icon": "/owl.svg",
