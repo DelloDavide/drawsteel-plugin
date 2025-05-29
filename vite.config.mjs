@@ -5,11 +5,6 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
   build: {
-    lib: {
-      entry: 'index.js',
-      formats: ['es'],
-      fileName: () => 'index.js'
-    },
     rollupOptions: {
       external: ['@owlbear-rodeo/sdk']
     }
