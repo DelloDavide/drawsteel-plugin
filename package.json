@@ -6,7 +6,7 @@
     "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://dellodavide.github.io/drawsteel-extension/",
+  "homepage": "https://dellodavide.github.io/",
   "dependencies": {
     "@owlbear-rodeo/sdk": "^3.1.0"
   },
