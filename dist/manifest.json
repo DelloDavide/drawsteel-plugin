@@ -6,6 +6,7 @@
   "homepage_url": "https://dellodavide.github.io/drawsteel-plugin/index.html",
   "icon": "/owl.svg",
   "description": "A basic Draw Steel Abilities plugin for you and your players",
+  "background_url": "./setup.js",
   "action": {
     "title": "Draw Steel Abilities",
     "icon": "/owl.svg",
