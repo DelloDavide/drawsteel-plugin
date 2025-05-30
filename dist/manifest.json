@@ -12,10 +12,5 @@
     "popover": "/",
     "height": 550,
     "width": 450
-  },
-  "permissions": [
-    "CONTEXT_MENU",
-    "PLAYER",
-    "SCENE"
-  ]
+  }
 }
