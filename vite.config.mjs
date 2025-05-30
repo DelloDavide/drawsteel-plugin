@@ -2,10 +2,14 @@ import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
+  server: {
+    cors: {
+      origin: "https://www.owlbear.rodeo",
+    },
+  },
   build: {
     outDir: 'dist',
     rollupOptions: {
-      // NON mettere nulla in "external" qui
     }
   },
   plugins: [
