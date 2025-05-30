@@ -3,6 +3,7 @@
 <head>
   <link rel="icon" type="image/svg+xml" href="/owl.svg">
   <title>Draw Steel Abilities</title>
+  <script src="https://unpkg.com/@owlbear-rodeo/sdk"></script> <script_disabled type="text/javascript" src="https://unpkg.com/@owlbear-rodeo/sdk"></script_disabled>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +25,7 @@
       text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
     }
 
-    img {
+    img.header-icon { /* Changed from img to img.header-icon to be specific */
       width: 70px;
       height: 70px;
       margin-bottom: 20px;
@@ -213,29 +214,60 @@
   </style>
 </head>
 <body>
-  <img src="./owl.svg" alt="Owl Icon" />
-  <h2>Abilità del Giocatore</h2>
+  <img src="./owl.svg" alt="Owl Icon" class="header-icon" /> <h2>Abilità del Giocatore</h2>
   <input type="text" id="userId" placeholder="User ID Discord" /><br>
   <input type="text" id="abilityName" placeholder="Nome Abilità" /><br>
-  <button onclick="getAbility()">Cerca</button>
-  <div id="abilityCard">
+  <button id="searchButton">Cerca</button> <div id="abilityCard">
     </div>
 
   <script>
+    const EXTENSION_ID = "com.steel.discorduserid"; // Must match your manifest.json id
+    const METADATA_KEY_USER_ID = `${EXTENSION_ID}/discordUserId`;
+
+    const userIdInput = document.getElementById('userId');
+    const abilityNameInput = document.getElementById('abilityName');
+    const searchButton = document.getElementById('searchButton');
+    const abilityCard = document.getElementById('abilityCard');
+
+    // Function to attempt to populate User ID from selected token
+    async function populateUserIdFromSelectedToken() {
+      if (!OBR || !OBR.player || !OBR.scene || !OBR.scene.items) return; // SDK not ready
+
+      const selection = await OBR.player.getSelection();
+      if (selection && selection.length > 0) {
+        // Get details for the first selected item
+        const items = await OBR.scene.items.getItems(selection);
+        if (items.length > 0) {
+          const item = items[0]; // Prioritize the first selected item
+          if (item.metadata && item.metadata[METADATA_KEY_USER_ID]) {
+            userIdInput.value = item.metadata[METADATA_KEY_USER_ID];
+          } else {
+            // Optional: Clear if no ID on selected token, or leave as is
+            // userIdInput.value = "";
+          }
+        }
+      }
+    }
+
     async function getAbility() {
-      const userId = document.getElementById('userId').value;
-      const abilityName = document.getElementById('abilityName').value;
-      const abilityCard = document.getElementById('abilityCard');
+      const userId = userIdInput.value;
+      const abilityName = abilityNameInput.value;
 
       // Pulisci il contenuto precedente della carta
       abilityCard.innerHTML = '';
       abilityCard.style.display = 'none'; // Nasconde la carta fino a che non ci sono dati
 
+      if (!userId || !abilityName) {
+          abilityCard.innerHTML = '<div style="text-align: center; color: #FFB300;">Per favore, inserisci User ID e Nome Abilità.</div>';
+          abilityCard.style.display = 'flex';
+          return;
+      }
+
       try {
         const response = await fetch(`https://cf5a18ec-3686-4dfb-a4a2-199dd8d060b7-00-zoytalpggzg7.janeway.repl.co/api/ability?user_id=${userId}&name=${encodeURIComponent(abilityName)}`);
         const data = await response.json();
 
-        if (data && Object.keys(data).length > 0) { // Controlla se ci sono dati
+        if (data && Object.keys(data).length > 0 && !data.error) { // Controlla se ci sono dati e non un errore esplicito
           abilityCard.style.display = 'flex'; // Mostra la carta
 
           // Titolo dell'abilità
@@ -257,7 +289,7 @@
             abilityCard.appendChild(keywordsSection);
           }
 
-          // Type (general type) - Nota: "action" nell'immagine è la stessa cosa del campo "type" del tuo JSON
+          // Type (general type)
           if (data.type) {
             const typeSection = document.createElement('div');
             typeSection.className = 'card-section';
@@ -265,7 +297,7 @@
             abilityCard.appendChild(typeSection);
           }
 
-          // Char (che nell'immagine sembra essere il "Power Roll")
+          // Char (Power Roll)
           if (data.char) {
             const charSection = document.createElement('div');
             charSection.className = 'card-section full-width';
@@ -290,29 +322,27 @@
           }
 
           // Danni (roll1, roll2, roll3)
-          const damageRolls = [data.roll1, data.roll2, data.roll3].filter(Boolean); // Filtra i valori null/undefined
+          const damageRolls = [data.roll1, data.roll2, data.roll3].filter(Boolean);
 
           if (damageRolls.length > 0) {
             const damageList = document.createElement('ul');
             damageList.className = 'power-damage-list';
             damageRolls.forEach(rollText => {
               const listItem = document.createElement('li');
-              // Dividiamo la stringa al primo ":" per separare condizione e danno
               const parts = rollText.split(':');
               if (parts.length === 2) {
-                // Rimuoviamo gli asterischi dal primo pezzo e trimmiamo gli spazi
                 const condition = parts[0].replace(/\*/g, '').trim();
                 const damage = parts[1].trim();
                 listItem.innerHTML = `<span>${condition}</span><span>${damage}</span>`;
               } else {
-                listItem.innerHTML = `<span>${rollText}</span><span></span>`; // Fallback se il formato non è come atteso
+                listItem.innerHTML = `<span>${rollText}</span><span></span>`;
               }
               damageList.appendChild(listItem);
             });
             abilityCard.appendChild(damageList);
           }
 
-          // Effect (se presente e non nullo)
+          // Effect
           if (data.effect) {
             const effectSection = document.createElement('div');
             effectSection.className = 'card-section full-width';
@@ -321,7 +351,8 @@
           }
 
         } else {
-            abilityCard.innerHTML = '<div style="text-align: center; color: #FF6B6B;">Nessuna abilità trovata con questo nome/ID.</div>';
+            const errorMessage = data.error || 'Nessuna abilità trovata con questo nome/ID.';
+            abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">${errorMessage}</div>`;
             abilityCard.style.display = 'flex'; // Mostra il messaggio di errore
         }
 
@@ -331,6 +362,27 @@
         abilityCard.style.display = 'flex'; // Mostra il messaggio di errore
       }
     }
+
+    // Initialize SDK and event listeners when OBR is ready
+    if (window.OBR) { // Check if OBR is available
+        OBR.onReady(async () => {
+            // Populate User ID on initial load if a token is already selected
+            await populateUserIdFromSelectedToken();
+
+            // Listen for selection changes to update the User ID field
+            OBR.player.onChange(async (player) => {
+                await populateUserIdFromSelectedToken();
+            });
+
+            // Add event listener to the search button
+            searchButton.addEventListener('click', getAbility);
+        });
+    } else {
+        // Fallback if OBR SDK is not loaded (e.g. testing outside Owlbear)
+        console.warn("Owlbear Rodeo SDK not found. Running in standalone mode.");
+        searchButton.addEventListener('click', getAbility);
+    }
+
   </script>
 </body>
 </html>
