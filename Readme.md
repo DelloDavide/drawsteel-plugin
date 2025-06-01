@@ -1,4 +1,4 @@
-# Tutorial - Draw Steel - Abilities
+# Draw Steel Abilities
 
 Code Page [here](https://drawsteel-plugin.onrender.com).
 

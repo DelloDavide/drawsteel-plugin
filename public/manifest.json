@@ -4,14 +4,13 @@
   "manifest_version": 1,
   "author": "Davide Dell'Oglio",
   "homepage_url": "https://dellodavide.github.io/drawsteel-plugin/index.html",
-  "icon": "/owl.svg",
+  "icon": "/owl.png",
   "description": "A basic Draw Steel Abilities plugin for you and your players",
-  "background_url": "./setup.js",
   "action": {
     "title": "Draw Steel Abilities",
     "icon": "/owl.svg",
     "popover": "/",
-    "height": 550,
+    "height": 600,
     "width": 450
   }
 }
