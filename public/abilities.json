@@ -78,11 +78,9 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
             "keywords": "Mischia",
             "name": "Afferrare",
-            "power_roll": [
-                "*11 o inferiore:* Nessun effetto",
-                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-                "*17 o superiore:* Afferri il bersaglio."
-            ],
+            "roll1": "*11 o inferiore:* Nessun effetto",
+            "roll2": "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll3": "*17 o superiore:* Afferri il bersaglio.",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         },
@@ -104,12 +102,10 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
             "keywords": "Mischia",
             "name": "Spinta",
-            "power_roll": [
-                "*11 o inferiore:* Spingi 1",
-                "*12–16:* Spingi 2",
-                "*17 o superiore:* Spingi 3"
-            ],
-            "target": "1 creatura non più di 1 taglia più grande di  te",
+            "roll1": "*11 o inferiore:* Spingi 1",
+            "roll2": "*12–16:* Spingi 2",
+            "roll3": "*17 o superiore:* Spingi 3",
+            "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         },
         "Scudo Inerziale (Triggered)": {
@@ -135,6 +131,224 @@
             "roll3": "*17 o superiore:* 16 danni",
             "target": "1 creatura o oggetto",
             "type": "Azione"
+        }
+    },
+    "Condizioni": {
+        "Afferrato": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei afferrato, la tua velocità è 0, non puoi essere mosso forzatamente, non puoi usare la manovra di Spinta, e subisci uno svantaggio (bane) sulle abilità che non bersagliano la creatura che ti sta afferrando. Se la creatura che ti sta afferrando si muove, vieni mosso insieme ad essa. Se la taglia della creatura è equivalente o inferiore alla tua, la loro velocità è dimezzata mentre ti stanno afferrando. \n\nLa creatura che ti sta afferrando può usare una manovra per spostarti in un quadretto non occupato a sé adiacente. \n\nLa creatura che ti sta afferrando può terminare l'afferramento in qualunque momento (nessuna azione richiesta). Puoi anche tentare di liberarti da un afferramento usando la manovra Liberarsi dall'Afferramento (Escape Grab). Se ti teletrasporti o se la creatura che ti sta afferrando viene mossa forzatamente in un quadretto che non ti è adiacente, non sei più afferrato.",
+            "keywords": null,
+            "name": "Afferrato",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Bleeding": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei sanguinante, ogni qualvolta effettui una prova di Tenacia (Might) o Agilità (Agility), effettui un colpo a distanza, o usi un'azione, manovra o un'azione innescata (triggered action), perdi 1d6 Stamina dopo che il test, azione, manovra o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo.",
+            "keywords": null,
+            "name": "Bleeding",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Dazed": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei stordito, puoi fare solo una cosa nel tuo turno: usare una manovra, usare un'azione, o usare un'azione di movimento. Inoltre non puoi usare azioni innescate, azioni innescate gratuite, o manovre gratuite.",
+            "keywords": null,
+            "name": "Dazed",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Frightened": {
+            "char": null,
+            "distance": null,
+            "effect": "Se sei spaventato, i power roll delle tue abilità contro la fonte della tua paura subiscono uno svantaggio (bane). Se quella fonte è una creatura, i suoi power roll contro di te hanno un vantaggio (edge). Non puoi muoverti volontariamente verso la fonte della tua paura se conosci la posizione di quella fonte. Se subisci la condizione di spaventato da una fonte mentre sei già spaventato da un'altra fonte, la nuova condizione sostituisce quella precedente.",
+            "keywords": null,
+            "name": "Frightened",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Grabbed": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei afferrato, la tua velocità è 0, non puoi essere mosso forzatamente, non puoi usare la manovra di Spinta, e subisci uno svantaggio (bane) sulle abilità che non bersagliano la creatura che ti sta afferrando. Se la creatura che ti sta afferrando si muove, vieni mosso insieme ad essa. Se la taglia della creatura è equivalente o inferiore alla tua, la loro velocità è dimezzata mentre ti stanno afferrando. \n\nLa creatura che ti sta afferrando può usare una manovra per spostarti in un quadretto non occupato a sé adiacente. \n\nLa creatura che ti sta afferrando può terminare l'afferramento in qualunque momento (nessuna azione richiesta). Puoi anche tentare di liberarti da un afferramento usando la manovra Liberarsi dall'Afferramento (Escape Grab). Se ti teletrasporti o se la creatura che ti sta afferrando viene mossa forzatamente in un quadretto che non ti è adiacente, non sei più afferrato.",
+            "keywords": null,
+            "name": "Grabbed",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Indebolito": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei indebolito, tutti i tuoi power roll subiscono uno svantaggio (bane).",
+            "keywords": null,
+            "name": "Indebolito",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Prone": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei prono, sei sdraiato a terra, i tuoi attacchi singoli (strike) subiscono uno svantaggio (bane) e le abilità in mischia contro di te hanno un vantaggio (edge). Puoi muoverti trascinandoti per terra, che costa 1 quadretto di movimento in più per ogni quadretto di movimento. Non puoi arrampicarti, nuotare, saltare o volare mentre sei prono. Se ti stai arrampicando o stai volando o saltando quando vieni buttato prono, precipiti. \n\nMentre sei prono, puoi rialzarti spendendo una manovra, a meno che l'abilità o l'effetto che ha imposto la condizione non specifichi altrimenti. Puoi usare una manovra per permettere a una creatura prona adiacente di rialzarsi.",
+            "keywords": null,
+            "name": "Prone",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Prono": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei prono, sei sdraiato a terra, i tuoi attacchi singoli (strike) subiscono uno svantaggio (bane) e le abilità in mischia contro di te hanno un vantaggio (edge). Puoi muoverti trascinandoti per terra, che costa 1 quadretto di movimento in più per ogni quadretto di movimento. Non puoi arrampicarti, nuotare, saltare o volare mentre sei prono. Se ti stai arrampicando o stai volando o saltando quando vieni buttato prono, precipiti. \n\nMentre sei prono, puoi rialzarti spendendo una manovra, a meno che l'abilità o l'effetto che ha imposto la condizione non specifichi altrimenti. Puoi usare una manovra per permettere a una creatura prona adiacente di rialzarsi.",
+            "keywords": null,
+            "name": "Prono",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Provocato": {
+            "char": null,
+            "distance": null,
+            "effect": "Se sei provocato, hai un doppio svantaggio (double bane) ai power roll che non bersagliano la creatura ti ha provocato fintanto che hai linea visiva su quella creatura. Se subisci la condizione di provocato mentre sei già provocato da un'altra creatura, la nuova condizione sostituisce quella precedente.",
+            "keywords": null,
+            "name": "Provocato",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Rallentato": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei rallentato, la tua velocità è 2 a meno che non sia già inferiore, e non puoi schivare (shift).",
+            "keywords": null,
+            "name": "Rallentato",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Restrained": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei trattenuto, la tua velocità è 0, non puoi usare la manovra di Rialzarsi, e non puoi essere mosso forzatamente. I power roll delle tue abilità subiscono uno svantaggio (bane), le abilità contro di te ottengono un vantaggio (edge), e soffri uno svantaggio sui test di Tenacia (Might) e Agilità (Agility). \n\nSe ti teletrasporti mentre sei trattenuto, la condizione termina.",
+            "keywords": null,
+            "name": "Restrained",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Sanguinante": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei sanguinante, ogni qualvolta effettui una prova di Tenacia (Might) o Agilità (Agility), effettui un colpo a distanza, o usi un'azione, manovra o un'azione innescata (triggered action), perdi 1d6 Stamina dopo che il test, azione, manovra o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo.",
+            "keywords": null,
+            "name": "Sanguinante",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Slowed": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei rallentato, la tua velocità è 2 a meno che non sia già inferiore, e non puoi schivare (shift).",
+            "keywords": null,
+            "name": "Slowed",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Spaventato": {
+            "char": null,
+            "distance": null,
+            "effect": "Se sei spaventato, i power roll delle tue abilità contro la fonte della tua paura subiscono uno svantaggio (bane). Se quella fonte è una creatura, i suoi power roll contro di te hanno un vantaggio (edge). Non puoi muoverti volontariamente verso la fonte della tua paura se conosci la posizione di quella fonte. Se subisci la condizione di spaventato da una fonte mentre sei già spaventato da un'altra fonte, la nuova condizione sostituisce quella precedente.",
+            "keywords": null,
+            "name": "Spaventato",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Stordito": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei stordito, puoi fare solo una cosa nel tuo turno: usare una manovra, usare un'azione, o usare un'azione di movimento. Inoltre non puoi usare azioni innescate, azioni innescate gratuite, o manovre gratuite.",
+            "keywords": null,
+            "name": "Stordito",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Taunted": {
+            "char": null,
+            "distance": null,
+            "effect": "Se sei provocato, hai un doppio svantaggio (double bane) ai power roll che non bersagliano la creatura ti ha provocato fintanto che hai linea visiva su quella creatura. Se subisci la condizione di provocato mentre sei già provocato da un'altra creatura, la nuova condizione sostituisce quella precedente.",
+            "keywords": null,
+            "name": "Taunted",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Trattenuto": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei trattenuto, la tua velocità è 0, non puoi usare la manovra di Rialzarsi, e non puoi essere mosso forzatamente. I power roll delle tue abilità subiscono uno svantaggio (bane), le abilità contro di te ottengono un vantaggio (edge), e soffri uno svantaggio sui test di Tenacia (Might) e Agilità (Agility). \n\nSe ti teletrasporti mentre sei trattenuto, la condizione termina.",
+            "keywords": null,
+            "name": "Trattenuto",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Weakened": {
+            "char": null,
+            "distance": null,
+            "effect": "Mentre sei indebolito, tutti i tuoi power roll subiscono uno svantaggio (bane).",
+            "keywords": null,
+            "name": "Weakened",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
         }
     },
     "Degotho": {
@@ -204,11 +418,9 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
             "keywords": "Mischia",
             "name": "Afferrare",
-            "power_roll": [
-                "*11 o inferiore:* Nessun effetto",
-                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-                "*17 o superiore:* Afferri il bersaglio."
-            ],
+            "roll1": "*11 o inferiore:* Nessun effetto",
+            "roll2": "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll3": "*17 o superiore:* Afferri il bersaglio.",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         },
@@ -254,12 +466,10 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
             "keywords": "Mischia",
             "name": "Spinta",
-            "power_roll": [
-                "*11 o inferiore:* Spingi 1",
-                "*12–16:* Spingi 2",
-                "*17 o superiore:* Spingi 3"
-            ],
-            "target": "1 creatura non più di 1 taglia più grande di  te",
+            "roll1": "*11 o inferiore:* Spingi 1",
+            "roll2": "*12–16:* Spingi 2",
+            "roll3": "*17 o superiore:* Spingi 3",
+            "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         },
         "Your Entrails Are Your Extrails! (Heroic Ability 3pts)": {
@@ -282,11 +492,9 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
             "keywords": "Mischia",
             "name": "Afferrare",
-            "power_roll": [
-                "*11 o inferiore:* Nessun effetto",
-                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-                "*17 o superiore:* Afferri il bersaglio."
-            ],
+            "roll1": "*11 o inferiore:* Nessun effetto",
+            "roll2": "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll3": "*17 o superiore:* Afferri il bersaglio.",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         },
@@ -296,11 +504,9 @@
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
             "keywords": "Mischia",
             "name": "Spinta",
-            "power_roll": [
-                "*11 o inferiore:* Spingi 1",
-                "*12–16:* Spingi 2",
-                "*17 o superiore:* Spingi 3"
-            ],
+            "roll1": "*11 o inferiore:* Spingi 1",
+            "roll2": "*12–16:* Spingi 2",
+            "roll3": "*17 o superiore:* Spingi 3",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
         }
