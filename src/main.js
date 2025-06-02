@@ -39,14 +39,9 @@ function initializeApp() {
   }
 
   if (searchButton) {
-    searchButton.addEventListener('click', async () => {
-      const userId = userIdInput.value;
-      const abilityName = abilityNameInput.value;
-      const ability = await getAbility(userId, abilityName);
-      abilityCard.innerHTML = ability
-        ? `<pre>${JSON.stringify(ability, null, 2)}</pre>`
-        : "<p>Abilità non trovata.</p>";
-    });
+    searchButton.addEventListener('click', getAbility);
+  } else {
+    console.error("#searchButton element not found.");
   }
 }
 

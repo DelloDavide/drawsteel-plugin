@@ -17,7 +17,7 @@ export function setupContextMenu() {
         },
       },
       {
-        icon: `${window.location.origin}/remove/add.svg`,
+        icon: `${window.location.origin}/assets/remove.svg`,
         label: "Remove from Initiative",
         filter: {
           every: [{ key: "layer", value: "CHARACTER" }],
