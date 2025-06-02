@@ -7,8 +7,8 @@ export function setupContextMenu() {
     id: `${ID}/context-menu`,
     icons: [
       {
-        icon: `${window.location.origin}/assets/discordAdd.svg`,
-        label: "Aggiungi il tuo nome del tuo personaggio",
+        icon: `${window.location.origin}/assets/owlPlus.svg`,
+        label: "Add Character Name",
         filter: {
           every: [
             { key: "layer", value: "CHARACTER" },
@@ -17,8 +17,8 @@ export function setupContextMenu() {
         },
       },
       {
-        icon: `${window.location.origin}/assets/discordRemove.svg`,
-        label: "Rimuovi il nome del tuo personaggio",
+        icon: `${window.location.origin}/assets/owlMinus.svg`,
+        label: "Remove Character Name",
         filter: {
           every: [{ key: "layer", value: "CHARACTER" }],
         },

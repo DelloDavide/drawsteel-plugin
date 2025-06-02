@@ -2,25 +2,25 @@ import "./style.css";
 import "./mainStyle.css";
 import OBR from "@owlbear-rodeo/sdk";
 import { setupContextMenu } from "./contextMenu";
-import { setupInitiativeList } from "./initiativeList";
+import { setupCharacterList } from "./characterList";
 import { getAbility } from "./abilities";
 
 let userIdInput;
 let abilityNameInput;
 let searchButton;
 let abilityCard;
-let initiativeListElement;
+let characterListElement;
 
 function initializeApp() {
   document.querySelector("#app").innerHTML = `
     <div>
       <img src="./owl.svg" alt="Owl Icon" />
-      <h2>Abilità del Giocatore</h2>
-      <input type="text" id="userId" placeholder="Nome Personaggio" /><br>
-      <input type="text" id="abilityName" placeholder="Nome Abilità" /><br>
+      <h2>Manuale del Giocatore  Draw Steel</h2>
+      <input type="text" id="userId" placeholder="Nome Categoria / Personaggio" /><br>
+      <input type="text" id="abilityName" placeholder="Nome Azione" /><br>
       <button id="searchButton">Cerca</button> 
       <div id="abilityCard"></div>
-      <ul id="initiative-list"></ul>
+      <ul id="character-list"></ul>
     </div>
   `;
 
@@ -28,14 +28,14 @@ function initializeApp() {
   abilityNameInput = document.getElementById('abilityName');
   searchButton = document.getElementById('searchButton');
   abilityCard = document.getElementById('abilityCard');
-  initiativeListElement = document.querySelector("#initiative-list");
+  characterListElement = document.querySelector("#character-list");
 
   setupContextMenu();
 
-  if (initiativeListElement) {
-    setupInitiativeList(initiativeListElement);
+  if (characterListElement) {
+    setupCharacterList(characterListElement);
   } else {
-    console.warn("#initiative-list element not found for setupInitiativeList.");
+    console.warn("#character-list element not found for setupCharacterList.");
   }
 
   if (searchButton) {

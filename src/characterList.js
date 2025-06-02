@@ -2,25 +2,25 @@ import OBR from "@owlbear-rodeo/sdk";
 
 const ID = "drawsteel-plugin.character-name-tracker";
 
-export function setupInitiativeList(element) {
+export function setupCharacterList(element) {
   const renderList = (items) => {
-    const initiativeItems = [];
+    const characterItems = [];
     for (const item of items) {
       const metadata = item.metadata[`${ID}/metadata`];
       if (metadata) {
-        initiativeItems.push({
-          initiative: metadata.initiative,
+        characterItems.push({
+          character: metadata.characterName,
           name: item.name,
         });
       }
     }
-    const sortedItems = initiativeItems.sort(
-      (a, b) => parseFloat(b.initiative) - parseFloat(a.initiative)
+    const sortedItems = characterItems.sort(
+      (a, b) => parseFloat(b.character) - parseFloat(a.character)
     );
     const nodes = [];
-    for (const initiativeItem of sortedItems) {
+    for (const characterItem of sortedItems) {
       const node = document.createElement("li");
-      node.innerHTML = `${initiativeItem.name} (${initiativeItem.initiative})`;
+      node.innerHTML = `${characterItem.name} (${characterItem.character})`;
       nodes.push(node);
     }
     element.replaceChildren(...nodes);
