@@ -1,14 +1,14 @@
 import OBR from "@owlbear-rodeo/sdk";
 
-const ID = "com.tutorial.initiative-tracker";
+const ID = "drawsteel-plugin.discord-id-tracker";
 
 export function setupContextMenu() {
   OBR.contextMenu.create({
     id: `${ID}/context-menu`,
     icons: [
       {
-        icon: `${window.location.origin}/assets/add.svg`,
-        label: "Add to Initiative",
+        icon: `${window.location.origin}/assets/discordAdd.svg`,
+        label: "Add your Discord ID",
         filter: {
           every: [
             { key: "layer", value: "CHARACTER" },
@@ -17,8 +17,8 @@ export function setupContextMenu() {
         },
       },
       {
-        icon: `${window.location.origin}/assets/remove.svg`,
-        label: "Remove from Initiative",
+        icon: `${window.location.origin}/assets/discordRemove.svg`,
+        label: "Remove your Discord ID",
         filter: {
           every: [{ key: "layer", value: "CHARACTER" }],
         },
@@ -29,7 +29,7 @@ export function setupContextMenu() {
         (item) => item.metadata[`${ID}/metadata`] === undefined
       );
       if (addToInitiative) {
-        const initiative = window.prompt("Enter the initiative value");
+        const initiative = window.prompt("Enter your Discord ID");
         OBR.scene.items.updateItems(context.items, (items) => {
           for (let item of items) {
             item.metadata[`${ID}/metadata`] = {
