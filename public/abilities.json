@@ -1,0 +1,308 @@
+{
+    "C'eree": {
+        "Campo Nullo (Manovra)": {
+            "char": null,
+            "distance": "Aura 1",
+            "effect": "\nEach target reduces their potencies by 1.\nonce as a free maneuver on your turn, you can spend 1 discipline and give your null field has one of the following additional effects until the start of your next turn:\n   • gravitic disruption:    when a target takes damage, you can slide them 2.\n   • inertial anchor:    each target who starts their turn in the area cannot shift.\n   • synaptic break:    when a target is subjected to a potency, the potency is increased by 1.\nThis ability stays active even after encounters end. it ends if you are dying or if you willingly end it (no action required).",
+            "keywords": "Psionica",
+            "name": "Campo Nullo (Manovra)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Tutti i nemici",
+            "type": "Manovra"
+        },
+        "Colpo Cinetico (Signature)": {
+            "char": "agilità",
+            "distance": "Mischia 1",
+            "effect": null,
+            "keywords": "Melee, Psionic, Strike, Weapon",
+            "name": "Colpo Cinetico (Signature)",
+            "roll1": "*11 o inferiore:* 7 danni; provocato",
+            "roll2": "*12–16:* 8 danni; provocato (EoT); slitta 1",
+            "roll3": "*17 o superiore:* 9 danni; provocato (EoT); slitta 2",
+            "target": "1 creatura o oggetto",
+            "type": "Azione"
+        },
+        "Dardo Psionico (Action)": {
+            "char": "Intuizione",
+            "distance": "Distanza 10",
+            "effect": null,
+            "keywords": "Psionic, Ranged, Strike",
+            "name": "Dardo Psionico (Action)",
+            "roll1": "*11 o inferiore:* 5 danni psichici; slitta 1",
+            "roll2": "*12–16:* 8 danni psichici; slitta 2",
+            "roll3": "*17 o superiore:* 10 danni psichici; slitta 3",
+            "target": "1 creatura o oggetto",
+            "type": "Azione"
+        },
+        "Disgregatore Arcano (5)": {
+            "char": "Intuizione",
+            "distance": "Mischia",
+            "effect": "\nWhile weakened this way, the target takes damage equal to your intuition score when they use a supernatural or ability that costs malice.",
+            "keywords": "Melee, Psionic, Strike, Weapon",
+            "name": "Disgregatore Arcano (5)",
+            "roll1": "*11 o inferiore:* 11 psychic damage; M < 0, weakened (save ends)",
+            "roll2": "*12–16:* 15 psychic damage; M < 1, weakened (save ends)",
+            "roll3": "*17 o superiore:* 19 psychic damage; M < 2, weakened (save ends)",
+            "target": "1 creatura",
+            "type": "Azione"
+        },
+        "Free Strike (Melee)": {
+            "char": "+ 2",
+            "distance": "Melee 2",
+            "effect": null,
+            "keywords": "Charge, Melee, Strike, Weapon",
+            "name": "Free Strike (Melee)",
+            "roll1": "*11 o inferiore:* 4 Damage",
+            "roll2": "*12–16:* 7 Damage",
+            "roll3": "*17 o superiore:* 9 Damage",
+            "target": "1 Creature or Object",
+            "type": "Action"
+        },
+        "Free Strike (Ranged)": {
+            "char": "+ 2",
+            "distance": "Ranged 5",
+            "effect": null,
+            "keywords": "Ranged, Strike, Weapon",
+            "name": "Free Strike (Ranged)",
+            "roll1": "*11 o inferiore:* 4 Damage",
+            "roll2": "*12–16:* 6 Damage",
+            "roll3": "*17 o superiore:* 8 Damage",
+            "target": "1 Creature or Object",
+            "type": "Action"
+        },
+        "Grab": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
+            "keywords": "Mischia",
+            "name": "Afferrare",
+            "power_roll": [
+                "*11 o inferiore:* Nessun effetto",
+                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+                "*17 o superiore:* Afferri il bersaglio."
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        },
+        "Passo Inerziale (Signature)": {
+            "char": "agilità",
+            "distance": "Mischia 1",
+            "effect": "You can shift up to half your speed before or after you make the strike",
+            "keywords": "Mischia, Strike, Psionic, Weapon",
+            "name": "Passo Inerziale (Signature)",
+            "roll1": "*11 o inferiore:* 8 danni",
+            "roll2": "*12–16:* 10 danni",
+            "roll3": "*17 o superiore:* 13 danni",
+            "target": "1 creatura o un oggetto",
+            "type": "Azione"
+        },
+        "Push": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
+            "keywords": "Mischia",
+            "name": "Spinta",
+            "power_roll": [
+                "*11 o inferiore:* Spingi 1",
+                "*12–16:* Spingi 2",
+                "*17 o superiore:* Spingi 3"
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di  te",
+            "type": "Manovra"
+        },
+        "Scudo Inerziale (Triggered)": {
+            "char": null,
+            "distance": "Me stesso",
+            "effect": "\nTrigger: You take damage.\n\nEffect:\nYou halve the damage.\n\nSpend 1:\nYou decrease the potency of one effect associated with the damage for you by 1.",
+            "keywords": "Psionic",
+            "name": "Scudo Inerziale (Triggered)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Io",
+            "type": "Azione Innescata"
+        },
+        "Spina Temporale (3)": {
+            "char": "Intuizione",
+            "distance": "Mischia",
+            "effect": "\nYou can shift up to half your speed before or after you make the strike. additionally, whenever an effect lets you use a free strike or a signature ability, you can use this ability instead, paying its discipline cost as usual.",
+            "keywords": "Melee, Psionic, Strike, Weapon",
+            "name": "Spina Temporale (3)",
+            "roll1": "*11 o inferiore:* 10 danni",
+            "roll2": "*12–16:* 13 danni",
+            "roll3": "*17 o superiore:* 16 danni",
+            "target": "1 creatura o oggetto",
+            "type": "Azione"
+        }
+    },
+    "Degotho": {
+        "Brutal Slam (Signature)": {
+            "char": "+ Might (+2)",
+            "distance": "Melee 2",
+            "effect": null,
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Brutal Slam (Signature)",
+            "roll1": "*11 o inferiore:* 7 Damage; Push 1",
+            "roll2": "*12–16:* 10 Damage; Push 2",
+            "roll3": "*17 o superiore:* 13 Damage; Push 4",
+            "target": "1 Creature or Object",
+            "type": "Action"
+        },
+        "Draconian Guard (Triggered Action)": {
+            "char": null,
+            "distance": "Self",
+            "effect": "\nTrigger:\nYou, or a creature adjacent to you, takes damage from a strike\n\nEffect:\nYou reduce the damage from the strike by an amount equal to your level.",
+            "keywords": null,
+            "name": "Draconian Guard (Triggered Action)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Self",
+            "type": "Triggered Action"
+        },
+        "Draconic Pride (Action)": {
+            "char": "+ Might (+2)",
+            "distance": "Burst 1",
+            "effect": null,
+            "keywords": "Area, Magic",
+            "name": "Draconic Pride (Action)",
+            "roll1": "*11 o inferiore:* 2 Damage",
+            "roll2": "*12–16:* 5 Damage; Push 1",
+            "roll3": "*17 o superiore:* 7 Damage; Push 2",
+            "target": "All Enemies",
+            "type": "Action"
+        },
+        "Free Strike (Melee)": {
+            "char": "+ Might (+2)",
+            "distance": "Melee 2",
+            "effect": null,
+            "keywords": "Charge, Melee, Strike, Weapon",
+            "name": "Free Strike (Melee)",
+            "roll1": "*11 o inferiore:* 6 Damage",
+            "roll2": "*12–16:* 9 Damage",
+            "roll3": "*17 o superiore:* 11 Damage",
+            "target": "1 Creature or Object",
+            "type": "Action"
+        },
+        "Free Strike (Ranged)": {
+            "char": "+Might (+2)",
+            "distance": "Ranged 5",
+            "effect": null,
+            "keywords": "Ranged, Strike, Weapon",
+            "name": "Free Strike (Ranged)",
+            "roll1": "*11 o inferiore:* 4 Damage",
+            "roll2": "*12–16:* 6 Damage",
+            "roll3": "*17 o superiore:* 8 Damage",
+            "target": "1 Creature or Object",
+            "type": "Action"
+        },
+        "Grab": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
+            "keywords": "Mischia",
+            "name": "Afferrare",
+            "power_roll": [
+                "*11 o inferiore:* Nessun effetto",
+                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+                "*17 o superiore:* Afferri il bersaglio."
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        },
+        "Lines of Force (Triggered Action)": {
+            "char": null,
+            "distance": "Melee 1",
+            "effect": "\nTrigger:\nThe target would be force moved.\n\nEffect:\nYou can select a new target of the same size or smaller within distance to be force moved instead, and you can turn that forced movement into a push instead. You become the source of the forced movement and decide where the new target’s destination. Additionally, the forced movement distance gains a bonus equal to your might score.\n\nSpend 1:\nThe forced movement distance instead gains a bonus equal to twice your Might score.",
+            "keywords": "Magic, Melee",
+            "name": "Lines of Force (Triggered Action)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Self or 1 Creature",
+            "type": "Triggered Action"
+        },
+        "Make Peace With Your God! (Heroic Ability 5pts)": {
+            "char": null,
+            "distance": "Self",
+            "effect": "The next ability roll you make this turn automatically achieves a tier 3 result. You gain one surge.",
+            "keywords": null,
+            "name": "Make Peace With Your God! (Heroic Ability 5pts)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Self",
+            "type": "Maneuver"
+        },
+        "Net And Stab (Signature)": {
+            "char": "+ Might (+ 2)",
+            "distance": "Melee 2",
+            "effect": null,
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Net And Stab (Signature)",
+            "roll1": "*11 o inferiore:* 6 Damage; A < 0 Slowed (EoT)",
+            "roll2": "*12–16:* 8 Damage; A < 1 Slowed (EoT)",
+            "roll3": "*17 o superiore:* 10 Damage; A < 2 Restrained (EoT)",
+            "target": "1 Creature",
+            "type": "Action"
+        },
+        "Push": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
+            "keywords": "Mischia",
+            "name": "Spinta",
+            "power_roll": [
+                "*11 o inferiore:* Spingi 1",
+                "*12–16:* Spingi 2",
+                "*17 o superiore:* Spingi 3"
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di  te",
+            "type": "Manovra"
+        },
+        "Your Entrails Are Your Extrails! (Heroic Ability 3pts)": {
+            "char": "+Might (+2)",
+            "distance": "Melee 2",
+            "effect": "While bleeding, the target takes damage equal to your might score at the end of your turns.",
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Your Entrails Are Your Extrails! (Heroic Ability 3pts)",
+            "roll1": "*11 o inferiore:* 7 damage; M < 0, bleeding (save ends)",
+            "roll2": "*12–16:* 9 damage; M < 1, bleeding (save ends)",
+            "roll3": "*17 o superiore:* 12 damage; M < 2, bleeding (save ends)",
+            "target": "1 creature or object",
+            "type": "Action"
+        }
+    },
+    "Master": {
+        "Grab": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua. Puoi afferrare solo una creatura alla volta in questo modo.",
+            "keywords": "Mischia",
+            "name": "Afferrare",
+            "power_roll": [
+                "*11 o inferiore:* Nessun effetto",
+                "*12–16:* Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+                "*17 o superiore:* Afferri il bersaglio."
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        },
+        "Push": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
+            "keywords": "Mischia",
+            "name": "Spinta",
+            "power_roll": [
+                "*11 o inferiore:* Spingi 1",
+                "*12–16:* Spingi 2",
+                "*17 o superiore:* Spingi 3"
+            ],
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        }
+    }
+}

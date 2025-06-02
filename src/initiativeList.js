@@ -1,6 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 
-const ID = "drawsteel-plugin.discord-id-tracker";
+const ID = "drawsteel-plugin.character-name-tracker";
 
 export function setupInitiativeList(element) {
   const renderList = (items) => {

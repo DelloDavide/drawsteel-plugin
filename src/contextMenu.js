@@ -1,6 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 
-const ID = "drawsteel-plugin.discord-id-tracker";
+const ID = "drawsteel-plugin.character-name-tracker";
 
 export function setupContextMenu() {
   OBR.contextMenu.create({
@@ -8,7 +8,7 @@ export function setupContextMenu() {
     icons: [
       {
         icon: `${window.location.origin}/assets/discordAdd.svg`,
-        label: "Add your Discord ID",
+        label: "Aggiungi il tuo nome del tuo personaggio",
         filter: {
           every: [
             { key: "layer", value: "CHARACTER" },
@@ -18,22 +18,22 @@ export function setupContextMenu() {
       },
       {
         icon: `${window.location.origin}/assets/discordRemove.svg`,
-        label: "Remove your Discord ID",
+        label: "Rimuovi il nome del tuo personaggio",
         filter: {
           every: [{ key: "layer", value: "CHARACTER" }],
         },
       },
     ],
     onClick(context) {
-      const addToInitiative = context.items.every(
+      const addCharacterName = context.items.every(
         (item) => item.metadata[`${ID}/metadata`] === undefined
       );
-      if (addToInitiative) {
-        const initiative = window.prompt("Enter your Discord ID");
+      if (addCharacterName) {
+        const characterName = window.prompt("Scrivi il nome del tuo personaggio");
         OBR.scene.items.updateItems(context.items, (items) => {
           for (let item of items) {
             item.metadata[`${ID}/metadata`] = {
-              initiative,
+              characterName,
             };
           }
         });

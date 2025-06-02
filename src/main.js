@@ -16,7 +16,7 @@ function initializeApp() {
     <div>
       <img src="./owl.svg" alt="Owl Icon" />
       <h2>Abilità del Giocatore</h2>
-      <input type="text" id="userId" placeholder="User ID Discord" /><br>
+      <input type="text" id="userId" placeholder="Nome Personaggio" /><br>
       <input type="text" id="abilityName" placeholder="Nome Abilità" /><br>
       <button id="searchButton">Cerca</button> 
       <div id="abilityCard"></div>

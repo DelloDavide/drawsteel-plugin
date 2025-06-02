@@ -14,5 +14,3 @@ learn-more: https://owlbear.app
 # Draw Steel Abilities
 
 A basic Draw Steel Abilities plugin for you and your players
-
-remember to start the discord bot before using the plugin

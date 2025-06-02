@@ -25,19 +25,17 @@ export async function getAbility() {
   }
 
   try {
-    const response = await fetch(`https://cf5a18ec-3686-4dfb-a4a2-199dd8d060b7-00-zoytalpggzg7.janeway.repl.co/api/ability?user_id=${userId}&name=${encodeURIComponent(abilityName)}`);
-    
+    const response = await fetch('./abilities.json');
+
     if (!response.ok) {
-        let errorData;
-        try {
-            errorData = await response.json();
-        } catch (e) {
-        }
-        const errorMessage = errorData?.error || `Errore HTTP: ${response.status}`;
-        throw new Error(errorMessage);
+      throw new Error(`Errore HTTP: ${response.status}`);
     }
     
-    const data = await response.json();
+    const abilities = await response.json();
+
+    const dataUser = abilities[userId];
+
+    const data = dataUser[abilityName];
 
     if (data && Object.keys(data).length > 0 && !data.error) { 
       abilityCard.style.display = 'flex'; 
