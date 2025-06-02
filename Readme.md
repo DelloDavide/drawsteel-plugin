@@ -1,8 +1,15 @@
 # Draw Steel Abilities
 
-Pagina di Host del Plugin [here](https://drawsteel-plugin.onrender.com).
+Pagina di Host del Plugin: [here](https://drawsteel-plugin.onrender.com).
 
 Per usare su OwlBear il Plugin: https://drawsteel-plugin.onrender.com/manifest.json
+
+# TODO
+
+Aggiungere Abilità di tutti
+Aggiungere Movimenti Manovre comuni ecc..
+Aggiungere finestra di visualizzazione abilità per tutti in basso a destra (e rimuovere visualizazione user Id comune)
+Aggiungere possibilita di ancorare finestra di visualizzazione cosi da fare andare a sinistra e far andare via comando quando si vuole
 
 # Lista delle Abilità
 

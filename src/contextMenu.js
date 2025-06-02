@@ -29,7 +29,7 @@ export function setupContextMenu() {
         (item) => item.metadata[`${ID}/metadata`] === undefined
       );
       if (addCharacterName) {
-        const characterName = window.prompt("Scrivi il nome del tuo personaggio");
+        const characterName = window.prompt("Scrivi il nome del tuo personaggio (Supportati per ora: 'C'eree', 'Condizioni', 'Degotho', 'Master')");
         OBR.scene.items.updateItems(context.items, (items) => {
           for (let item of items) {
             item.metadata[`${ID}/metadata`] = {

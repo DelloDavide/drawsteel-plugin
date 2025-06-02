@@ -1,9 +1,11 @@
+import OBR from "@owlbear-rodeo/sdk";
+
 export async function getAbility() {
   const userIdInput = document.getElementById('userId');
-  const abilityNameInput = document.getElementById('abilityName');
+  const abilityNamesSelect = document.getElementById('abilityName');
   const abilityCard = document.getElementById('abilityCard');
 
-  if (!userIdInput || !abilityNameInput || !abilityCard) {
+  if (!userIdInput || !abilityNamesSelect || !abilityCard) {
     console.error('Elementi DOM necessari non trovati (userId, abilityName, o abilityCard).');
     if (abilityCard) {
         abilityCard.innerHTML = '<div style="text-align: center; color: #FF6B6B;">Errore di configurazione: elementi mancanti.</div>';
@@ -13,7 +15,7 @@ export async function getAbility() {
   }
 
   const userId = userIdInput.value;
-  const abilityName = abilityNameInput.value;
+  const abilityName = abilityNamesSelect.value;
 
   abilityCard.innerHTML = '';
   abilityCard.style.display = 'none';
@@ -33,9 +35,8 @@ export async function getAbility() {
     
     const abilities = await response.json();
 
-    const dataUser = abilities[userId];
-
-    const data = dataUser[abilityName];
+    const dataUser = getPropertyCaseInsensitive(abilities, userId);
+    const data = getPropertyCaseInsensitive(dataUser, abilityName);
 
     if (data && Object.keys(data).length > 0 && !data.error) { 
       abilityCard.style.display = 'flex'; 
@@ -121,4 +122,66 @@ export async function getAbility() {
     abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">Si è verificato un errore: ${error.message}</div>`;
     abilityCard.style.display = 'flex'; 
   }
+}
+
+export async function getUserAbilities() {
+  const userIdInput = document.getElementById('userId');
+  const abilityNamesSelect = document.getElementById('abilityName');
+  const abilityCard = document.getElementById('abilityCard');
+
+  if (!userIdInput || !abilityNamesSelect || !abilityCard) {
+    console.error('Elementi DOM necessari non trovati (userId, abilityName, o abilityCard).');
+    if (abilityCard) {
+        abilityCard.innerHTML = '<div style="text-align: center; color: #FF6B6B;">Errore di configurazione: elementi mancanti.</div>';
+        abilityCard.style.display = 'flex';
+    }
+    return;
+  }
+
+  const userId = userIdInput.value;
+
+  try {
+    const response = await fetch('./abilities.json');
+
+    if (!response.ok) {
+      throw new Error(`Errore HTTP: ${response.status}`);
+    }
+    
+    const abilities = await response.json();
+
+    const data = getPropertyCaseInsensitive(abilities, userId);
+
+    if (data && Object.keys(data).length > 0 && !data.error) {
+      let selectOptions = '';
+      for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            const ability = data[key];
+            selectOptions += `<option value="${key}">${ability.name}</option>\n`;
+        }
+        abilityNamesSelect.innerHTML = selectOptions;
+      }
+    } else {
+        const errorMessage = data.error || 'Nessuna abilità trovata per questo User';
+        abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">${errorMessage}</div>`;
+        abilityCard.style.display = 'flex'; 
+    }
+
+  } catch (error) {
+    console.error('Errore nel recupero delle abilità per questo User:', error);
+    abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">Si è verificato un errore: ${error.message}</div>`;
+    abilityCard.style.display = 'flex'; 
+  }
+}
+
+function getPropertyCaseInsensitive(obj, keyToFind) {
+  if (!obj || typeof obj !== 'object' || keyToFind === null || keyToFind === undefined) {
+    return undefined;
+  }
+  const lowerKeyToFind = String(keyToFind).toLowerCase();
+  for (const currentKey in obj) {
+    if (obj.hasOwnProperty(currentKey) && String(currentKey).toLowerCase() === lowerKeyToFind) {
+      return obj[currentKey];
+    }
+  }
+  return undefined;
 }

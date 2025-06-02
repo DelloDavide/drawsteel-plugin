@@ -3,39 +3,58 @@ import "./mainStyle.css";
 import OBR from "@owlbear-rodeo/sdk";
 import { setupContextMenu } from "./contextMenu";
 import { setupCharacterList } from "./characterList";
-import { getAbility } from "./abilities";
+import { getAbility, getUserAbilities } from "./abilities";
 
 let userIdInput;
-let abilityNameInput;
+let abilityNamesSelect;
 let searchButton;
+let searchUserAbilityButton;
 let abilityCard;
-let characterListElement;
 
 function initializeApp() {
   document.querySelector("#app").innerHTML = `
     <div>
       <img src="./owl.svg" alt="Owl Icon" />
       <h2>Manuale del Giocatore  Draw Steel</h2>
-      <input type="text" id="userId" placeholder="Nome Categoria / Personaggio" /><br>
-      <input type="text" id="abilityName" placeholder="Nome Azione" /><br>
-      <button id="searchButton">Cerca</button> 
+      <div class="page-center">
+        <input type="text" id="userId" placeholder="Nome Categoria / Personaggio" readonly /><br>
+        <button id="searchUserAbilityButton">Cerca Abilità</button><br>
+      </div>
+      <div class="page-center">
+        <div class="custom-select-wrapper">
+          <select id="abilityName">
+            <option value="" disabled selected hidden>Nome Azione</option>
+          </select>
+          <div class="custom-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 10l5 5 5-5" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <button id="searchButton">Vedi Abilità</button><br>
+      </div>
       <div id="abilityCard"></div>
-      <ul id="character-list"></ul>
     </div>
   `;
 
   userIdInput = document.getElementById('userId');
-  abilityNameInput = document.getElementById('abilityName');
+  abilityNamesSelect = document.getElementById('abilityName');
   searchButton = document.getElementById('searchButton');
+  searchUserAbilityButton = document.getElementById('searchUserAbilityButton');
   abilityCard = document.getElementById('abilityCard');
-  characterListElement = document.querySelector("#character-list");
 
   setupContextMenu();
 
-  if (characterListElement) {
-    setupCharacterList(characterListElement);
+  if (userIdInput) {
+    setupCharacterList(userIdInput);
   } else {
-    console.warn("#character-list element not found for setupCharacterList.");
+    console.warn("userIdInput element not found for setupCharacterList.");
+  }
+
+  if (searchUserAbilityButton) {
+    searchUserAbilityButton.addEventListener('click', getUserAbilities);
+  } else {
+    console.error("#searchUserAbilityButton element not found.");
   }
 
   if (searchButton) {
