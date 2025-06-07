@@ -1,28 +1,38 @@
 import "./style.css";
 import "./mainStyle.css";
 import OBR from "@owlbear-rodeo/sdk";
-import { setupContextMenu } from "./contextMenu";
-import { setupCharacterList } from "./characterList";
-import { getAbility, getUserAbilities } from "./abilities";
+import { setupActionsList } from "./characterList";
+import { getAbility, getUserAbilities, getUsers } from "./abilities";
+import { setMetadataPopover, openClosePopover } from "./background";
 
-let userIdInput;
+let usersNameSelect;
 let abilityNamesSelect;
 let searchButton;
 let searchUserAbilityButton;
+let windowSearchButton;
 let abilityCard;
 
-function initializeApp() {
+async function initializeApp() {
   document.querySelector("#app").innerHTML = `
     <div>
       <img src="./owl.svg" alt="Owl Icon" />
       <h2>Manuale del Giocatore  Draw Steel</h2>
       <div class="page-center">
-        <input type="text" id="userId" placeholder="Nome Categoria / Personaggio" readonly /><br>
+        <div class="custom-select-wrapper">
+          <select id="usersNameSelect">
+            <option value="" disabled selected hidden>Nome Azione</option>
+          </select>
+          <div class="custom-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 10l5 5 5-5" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+      </div>
         <button id="searchUserAbilityButton">Cerca Abilità</button><br>
       </div>
       <div class="page-center">
         <div class="custom-select-wrapper">
-          <select id="abilityName">
+          <select id="abilityNamesSelect">
             <option value="" disabled selected hidden>Nome Azione</option>
           </select>
           <div class="custom-arrow">
@@ -31,24 +41,27 @@ function initializeApp() {
             </svg>
           </div>
         </div>
-        <button id="searchButton">Vedi Abilità</button><br>
+      </div>
+      <div class="page-center">
+        <button id="searchButton">Vedi Abilità - Locale</button><br>
+        <button id="windowSearchButton">Vedi Abilità - Condivisa</button><br>
       </div>
       <div id="abilityCard"></div>
     </div>
   `;
 
-  userIdInput = document.getElementById('userId');
-  abilityNamesSelect = document.getElementById('abilityName');
+  usersNameSelect = document.getElementById('usersNameSelect');
+  abilityNamesSelect = document.getElementById('abilityNamesSelect');
   searchButton = document.getElementById('searchButton');
   searchUserAbilityButton = document.getElementById('searchUserAbilityButton');
+  windowSearchButton = document.getElementById('windowSearchButton');
   abilityCard = document.getElementById('abilityCard');
 
-  setupContextMenu();
-
-  if (userIdInput) {
-    setupCharacterList(userIdInput);
+  if (usersNameSelect) {
+    getUsers()
+    setupActionsList(usersNameSelect);
   } else {
-    console.warn("userIdInput element not found for setupCharacterList.");
+    console.warn("usersNameSelect element not found for setupActionsList.");
   }
 
   if (searchUserAbilityButton) {
@@ -61,6 +74,15 @@ function initializeApp() {
     searchButton.addEventListener('click', getAbility);
   } else {
     console.error("#searchButton element not found.");
+  }
+
+  if (windowSearchButton) {
+    await setMetadataPopover()
+    windowSearchButton.addEventListener('click', () => {
+      openClosePopover(usersNameSelect.value, abilityNamesSelect.value);
+    });
+  } else {
+    console.error("#windowSearchButton element not found.");
   }
 }
 

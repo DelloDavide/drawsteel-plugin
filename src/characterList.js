@@ -1,11 +1,9 @@
 import OBR from "@owlbear-rodeo/sdk";
 
-import { getUserAbilities } from "./abilities";
-
 const ID = "drawsteel-plugin.character-name-tracker";
 
-export function setupCharacterList(inputElement) {
-    const abilityNamesSelect = document.getElementById('abilityName');
+export function setupActionsList(inputElement) {
+    const abilityNamesSelect = document.getElementById('abilityNamesSelect');
     const abilityCard = document.getElementById('abilityCard');
     const renderList = (items) => {
     const characterItems = [];
