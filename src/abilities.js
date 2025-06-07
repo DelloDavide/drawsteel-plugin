@@ -1,4 +1,4 @@
-const abilitiesJSON = await readAbilities();
+const abilitiesJSON = readAbilities();
 
 export async function getAbility() {
   const usersNameSelect = document.getElementById('usersNameSelect');
@@ -27,7 +27,7 @@ export async function getAbility() {
   }
 
   try {
-    const abilities = abilitiesJSON
+    const abilities = await abilitiesJSON
 
     const dataUser = getPropertyCaseInsensitive(abilities, userId);
     const data = getPropertyCaseInsensitive(dataUser, abilityName);
@@ -135,7 +135,7 @@ export async function getUserAbilities() {
   const userId = usersNameSelect.value;
 
   try {
-    const abilities = abilitiesJSON
+    const abilities = await abilitiesJSON
 
     const data = getPropertyCaseInsensitive(abilities, userId);
 
@@ -176,7 +176,7 @@ export async function getUsers() {
   }
 
   try {
-    const abilities = abilitiesJSON
+    const abilities = await abilitiesJSON
 
     if (abilities && Object.keys(abilities).length > 0 && !abilities.error) {
       let selectOptions = '';
@@ -222,7 +222,7 @@ export async function getAbilityPopover(usersNameSelect, abilityNamesSelect, abi
   }
 
   try {
-    const abilities = abilitiesJSON;
+    const abilities = await abilitiesJSON;
     const dataUser = getPropertyCaseInsensitive(abilities, userId);
     const data = getPropertyCaseInsensitive(dataUser, abilityName);
 
