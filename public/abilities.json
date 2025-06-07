@@ -208,6 +208,18 @@
         }
     },
     "C'eree": {
+        "Afferrare/Grab": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
+            "keywords": "Mischia",
+            "name": "Afferrare/Grab",
+            "roll1": "*11 o inferiore: Nessun effetto",
+            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll3": "*17 o superiore: Afferri il bersaglio.",
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        },
         "Campo Nullo (Manovra)": {
             "char": null,
             "distance": "Aura 1",
@@ -279,18 +291,6 @@
             "roll3": "*17 o superiore: 8 Damage",
             "target": "1 Creature or Object",
             "type": "Action"
-        },
-        "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
-            "name": "Afferrare/Grab",
-            "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-            "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
         },
         "Passo Inerziale (Signature)": {
             "char": "+ Agilità",
@@ -574,6 +574,18 @@
         }
     },
     "Degotho": {
+        "Afferrare/Grab": {
+            "char": "+ Tenacia (Might):",
+            "distance": "Mischia 1",
+            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
+            "keywords": "Mischia",
+            "name": "Afferrare/Grab",
+            "roll1": "*11 o inferiore: Nessun effetto",
+            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll3": "*17 o superiore: Afferri il bersaglio.",
+            "target": "1 creatura non più di 1 taglia più grande di te",
+            "type": "Manovra"
+        },
         "Brutal Slam (Signature)": {
             "char": "+ Might (+2)",
             "distance": "Melee 2",
@@ -633,18 +645,6 @@
             "roll3": "*17 o superiore: 8 Damage",
             "target": "1 Creature or Object",
             "type": "Action"
-        },
-        "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
-            "name": "Afferrare/Grab",
-            "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-            "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
         },
         "Lines of Force (Triggered Action)": {
             "char": null,

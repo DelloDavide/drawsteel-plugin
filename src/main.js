@@ -1,9 +1,7 @@
 import "./style.css";
-import "./mainStyle.css";
 import OBR from "@owlbear-rodeo/sdk";
-import { setupActionsList } from "./characterList";
 import { getAbility, getUserAbilities, getUsers } from "./abilities";
-import { setMetadataPopover, openClosePopover } from "./background";
+import { setMetadataPopover, openClosePopover } from "./popover";
 
 let usersNameSelect;
 let abilityNamesSelect;
@@ -28,7 +26,7 @@ async function initializeApp() {
             </svg>
         </div>
       </div>
-        <button id="searchUserAbilityButton">Cerca Abilità</button><br>
+        <button id="searchUserAbilityButton" title="Cerca Abilità">Cerca Abilità</button><br>
       </div>
       <div class="page-center">
         <div class="custom-select-wrapper">
@@ -43,10 +41,12 @@ async function initializeApp() {
         </div>
       </div>
       <div class="page-center">
-        <button id="searchButton">Vedi Abilità - Locale</button><br>
-        <button id="windowSearchButton">Vedi Abilità - Condivisa</button><br>
+        <button id="searchButton" title="Vedi Abilità - Locale">Vedi Abilità - Locale</button><br>
+        <button id="windowSearchButton" title="Mostra Abilità - Condividi">Mostra Abilità - Condividi</button><br>
       </div>
-      <div id="abilityCard"></div>
+      <div class="page-center">
+        <div id="abilityCard"></div>
+      </div>
     </div>
   `;
 
@@ -58,28 +58,32 @@ async function initializeApp() {
   abilityCard = document.getElementById('abilityCard');
 
   if (usersNameSelect) {
-    getUsers()
-    setupActionsList(usersNameSelect);
+    await getUsers(usersNameSelect, abilityNamesSelect, abilityCard)
+    await getUserAbilities(usersNameSelect, abilityNamesSelect, abilityCard);
   } else {
-    console.warn("usersNameSelect element not found for setupActionsList.");
+    console.warn("usersNameSelect element not found for usersNameSelect.");
   }
 
   if (searchUserAbilityButton) {
-    searchUserAbilityButton.addEventListener('click', getUserAbilities);
+    searchUserAbilityButton.addEventListener('click', async () => {
+      await getUserAbilities(usersNameSelect, abilityNamesSelect, abilityCard);
+    });
   } else {
     console.error("#searchUserAbilityButton element not found.");
   }
 
   if (searchButton) {
-    searchButton.addEventListener('click', getAbility);
+    searchButton.addEventListener('click', async () => {
+      await getAbility(usersNameSelect.value, abilityNamesSelect.value, abilityCard);
+    });
   } else {
     console.error("#searchButton element not found.");
   }
 
   if (windowSearchButton) {
     await setMetadataPopover()
-    windowSearchButton.addEventListener('click', () => {
-      openClosePopover(usersNameSelect.value, abilityNamesSelect.value);
+    windowSearchButton.addEventListener('click', async () => {
+      await openClosePopover(usersNameSelect.value, abilityNamesSelect.value);
     });
   } else {
     console.error("#windowSearchButton element not found.");
