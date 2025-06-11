@@ -1,4 +1,28 @@
-const abilitiesJSON = readAbilities();
+import { getChoosenFile } from "./main";
+
+export async function getFiles(abilitiesFileSelect, abilitiesDictionary) {
+  try {
+    if (abilitiesDictionary && Object.keys(abilitiesDictionary).length > 0 && !abilitiesDictionary.error) {
+      let selectOptions = '';
+      for (const key in abilitiesDictionary) {
+        if (abilitiesDictionary.hasOwnProperty(key)) {
+          const fileName = abilitiesDictionary[key];
+          selectOptions += `<option value="${fileName}">${key}</option>\n`;
+        }
+        abilitiesFileSelect.innerHTML = selectOptions;
+      }
+    } else {
+      const errorMessage = data.error || 'Nessun file trovato';
+      abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">${errorMessage}</div>`;
+      abilityCard.style.display = 'flex';
+    }
+
+  } catch (error) {
+    console.error('Errore nel recupero dei file:', error);
+    abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">Si è verificato un errore: ${error.message}</div>`;
+    abilityCard.style.display = 'flex';
+  }
+}
 
 export async function getUsers(usersNameSelect, abilityNamesSelect, abilityCard) {
   if (!usersNameSelect || !abilityNamesSelect || !abilityCard) {
@@ -11,7 +35,7 @@ export async function getUsers(usersNameSelect, abilityNamesSelect, abilityCard)
   }
 
   try {
-    const abilities = await abilitiesJSON
+    const abilities = await readAbilities(getChoosenFile())
 
     if (abilities && Object.keys(abilities).length > 0 && !abilities.error) {
       let selectOptions = '';
@@ -47,7 +71,7 @@ export async function getUserAbilities(usersNameSelect, abilityNamesSelect, abil
   const userId = usersNameSelect.value;
 
   try {
-    const abilities = await abilitiesJSON
+    const abilities = await readAbilities(getChoosenFile())
 
     const data = getPropertyCaseInsensitive(abilities, userId);
 
@@ -96,7 +120,7 @@ export async function getAbility(usersNameSelect, abilityNamesSelect, abilityCar
   }
 
   try {
-    const abilities = await abilitiesJSON;
+    const abilities = await readAbilities(getChoosenFile());
     const dataUser = getPropertyCaseInsensitive(abilities, userId);
     const data = getPropertyCaseInsensitive(dataUser, abilityName);
 
@@ -200,8 +224,8 @@ function getPropertyCaseInsensitive(obj, keyToFind) {
   return undefined;
 }
 
-async function readAbilities() {
-  const response = await fetch('./abilities.json');
+async function readAbilities(file) {
+  const response = await fetch(file);
 
   if (!response.ok) {
     throw new Error(`Errore HTTP: ${response.status}`);
