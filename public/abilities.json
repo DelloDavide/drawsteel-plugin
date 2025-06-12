@@ -85,7 +85,7 @@
             "type": "Azione"
         },
         "Hurl Element (Azione)": {
-            "char": "+ Might (+2)",
+            "char": "+ Reason (+2)",
             "distance": "Ranged 10",
             "effect": "Quando effettui questo strike, scegli il danno tra uno dei seguenti tipi: acido, freddo, corruzione, fuoco, fulmine, veleno o sonico.",
             "keywords": "Magic, Ranged, Strike",
