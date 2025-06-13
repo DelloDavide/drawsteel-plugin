@@ -1,14 +1,8 @@
 import "./style.css";
 import OBR from "@owlbear-rodeo/sdk";
-import { getAbility, getUserAbilities, getUsers, getFiles } from "./abilities";
+import { getAbility, getUserAbilities, getUsers, getFiles, setChoosenFile } from "./abilities";
 import { setMetadataPopover, openClosePopover } from "./popover";
 
-const abilitiesDictionary = {
-  Campagna_A: "./abilities.json",
-  Campagna_B: "./abilities2.json"
-};
-
-let choosenFile;
 let abilitiesFileSelect;
 let searchAbilitiesFileButton;
 let usersNameSelect;
@@ -80,8 +74,11 @@ async function initializeApp() {
   windowSearchButton = document.getElementById('windowSearchButton');
   abilityCard = document.getElementById('abilityCard');
 
+  abilityCard.style.display = "none";
+
   if (abilitiesFileSelect) {
-    await getFiles(abilitiesFileSelect, abilitiesDictionary)
+    await getFiles(abilitiesFileSelect)
+    setChoosenFile(abilitiesFileSelect.value);
   } else {
     console.warn("abilitiesFileSelect element not found for abilitiesFileSelect.");
   }
@@ -95,7 +92,7 @@ async function initializeApp() {
     console.error("#searchAbilitiesFileButton element not found.");
   }
 
-  if (usersNameSelect && typeof choosenFile === "string" && choosenFile.trim() !== "" ) {
+  if (usersNameSelect) {
     await getUsers(usersNameSelect, abilityNamesSelect, abilityCard)
     await getUserAbilities(usersNameSelect, abilityNamesSelect, abilityCard);
   } else {
@@ -125,7 +122,7 @@ async function initializeApp() {
       windowSearchButton.classList.add('loading');
 
       try {
-        await openClosePopover(usersNameSelect.value, abilityNamesSelect.value);
+        await openClosePopover(usersNameSelect.value, abilityNamesSelect.value, abilitiesFileSelect.value);
       } catch (err) {
         console.error("Errore durante openClosePopover:", err);
       }
@@ -137,16 +134,6 @@ async function initializeApp() {
     console.error("#windowSearchButton element not found.");
   }
 }
-
-function getChoosenFile() {
-  return choosenFile;
-}
-
-function setChoosenFile(choosenFileNew) {
-  choosenFile = choosenFileNew;
-}
-
-export { getChoosenFile, setChoosenFile };
 
 OBR.onReady(() => {
   console.log("Owlbear Rodeo SDK is available");

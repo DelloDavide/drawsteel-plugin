@@ -951,32 +951,6 @@
             "type": "Manovra"
         }
     },
-    "Master": {
-        "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
-            "name": "Afferrare/Grab",
-            "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-            "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        },
-        "Push": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
-            "keywords": "Mischia",
-            "name": "Spinta",
-            "roll1": "*11 o inferiore: Spingi 1",
-            "roll2": "*12–16: Spingi 2",
-            "roll3": "*17 o superiore: Spingi 3",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        }
-    },
     "Movimento": {
         "Avanzare/Advance": {
             "char": null,

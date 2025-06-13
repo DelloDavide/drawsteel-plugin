@@ -1,12 +1,17 @@
-import { getChoosenFile } from "./main";
+let choosenFile;
 
-export async function getFiles(abilitiesFileSelect, abilitiesDictionary) {
+export const abilitiesFilesDictionary = {
+  "Milizia Di Taed": "./Milizia_Di_Taed.json",
+  "L'Ultimo Sole": "./L_Ultimo_Sole.json"
+};
+
+export async function getFiles(abilitiesFileSelect) {
   try {
-    if (abilitiesDictionary && Object.keys(abilitiesDictionary).length > 0 && !abilitiesDictionary.error) {
+    if (abilitiesFilesDictionary && Object.keys(abilitiesFilesDictionary).length > 0 && !abilitiesFilesDictionary.error) {
       let selectOptions = '';
-      for (const key in abilitiesDictionary) {
-        if (abilitiesDictionary.hasOwnProperty(key)) {
-          const fileName = abilitiesDictionary[key];
+      for (const key in abilitiesFilesDictionary) {
+        if (abilitiesFilesDictionary.hasOwnProperty(key)) {
+          const fileName = abilitiesFilesDictionary[key];
           selectOptions += `<option value="${fileName}">${key}</option>\n`;
         }
         abilitiesFileSelect.innerHTML = selectOptions;
@@ -107,6 +112,8 @@ export async function getAbility(usersNameSelect, abilityNamesSelect, abilityCar
     return;
   }
 
+  abilityCard.style.display = "flex";
+
   const userId = usersNameSelect;
   const abilityName = abilityNamesSelect;
 
@@ -119,13 +126,33 @@ export async function getAbility(usersNameSelect, abilityNamesSelect, abilityCar
     return;
   }
 
+  await displayAbility(userId, abilityName, abilityCard)
+}
+
+async function displayAbility(userId, abilityName, abilityCard) {
   try {
-    const abilities = await readAbilities(getChoosenFile());
+    const file = getChoosenFile();
+    const abilities = await readAbilities(file);
     const dataUser = getPropertyCaseInsensitive(abilities, userId);
     const data = getPropertyCaseInsensitive(dataUser, abilityName);
 
     if (data && Object.keys(data).length > 0 && !data.error) {
+      createCard(data, abilityCard);
+    } else {
+      const errorMessage = data?.error || `Nessuna abilità trovata con questo nome/ID, file: ${file}, userId: ${userId}, abilityName: ${abilityName}`;
+      abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">${errorMessage}</div>`;
       abilityCard.style.display = 'flex';
+    }
+
+  } catch (error) {
+    console.error('Errore nel recupero dell\'abilità:', error);
+    abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">Si è verificato un errore: ${error.message}</div>`;
+    abilityCard.style.display = 'flex';
+  }
+}
+
+function createCard(data, abilityCard){
+  abilityCard.style.display = 'flex';
 
       const title = document.createElement('h3');
       title.textContent = data.name || 'Nome Sconosciuto';
@@ -197,18 +224,6 @@ export async function getAbility(usersNameSelect, abilityNamesSelect, abilityCar
         effectSection.innerHTML = `<span class="card-label" style="text-align: center; padding-right: 0;">Effect</span><span class="card-value">${data.effect}</span>`;
         abilityCard.appendChild(effectSection);
       }
-
-    } else {
-      const errorMessage = data?.error || 'Nessuna abilità trovata con questo nome/ID.';
-      abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">${errorMessage}</div>`;
-      abilityCard.style.display = 'flex';
-    }
-
-  } catch (error) {
-    console.error('Errore nel recupero dell\'abilità:', error);
-    abilityCard.innerHTML = `<div style="text-align: center; color: #FF6B6B;">Si è verificato un errore: ${error.message}</div>`;
-    abilityCard.style.display = 'flex';
-  }
 }
 
 function getPropertyCaseInsensitive(obj, keyToFind) {
@@ -233,3 +248,13 @@ async function readAbilities(file) {
 
   return await response.json();
 }
+
+function getChoosenFile() {
+  return choosenFile;
+}
+
+function setChoosenFile(choosenFileNew) {
+  choosenFile = choosenFileNew;
+}
+
+export { getChoosenFile, setChoosenFile };
