@@ -15,6 +15,8 @@ let abilityCard;
 async function initializeApp() {
   document.querySelector("#app").innerHTML = `
     <div>
+      <img src="./owl.svg" alt="Owl Icon" />
+      <h2>Manuale del Giocatore  Draw Steel</h2>
       <div class="page-center">
         <div class="custom-select-wrapper">
           <select id="abilitiesFileSelect">
@@ -24,12 +26,10 @@ async function initializeApp() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
               <path d="M7 10l5 5 5-5" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+          </div>
         </div>
+      <button id="searchAbilitiesFileButton" title="Cerca Abilità">Scegli Campagna</button><br>
       </div>
-        <button id="searchAbilitiesFileButton" title="Cerca Abilità">Scegli Campagna</button><br>
-      </div>
-      <img src="./owl.svg" alt="Owl Icon" />
-      <h2>Manuale del Giocatore  Draw Steel</h2>
       <div class="page-center">
         <div class="custom-select-wrapper">
           <select id="usersNameSelect">
