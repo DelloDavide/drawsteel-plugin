@@ -6,7 +6,8 @@ Per usare su OwlBear il Plugin: https://drawsteel-plugin.onrender.com/manifest.j
 
 # TODO
 
-Aggiungere possibilita di ancorare finestra di visualizzazione cosi da farla andare a sinistra e far andare via comando quando si vuole cliccando un bottone
+Migliorare il codice e renderlo più robusto e modulare
+Porting a Typescript
 
 ## License
 
