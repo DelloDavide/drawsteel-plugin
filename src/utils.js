@@ -1,7 +1,7 @@
 // Constants
 export const POPOVER_DIMENSIONS = {
-  WIDTH: 600,
-  HEIGHT: 600,
+  WIDTH: 625,
+  HEIGHT: 650,
   TIMEOUT: 15000
 };
 

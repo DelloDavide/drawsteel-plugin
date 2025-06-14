@@ -82,6 +82,43 @@ export async function getAbility(usersNameSelect, abilityNamesSelect, abilityCar
   await displayAbility(usersNameSelect, abilityNamesSelect, abilityCard);
 }
 
+export async function getStoredAbility(abilitiesFileSelect, usersNameSelect, abilityNamesSelect, abilityCard) {
+  if (!validateElements({ usersNameSelect, abilityNamesSelect, abilityCard })) {
+    handleError(new Error(ERROR_MESSAGES.MISSING_ELEMENTS), abilityCard);
+    return;
+  }
+
+  abilityCard.style.display = "flex";
+  abilityCard.innerHTML = '';
+  abilityCard.style.display = 'none';
+
+  if (!usersNameSelect || !abilityNamesSelect) {
+    handleError(new Error(ERROR_MESSAGES.MISSING_INPUT), abilityCard);
+    return;
+  }
+
+  await displayAbilityStored(abilitiesFileSelect, usersNameSelect, abilityNamesSelect, abilityCard);
+}
+
+async function displayAbilityStored(abilitiesFile, userId, abilityName, abilityCard) {
+  try {
+    const abilities = await readAbilities(abilitiesFile);
+    const dataUser = getPropertyCaseInsensitive(abilities, userId);
+    const data = getPropertyCaseInsensitive(dataUser, abilityName);
+
+    if (data && Object.keys(data).length > 0) {
+      createCard(data, abilityCard);
+    } else {
+      handleError(
+        new Error(`Nessuna abilità trovata con questo nome/ID, file: ${stateManager.choosenFile}, userId: ${userId}, abilityName: ${abilityName}`),
+        abilityCard
+      );
+    }
+  } catch (error) {
+    handleError(error, abilityCard);
+  }
+}
+
 async function displayAbility(userId, abilityName, abilityCard) {
   try {
     const abilities = await readAbilities(stateManager.choosenFile);
@@ -151,16 +188,16 @@ function createElement(tag, content, attributes = {}) {
 function createSection(label, value, className = '', valueClassName = '', labelStyle = {}) {
   const section = document.createElement('div');
   section.className = `card-section ${className}`;
-  
+
   const labelSpan = document.createElement('span');
   labelSpan.className = 'card-label';
   labelSpan.textContent = label;
   Object.entries(labelStyle).forEach(([key, value]) => labelSpan.style[key] = value);
-  
+
   const valueSpan = document.createElement('span');
   valueSpan.className = `card-value ${valueClassName}`;
   valueSpan.innerHTML = value;
-  
+
   section.appendChild(labelSpan);
   section.appendChild(valueSpan);
   return section;
@@ -169,7 +206,7 @@ function createSection(label, value, className = '', valueClassName = '', labelS
 function createDamageList(damageRolls) {
   const damageList = document.createElement('ul');
   damageList.className = 'power-damage-list';
-  
+
   damageRolls.forEach(rollText => {
     const listItem = document.createElement('li');
     const parts = rollText.split(':');
@@ -182,7 +219,7 @@ function createDamageList(damageRolls) {
     }
     damageList.appendChild(listItem);
   });
-  
+
   return damageList;
 }
 

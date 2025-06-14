@@ -16,7 +16,9 @@ async function initializeApp() {
       </svg>
     </button>
       <h3 id="userId"></h3>
-      <div id="abilityCardPopover"></div>
+      <div class="page-center">
+        <div id="abilityCardPopover"></div>
+      </div>
     </div>
   `;
 
