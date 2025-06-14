@@ -23,14 +23,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -66,27 +58,6 @@ h1 {
   color: #888;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -107,12 +78,12 @@ body {
   background-color: #1a1a1a;
   color: #e0e0e0;
   padding: 10px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  min-width: 320px;
 }
 
 h2 {
@@ -185,6 +156,29 @@ select#usersNameSelect:focus {
   outline: none;
 }
 
+select#abilitiesFileSelect {
+  width: 100%;
+  padding: 12px 15px;
+  padding-right: 40px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 1em;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+select#abilitiesFileSelect:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
 select#abilityNamesSelect {
   width: 100%;
   padding: 12px 15px;
@@ -227,6 +221,59 @@ select#abilityNamesSelect:focus {
   padding-top: 10px;
 }
 
+/* Sidebar Toggle Button Specific Styles */
+.sidebar-toggle {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1001;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+
+.sidebar-toggle:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-toggle:active {
+  transform: scale(0.95);
+}
+
+.sidebar-toggle.active {
+  transform: translateX(625px) scale(1.05);
+}
+
+.sidebar-toggle svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-toggle.active svg {
+  transform: rotate(180deg);
+}
+
+/* Generic Button Styles */
 button {
   display: inline-block;
   width: 50%;
@@ -241,17 +288,24 @@ button {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 0.6em 1.2em;
+  font-family: inherit;
 }
 
 button:hover {
   background-color: #45a049;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: #646cff;
 }
 
 button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 #abilityCard {
@@ -270,7 +324,6 @@ button:active {
   position: relative;
   overflow: hidden;
   overflow-y: auto;
-  display: none;
 }
 
 #abilityCard h3 {
@@ -299,10 +352,37 @@ button:active {
   position: relative;
   overflow: hidden;
   overflow-y: auto;
-  display: none;
 }
 
 #abilityCardPopover h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a3a3a;
+  color: #4CAF50;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+#abilityCardSidebar {
+  background-color: #2a2a2a;
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 500px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.4), 0 8px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#abilityCardSidebar h3 {
   margin: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #3a3a3a;
@@ -478,4 +558,186 @@ button.loading::after {
   to {
     transform: translateY(-50%) rotate(360deg);
   }
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar {
+  position: fixed;
+  left: -625px;
+  top: 0;
+  width: 625px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  overflow-y: auto;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-content {
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-content h3 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.sidebar.active .sidebar-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.circular-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.sidebar.active .circular-button {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.circular-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.circular-button svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    left: -100%;
+  }
+
+  .sidebar-toggle.active {
+    transform: translateX(100%) scale(1.05);
+  }
+}
+
+.saved-abilities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.saved-ability-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #2a2a2a;
+  border: 1px solid #4CAF50;
+  border-radius: 8px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.saved-ability-button:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.saved-ability-button:active {
+  transform: translateY(0);
+}
+
+.sidebar-ability-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #4CAF50;
+}
+
+.sidebar-ability-card h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.sidebar-ability-card .card-section {
+  margin-bottom: 10px;
+}
+
+.sidebar-ability-card .card-label {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.sidebar-ability-card .card-value {
+  color: #e0e0e0;
+  font-size: 0.9em;
 }

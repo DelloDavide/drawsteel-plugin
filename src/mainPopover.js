@@ -1,6 +1,7 @@
 import "./style.css";
 import OBR from "@owlbear-rodeo/sdk";
-import { getAbility } from "./abilities";
+import { getAbility, setChoosenFile } from "./abilities";
+import { popoverId } from "./popover";
 
 let abilityCardPopover;
 let userId;
@@ -15,7 +16,9 @@ async function initializeApp() {
       </svg>
     </button>
       <h3 id="userId"></h3>
-      <div id="abilityCardPopover"></div>
+      <div class="page-center">
+        <div id="abilityCardPopover"></div>
+      </div>
     </div>
   `;
 
@@ -24,9 +27,12 @@ async function initializeApp() {
   closePopoverBtn = document.getElementById('closePopoverBtn');
 
   if (abilityCardPopover && userId) {
-    const metadata = await OBR.room.getMetadata();
-    const userSelected = metadata["drawsteel-plugin/showPopoverUserSelected"];
-    const abilitySelected = metadata["drawsteel-plugin/showPopoverabilityNamesSelected"];
+    const params = new URLSearchParams(window.location.search);
+    const choosenFile = params.get("file");
+    const userSelected = params.get("user");
+    const abilitySelected = params.get("ability");
+
+    setChoosenFile(choosenFile);
 
     if (typeof userSelected === "string" && userSelected.trim() !== "" &&
       typeof abilitySelected === "string" && abilitySelected.trim() !== "") {
@@ -42,16 +48,12 @@ async function initializeApp() {
 
       await OBR.room.setMetadata({
         "drawsteel-plugin/showPopover": false,
-      });
-      await OBR.room.setMetadata({
         "drawsteel-plugin/showPopoverUserSelected": "",
-      });
-
-      await OBR.room.setMetadata({
         "drawsteel-plugin/showPopoverabilityNamesSelected": "",
+        "drawsteel-plugin/showPopoverFileSelected": "",
       });
 
-      await OBR.popover.close("drawsteel-plugin/popover");
+      await OBR.popover.close(popoverId);
     });
   } else {
     console.error("#closePopoverBtn element not found.");
