@@ -55,7 +55,7 @@ async function openPopover() {
     marginThreshold: 0,
   });
 
-  // Reset dopo il timeout
+  // Reset after timeout
   setTimeout(async () => {
     await OBR.room.setMetadata({
       [CONFIG.POPOVER.METADATA_KEYS.SHOW_POPOVER]: false,

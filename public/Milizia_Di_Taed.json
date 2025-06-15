@@ -19,7 +19,7 @@
             "keywords": "Area, Fire, Magic, Ranged",
             "name": "Conflagration (5)",
             "roll1": "*11 o inferiore: 6 danni da fuoco",
-            "roll2": "*12–16: 8 danni da fuoco",
+            "roll2": "*12 – 16: 8 danni da fuoco",
             "roll3": "*17 o superiore: 12 danni da fuoco",
             "target": "Ogni nemico nell'area",
             "type": "Azione"
@@ -31,7 +31,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Detonate Sigil (Azione)",
             "roll1": "*11 o inferiore: 6 danni; Slitta 1",
-            "roll2": "*12–16: 8 danni; Slitta 2",
+            "roll2": "*12 – 16: 8 danni; Slitta 2",
             "roll3": "*17 o superiore: 11 danni; Slitta 3",
             "target": "1 Creatura con il tuo sigillo",
             "type": "Azione"
@@ -55,7 +55,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 3 danni",
-            "roll2": "*12–16: 6 danni",
+            "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -67,7 +67,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 3 danni",
-            "roll2": "*12–16: 5 danni",
+            "roll2": "*12 – 16: 5 danni",
             "roll3": "*17 o superiore: 7 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -79,7 +79,7 @@
             "keywords": "Magic, Melee, Strike, Void",
             "name": "Grasp of Beyond (Signature)",
             "roll1": "*11 o inferiore: 6 danni da corruzione",
-            "roll2": "*12–16: 9 danni da corruzione",
+            "roll2": "*12 – 16: 9 danni da corruzione",
             "roll3": "*17 o superiore: 12 danni da corruzione",
             "target": "1 Creatura",
             "type": "Azione"
@@ -91,7 +91,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Hurl Element (Azione)",
             "roll1": "*11 o inferiore: 5 danni",
-            "roll2": "*12–16: 7 danni",
+            "roll2": "*12 – 16: 7 danni",
             "roll3": "*17 o superiore: 9 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -127,7 +127,7 @@
             "keywords": "Fire, Magic, Ranged, Strike",
             "name": "The Flesh, a Crucible (3)",
             "roll1": "*11 o inferiore: 9 danni da fuoco",
-            "roll2": "*12–16: 12 danni da fuoco",
+            "roll2": "*12 – 16: 12 danni da fuoco",
             "roll3": "*17 o superiore: 15 danni da fuoco",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -139,7 +139,7 @@
             "keywords": "Fire, Magic, Ranged, Strike",
             "name": "Viscous Fire (Signature)",
             "roll1": "*11 o inferiore: 6 danni da fuoco; Spingi 2",
-            "roll2": "*12–16: 9 danni da fuoco; Spingi 3",
+            "roll2": "*12 – 16: 9 danni da fuoco; Spingi 3",
             "roll3": "*17 o superiore: 11 danni da fuoco; Spingi 4",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -173,7 +173,7 @@
         "Curare/Heal": {
             "char": null,
             "distance": null,
-            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e rimanere in grado di combattere. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina)/(save ends) che la affligge.",
+            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e rimanere in grado di combattere. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina) / (save ends) che la affligge.",
             "keywords": null,
             "name": "Curare/Heal",
             "roll1": null,
@@ -208,22 +208,10 @@
         }
     },
     "C'eree": {
-        "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
-            "name": "Afferrare/Grab",
-            "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-            "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        },
         "Campo Nullo (Manovra)": {
             "char": null,
             "distance": "Aura 1",
-            "effect": "Each target reduces their potencies by 1. Once as a free maneuver on your turn, you can spend 1 discipline and give your null field one of the following additional effects until the start of your next turn:   <br>-Gravitic Disruption: When a target takes damage, you can slide them 2. <br>-Inertial Anchor: Each target who starts their turn in the area cannot shift. <br>-Synaptic Break: When a target is subjected to a potency, the potency is increased by 1. <p>This ability stays active even after encounters end. it ends if you are dying or if you willingly end it (no action required).",
+            "effect": " Ogni bersaglio riduce le proprie potency di 1. Una volta come manovra gratuita nel tuo turno, puoi spendere 1 disciplina e dare al tuo campo nullo uno dei seguenti effetti aggiuntivi fino all'inizio del tuo turno successivo: <br>- Gravitic Disruption: quando un bersaglio subisce danni, puoi farlo slidare di 2. <br>- Inertial Anchor: ogni bersaglio che inizia il proprio turno nell'area non può spostarsi. <br>- Synaptic Break: quando un bersaglio è soggetto a una potency, la potency viene aumentata di 1. <p>Questa abilità rimane attiva anche dopo la fine degli incontri. finisce se stai morendo o se lo finisci volontariamente (non è richiesta alcuna azione).",
             "keywords": "Psionica",
             "name": "Campo Nullo (Manovra)",
             "roll1": null,
@@ -239,19 +227,19 @@
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Colpo Cinetico (Signature)",
             "roll1": "*11 o inferiore: 7 danni; Provocato/Taunted (EoT)",
-            "roll2": "*12–16: 8 danni; Provocato/Taunted (EoT); slitta 1",
+            "roll2": "*12 – 16: 8 danni; Provocato/Taunted (EoT); slitta 1",
             "roll3": "*17 o superiore: 9 danni; Provocato/Taunted (EoT); slitta 2",
             "target": "1 creatura o oggetto",
             "type": "Azione"
         },
-        "Dardo Psionico (Action)": {
+        "Dardo Psionico (Azione)": {
             "char": "+ Intuizione",
             "distance": "Distanza 10",
             "effect": null,
             "keywords": "Psionic, Ranged, Strike",
-            "name": "Dardo Psionico (Action)",
+            "name": "Dardo Psionico (Azione)",
             "roll1": "*11 o inferiore: 5 danni psichici; slitta 1",
-            "roll2": "*12–16: 8 danni psichici; slitta 2",
+            "roll2": "*12 – 16: 8 danni psichici; slitta 2",
             "roll3": "*17 o superiore: 10 danni psichici; slitta 3",
             "target": "1 creatura o oggetto",
             "type": "Azione"
@@ -259,11 +247,11 @@
         "Disgregatore Arcano (5)": {
             "char": "+ Intuizione",
             "distance": "Mischia",
-            "effect": "While weakened this way, the target takes damage equal to your intuition score when they use a supernatural or ability that costs malice.",
+            "effect": " Mentre è indebolito in questo modo, il bersaglio subisce danni pari al tuo punteggio di intuition quando usa un potere soprannaturale o un'abilità che costa malizia.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Disgregatore Arcano (5)",
             "roll1": "*11 o inferiore: 11 psychic damage; M < 0, weakened (save ends)",
-            "roll2": "*12–16: 15 psychic damage; M < 1, weakened (save ends)",
+            "roll2": "*12 – 16: 15 psychic damage; M < 1, weakened (save ends)",
             "roll3": "*17 o superiore: 19 psychic damage; M < 2, weakened (save ends)",
             "target": "1 creatura",
             "type": "Azione"
@@ -275,10 +263,10 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 4 Damage",
-            "roll2": "*12–16: 7 Damage",
+            "roll2": "*12 – 16: 7 Damage",
             "roll3": "*17 o superiore: 9 Damage",
-            "target": "1 Creature or Object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         },
         "Free Strike (Ranged)": {
             "char": "+ 2",
@@ -287,41 +275,29 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 4 Damage",
-            "roll2": "*12–16: 6 Damage",
+            "roll2": "*12 – 16: 6 Damage",
             "roll3": "*17 o superiore: 8 Damage",
-            "target": "1 Creature or Object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         },
         "Passo Inerziale (Signature)": {
             "char": "+ Agilità",
             "distance": "Mischia 1",
-            "effect": "You can shift up to half your speed before or after you make the strike",
+            "effect": " Puoi aumentare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. ",
             "keywords": "Melee, Strike, Psionic, Weapon",
             "name": "Passo Inerziale (Signature)",
             "roll1": "*11 o inferiore: 8 danni",
-            "roll2": "*12–16: 10 danni",
+            "roll2": "*12 – 16: 10 danni",
             "roll3": "*17 o superiore: 13 danni",
             "target": "1 creatura o un oggetto",
             "type": "Azione"
         },
-        "Push": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
-            "keywords": "Mischia",
-            "name": "Spinta",
-            "roll1": "*11 o inferiore: Spingi 1",
-            "roll2": "*12–16: Spingi 2",
-            "roll3": "*17 o superiore: Spingi 3",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        },
-        "Scudo Inerziale (Triggered)": {
+        "Scudo Inerziale (Azione Innescata)": {
             "char": null,
             "distance": "Me stesso",
-            "effect": "Trigger: <br>You take damage. <p>Effect: <br>You halve the damage. <p>Spend 1: <br>You decrease the potency of one effect associated with the damage for you by 1.",
+            "effect": " Innesco: <br>Subisci danni. <p>Effetto: <br>dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te.",
             "keywords": "Psionic",
-            "name": "Scudo Inerziale (Triggered)",
+            "name": "Scudo Inerziale (Azione Innescata)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
@@ -331,11 +307,11 @@
         "Spina Temporale (3)": {
             "char": "+ Intuizione",
             "distance": "Mischia",
-            "effect": "You can shift up to half your speed before or after you make the strike. Additionally, whenever an effect allows you to use a free strike or a signature ability, you can use this ability instead, paying its discipline cost as usual.",
+            "effect": "Puoi aumentare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. Inoltre, ogni volta che un effetto ti consente di utilizzare un colpo gratuito o un'abilità distintiva, puoi utilizzare questa abilità al suo posto, pagando il suo costo di disciplina come di consueto.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Spina Temporale (3)",
             "roll1": "*11 o inferiore: 10 danni",
-            "roll2": "*12–16: 13 danni",
+            "roll2": "*12 – 16: 13 danni",
             "roll3": "*17 o superiore: 16 danni",
             "target": "1 creatura o oggetto",
             "type": "Azione"
@@ -459,7 +435,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Curse of Terror (5)",
             "roll1": "*11 o inferiore: 8 danni sacri; I < 0, Spaventato (save ends)",
-            "roll2": "*12–16: 11 danni sacri; I < 1, Spaventato (save ends)",
+            "roll2": "*12 – 16: 11 danni sacri; I < 1, Spaventato (save ends)",
             "roll3": "*17 o superiore: 15 danni sacri; I < 2, Spaventato (save ends)",
             "target": "1 Creatura",
             "type": "Azione"
@@ -471,7 +447,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 3 danni",
-            "roll2": "*12–16: 6 danni",
+            "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -483,7 +459,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 3 danni",
-            "roll2": "*12–16: 5 danni",
+            "roll2": "*12 – 16: 5 danni",
             "roll3": "*17 o superiore: 7 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -503,7 +479,7 @@
         "Healing Grace (Manovra)": {
             "char": null,
             "distance": "Ranged 10",
-            "effect": "Il bersaglio può spendere un Recupero (Recovery). <p>Spendi 1+: <br>Per ogni Piety che decidi di spendere, puoi aggiungere uno dei seguenti effetti: <p>-Puoi bersagliare un alleato aggiuntivo entro gittata. <br>-Puoi terminare un effetto su un bersaglio che termini con un tiro salvezza o che termini alla fine del turno. <br>-Un bersaglio prono può rialzarsi. <br>-Il bersaglio può spendere 1 Recupero aggiuntivo.",
+            "effect": "Il bersaglio può spendere un Recupero (Recovery). <p>Spendi 1+: <br>Per ogni pietà che decidi di spendere, puoi aggiungere uno dei seguenti effetti: <p>-Puoi bersagliare un alleato aggiuntivo entro gittata. <br>-Puoi terminare un effetto su un bersaglio che termini con un tiro salvezza o che termini alla fine del turno. <br>-Un bersaglio prono può rialzarsi. <br>-Il bersaglio può spendere 1 Recupero aggiuntivo.",
             "keywords": "Magic, Ranged",
             "name": "Healing Grace (Manovra)",
             "roll1": null,
@@ -519,7 +495,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Holy Lash (Signature)",
             "roll1": "*11 o inferiore: 5 danni sacri; tira verticale 2",
-            "roll2": "*12–16: 7 danni sacri; tira verticale 3",
+            "roll2": "*12 – 16: 7 danni sacri; tira verticale 3",
             "roll3": "*17 o superiore: 10 danni sacri; tira verticale 4",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -531,7 +507,7 @@
             "keywords": "Area, Magic",
             "name": "Lightfall (Signature)",
             "roll1": "*11 o inferiore: 2 danni sacri",
-            "roll2": "*12–16: 3 danni sacri",
+            "roll2": "*12 – 16: 3 danni sacri",
             "roll3": "*17 o superiore: 5 danni sacri",
             "target": "Ogni nemico nell'area",
             "type": "Azione"
@@ -543,7 +519,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Ray of Wrath (Azione)",
             "roll1": "*11 o inferiore: 4 danni",
-            "roll2": "*12–16: 6 danni",
+            "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -555,7 +531,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Violence Will Not Aid Thee! (3)",
             "roll1": "*11 o inferiore: 5 danni da fulmine",
-            "roll2": "*12–16: 8 danni da fulmine",
+            "roll2": "*12 – 16: 8 danni da fulmine",
             "roll3": "*17 o superiore: 11 danni da fulmine",
             "target": "1 Creatura",
             "type": "Azione"
@@ -563,7 +539,7 @@
         "Word of Judgment (Azione Innescata)": {
             "char": "+ Intuition (+2)",
             "distance": "Ranged 10",
-            "effect": "Innesco: <br>Il bersaglio subisce danno da un'abilità che richiede un power roll. <p>:Effetto: <br>Il power roll subisce uno svantaggio (bane) contro il bersaglio. <p>Spendi 1: <br>Il power roll subisce un doppio svantaggio (double bane) contro il bersaglio.",
+            "effect": "Innesco: <br>Il bersaglio subisce danno da un'abilità che richiede un power roll. <p>: Effetto: <br>Il power roll subisce uno svantaggio (bane) contro il bersaglio. <p>Spendi 1: <br>Il power roll subisce un doppio svantaggio (double bane) contro il bersaglio.",
             "keywords": "Magic, Ranged",
             "name": "Word of Judgment (Azione Innescata)",
             "roll1": null,
@@ -574,18 +550,6 @@
         }
     },
     "Degotho": {
-        "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
-            "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
-            "name": "Afferrare/Grab",
-            "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
-            "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        },
         "Brutal Slam (Signature)": {
             "char": "+ Might (+2)",
             "distance": "Melee 2",
@@ -593,34 +557,34 @@
             "keywords": "Melee, Strike, Weapon",
             "name": "Brutal Slam (Signature)",
             "roll1": "*11 o inferiore: 7 Damage; Push 1",
-            "roll2": "*12–16: 10 Damage; Push 2",
+            "roll2": "*12 – 16: 10 Damage; Push 2",
             "roll3": "*17 o superiore: 13 Damage; Push 4",
-            "target": "1 Creature or Object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         },
-        "Draconian Guard (Triggered Action)": {
+        "Draconian Guard (Azione Innescata)": {
             "char": null,
-            "distance": "Self",
-            "effect": "Trigger: <br>You, or a creature adjacent to you, takes damage from a strike. <p>Effect: <br>You reduce the damage from the strike by an amount equal to your level.",
+            "distance": "Sé Stesso",
+            "effect": "Innesco: <br>Tu, o una creatura adiacente a te, subite danni da un colpo. <p>Effetto: <br>Riduci i danni del colpo di un importo pari al tuo livello.",
             "keywords": null,
-            "name": "Draconian Guard (Triggered Action)",
+            "name": "Draconian Guard (Azione Innescata)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
-            "target": "Self",
-            "type": "Triggered Action"
+            "target": "Sé Stesso",
+            "type": "Azione Innescata"
         },
-        "Draconic Pride (Action)": {
+        "Draconic Pride (Azione)": {
             "char": "+ Might (+2)",
             "distance": "Burst 1",
             "effect": null,
             "keywords": "Area, Magic",
-            "name": "Draconic Pride (Action)",
+            "name": "Draconic Pride (Azione)",
             "roll1": "*11 o inferiore: 2 Damage",
-            "roll2": "*12–16: 5 Damage; Push 1",
+            "roll2": "*12 – 16: 5 Damage; Push 1",
             "roll3": "*17 o superiore: 7 Damage; Push 2",
             "target": "All Enemies",
-            "type": "Action"
+            "type": "Azione"
         },
         "Free Strike (Melee)": {
             "char": "+ Might (+2)",
@@ -629,10 +593,10 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 6 Damage",
-            "roll2": "*12–16: 9 Damage",
+            "roll2": "*12 – 16: 9 Damage",
             "roll3": "*17 o superiore: 11 Damage",
-            "target": "1 Creature or Object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         },
         "Free Strike (Ranged)": {
             "char": "+ Might (+2)",
@@ -641,34 +605,34 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 4 Damage",
-            "roll2": "*12–16: 6 Damage",
+            "roll2": "*12 – 16: 6 Damage",
             "roll3": "*17 o superiore: 8 Damage",
-            "target": "1 Creature or Object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         },
-        "Lines of Force (Triggered Action)": {
+        "Lines of Force (Azione Innescata)": {
             "char": null,
             "distance": "Melee 1",
-            "effect": "Trigger: <br>The target would be force moved. <p>Effect: <br>You can select a new target of the same size or smaller within distance to be force moved instead, and you can turn that forced movement into a push instead. You become the source of the forced movement and decide where the new target’s destination. Additionally, the forced movement distance gains a bonus equal to your might score. <p>Spend 1: <br>The forced movement distance instead gains a bonus equal to twice your Might score.",
+            "effect": "Innesco: <br>Il bersaglio verrebbe spostato forzatamente. <p>Effetto: <br>Puoi selezionare invece un nuovo bersaglio della stessa dimensione o più piccolo entro la distanza, da sottoporre a movimento forzato e puoi invece trasformare quel movimento forzato in una spinta. Diventi la fonte del movimento forzato e decidi dove si trova la destinazione del nuovo bersaglio. Inoltre, la distanza di movimento forzato ottiene un bonus pari al tuo punteggio di Might. <p>Spendi 1: <br>La distanza di movimento forzato ottiene invece un bonus pari al doppio del tuo punteggio di Might.",
             "keywords": "Magic, Melee",
-            "name": "Lines of Force (Triggered Action)",
+            "name": "Lines of Force (Azione Innescata)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
-            "target": "Self or 1 Creature",
-            "type": "Triggered Action"
+            "target": "Sé Stesso or 1 Creature",
+            "type": "Azione Innescata"
         },
-        "Make Peace With Your God! (Heroic Ability 5pts)": {
+        "Make Peace With Your God! (5)": {
             "char": null,
-            "distance": "Self",
-            "effect": "The next ability roll you make this turn automatically achieves a tier 3 result. You gain one surge.",
+            "distance": "Sé Stesso",
+            "effect": " Il prossimo tiro abilità che effettui in questo turno ottiene automaticamente un risultato di livello 3. Ottieni una surge.",
             "keywords": null,
-            "name": "Make Peace With Your God! (Heroic Ability 5pts)",
+            "name": "Make Peace With Your God! (5)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
-            "target": "Self",
-            "type": "Maneuver"
+            "target": "Sé Stesso",
+            "type": "Manovra"
         },
         "Net And Stab (Signature)": {
             "char": "+ Might (+ 2)",
@@ -677,34 +641,22 @@
             "keywords": "Melee, Strike, Weapon",
             "name": "Net And Stab (Signature)",
             "roll1": "*11 o inferiore: 6 Damage; A < 0 Slowed (EoT)",
-            "roll2": "*12–16: 8 Damage; A < 1 Slowed (EoT)",
+            "roll2": "*12 – 16: 8 Damage; A < 1 Slowed (EoT)",
             "roll3": "*17 o superiore: 10 Damage; A < 2 Restrained (EoT)",
-            "target": "1 Creature",
-            "type": "Action"
+            "target": "1 creatura",
+            "type": "Azione"
         },
-        "Push": {
-            "char": "+ Tenacia (Might)",
-            "distance": "Mischia 1",
-            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
-            "keywords": "Mischia",
-            "name": "Spinta",
-            "roll1": "*11 o inferiore: Spingi 1",
-            "roll2": "*12–16: Spingi 2",
-            "roll3": "*17 o superiore: Spingi 3",
-            "target": "1 creatura non più di 1 taglia più grande di te",
-            "type": "Manovra"
-        },
-        "Your Entrails Are Your Extrails! (Heroic Ability 3pts)": {
+        "Your Entrails Are Your Extrails! (3)": {
             "char": "+ Might (+2)",
             "distance": "Melee 2",
-            "effect": "While bleeding, the target takes damage equal to your might score at the end of your turns.",
+            "effect": " Mentre sanguina, il bersaglio subisce danni pari al tuo punteggio di forza alla fine dei tuoi turni.",
             "keywords": "Melee, Strike, Weapon",
-            "name": "Your Entrails Are Your Extrails! (Heroic Ability 3pts)",
+            "name": "Your Entrails Are Your Extrails! (3)",
             "roll1": "*11 o inferiore: 7 damage; M < 0, bleeding (save ends)",
-            "roll2": "*12–16: 9 damage; M < 1, bleeding (save ends)",
+            "roll2": "*12 – 16: 9 damage; M < 1, bleeding (save ends)",
             "roll3": "*17 o superiore: 12 damage; M < 2, bleeding (save ends)",
-            "target": "1 creature or object",
-            "type": "Action"
+            "target": "1 Creatura o Oggetto",
+            "type": "Azione"
         }
     },
     "M'kell": {
@@ -715,7 +667,7 @@
             "keywords": "Melee, Ranged, Strike, Weapon",
             "name": "Concussive Strike (3)",
             "roll1": "*11 o inferiore: 5 danni; M < 0, Stordito/Dazed (save ends)",
-            "roll2": "*12–16: 7 danni; M < 1, Stordito/Dazed (save ends)",
+            "roll2": "*12 – 16: 7 danni; M < 1, Stordito/Dazed (save ends)",
             "roll3": "*17 o superiore: 10 danni; M < 2, Stordito/Dazed (save ends)",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -739,7 +691,7 @@
             "keywords": "Melee, Strike, Weapon",
             "name": "Devastating Rush (Signature)",
             "roll1": "*11 o inferiore: 6 danni",
-            "roll2": "*12–16: 9 danni",
+            "roll2": "*12 – 16: 9 danni",
             "roll3": "*17 o superiore: 15 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -751,7 +703,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 5 danni",
-            "roll2": "*12–16: 8 danni",
+            "roll2": "*12 – 16: 8 danni",
             "roll3": "*17 o superiore: 13 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -763,7 +715,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 5 danni",
-            "roll2": "*12–16: 7 danni",
+            "roll2": "*12 – 16: 7 danni",
             "roll3": "*17 o superiore: 9 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -799,7 +751,7 @@
             "keywords": "Melee, Ranged, Strike, Weapon",
             "name": "Shock and Awe (Signature)",
             "roll1": "*11 o inferiore: 4 danni",
-            "roll2": "*12–16: 7 danni",
+            "roll2": "*12 – 16: 7 danni",
             "roll3": "*17 o superiore: 9 danni",
             "target": "1 Creatura",
             "type": "Azione"
@@ -831,13 +783,13 @@
     },
     "Manovre": {
         "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
+            "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
             "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
             "keywords": "Mischia",
             "name": "Afferrare/Grab",
             "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll2": "*12 – 16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
             "roll3": "*17 o superiore: Afferri il bersaglio.",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
@@ -845,7 +797,7 @@
         "Aiutare Attacco/Aid Attack": {
             "char": null,
             "distance": null,
-            "effect": "Scegli un nemico a te adiacente. Il prossimo power roll di un'ablità che un alleato effettua contro quella creatura prima dell'inizio del tuo prossimo turno ha un vantaggio (edge).",
+            "effect": "Scegli un nemico a te adiacente. Il prossimo power roll di un'abilità che un alleato effettua contro quella creatura prima dell'inizio del tuo prossimo turno ha un vantaggio (edge).",
             "keywords": null,
             "name": "Aiutare Attacco/Aid Attack",
             "roll1": null,
@@ -879,13 +831,13 @@
             "type": "Manovra"
         },
         "Liberarsi dall'Afferramento/Escape Grab": {
-            "char": "+ Tenacia (Might) o Agilità (Agility):",
+            "char": "+ Tenacia (Might) o Agilità (Agility)",
             "distance": null,
             "effect": "Mentre sei afferrato da un'altra creatura, puoi tentare di liberarti effettuando il test sopra (a cui non si applicano competenze). Subisci uno svantaggio (bane) se la creatura è di taglia superiore alla tua.",
             "keywords": null,
             "name": "Liberarsi dall'Afferramento/Escape Grab",
             "roll1": "*11 o inferiore: Non riesci a liberarti dall'afferramento.",
-            "roll2": "*12-16: Riesci a liberarti dall'afferramento, ma se lo fai, la creatura che ti sta afferando può effettuare un free strike contro di te prima che tu non sia più afferrato.",
+            "roll2": "*12 – 16: Riesci a liberarti dall'afferramento, ma se lo fai, la creatura che ti sta afferrando può effettuare un free strike contro di te prima che tu non sia più afferrato.",
             "roll3": "*17 o superiore: Riesci a liberarti dall'afferramento.",
             "target": null,
             "type": "Manovra"
@@ -893,7 +845,7 @@
         "Nascondersi/Hide": {
             "char": null,
             "distance": null,
-            "effect": "Usando la manovra di Nascondersi, tenti di nasconderti da altre creatura che non ti stanno osservando, purché tu abbia copertura o occultamento",
+            "effect": "Usando la manovra di Nascondersi, tenti di nasconderti da altre creature che non ti stanno osservando, purché tu abbia copertura o occultamento",
             "keywords": null,
             "name": "Nascondersi/Hide",
             "roll1": null,
@@ -927,13 +879,13 @@
             "type": "Manovra"
         },
         "Spinta/Push": {
-            "char": "+ Tenacia (Might):",
+            "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
             "keywords": "Mischia",
             "name": "Spinta/Push",
             "roll1": "*11 o inferiore: Spingi 1",
-            "roll2": "*12–16: Spingi 2",
+            "roll2": "*12 – 16: Spingi 2",
             "roll3": "*17 o superiore: Spingi 3",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
@@ -1021,7 +973,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 6 danni",
-            "roll2": "*12–16: 9 danni",
+            "roll2": "*12 – 16: 9 danni",
             "roll3": "*17 o superiore: 11 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -1033,7 +985,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 4 danni",
-            "roll2": "*12–16: 6 danni",
+            "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -1045,7 +997,7 @@
             "keywords": "Melee, Ranged, Strike, Weapon",
             "name": "Inspiring Strike (3)",
             "roll1": "*11 o inferiore: 5 danni; tu o un alleato entro 10 quadretti potete spendere un Recupero (Recovery)",
-            "roll2": "*12–16: 7 danni; tu o un alleato entro 10 quadretti potete spendere un Recupero (Recovery)",
+            "roll2": "*12 – 16: 7 danni; tu o un alleato entro 10 quadretti potete spendere un Recupero (Recovery)",
             "roll3": "*17 o superiore: 10 danni; tu o un alleato entro 10 quadretti potete spendere un Recupero (Recovery), e ognuno di voi guadagna un vantaggio (edge) sul prossimo power roll effettuato durante l'incontro per usare un'abilità.",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -1093,7 +1045,7 @@
             "keywords": "Melee, Strike, Weapon",
             "name": "Protective Attack (Signature)",
             "roll1": "*11 o inferiore: 7 danni",
-            "roll2": "*12–16: 10 danni",
+            "roll2": "*12 – 16: 10 danni",
             "roll3": "*17 o superiore: 13 danni",
             "target": "1 Creatura",
             "type": "Azione"
@@ -1105,7 +1057,7 @@
             "keywords": "Melee, Strike, Weapon",
             "name": "Shield Bash (Signature)",
             "roll1": "*11 o inferiore: 6 danni; spingi 1",
-            "roll2": "*12–16: 9 danni; spingi 2",
+            "roll2": "*12 – 16: 9 danni; spingi 2",
             "roll3": "*17 o superiore: 11 danni; spingi 3; M < 2 Prono/Prone",
             "target": "1 Creatura",
             "type": "Azione"

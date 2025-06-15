@@ -19,7 +19,7 @@
             "keywords": "Area, Fire, Magic, Ranged",
             "name": "Conflagration (5)",
             "roll1": "*11 o inferiore: 5 danni da fuoco",
-            "roll2": "*12–16: 7 danni da fuoco",
+            "roll2": "*12 – 16: 7 danni da fuoco",
             "roll3": "*17 o superiore: 11 danni da fuoco",
             "target": "Ogni nemico nell'area",
             "type": "Azione"
@@ -27,12 +27,12 @@
         "Erase (7)": {
             "char": "+ Reason (+4)",
             "distance": "Ranged 12",
-            "effect": "Il numero di creature che bersagli con questa abilità è determinato dal tuo power roll. <p>Effetto: Ogni bersaglio inizia a scomparire dalla realtà (save ends). Mentre scompare, un bersaglio inizialmente subisce uno svantaggio (bane) ai power roll. Alla fine del suo primo turno, subisce un doppio svantaggio (double bane) ai power roll. Alla fine del suo secondo turno, scompare dall'esistenza per 1 ora, riapparendo nel suo spazio originale o lo spazio libero più vicino.",
+            "effect": "Il numero di creature che bersagli con questa abilità è determinato dal tuo power roll. <p>Effetto: Ogni bersaglio inizia a scomparire dalla realtà, tiro salvezza termina (save ends). Mentre scompare, un bersaglio inizialmente subisce uno svantaggio (bane) ai power roll. Alla fine del suo primo turno, subisce un doppio svantaggio (double bane) ai power roll. Alla fine del suo secondo turno, scompare dall'esistenza per 1 ora, riapparendo nel suo spazio originale o lo spazio libero più vicino.",
             "keywords": "Magic, Ranged, Strike, Void",
             "name": "Erase (7)",
-            "roll1": "11 o inferiore: 1 creatura",
-            "roll2": "12–16: 2 creature",
-            "roll3": "17 o superiore: 3 creature",
+            "roll1": "*11 o inferiore: 1 creatura",
+            "roll2": "*12 – 16: 2 creature",
+            "roll3": "*17 o superiore: 3 creature",
             "target": "Speciale",
             "type": "Azione"
         },
@@ -43,7 +43,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 4 danni",
-            "roll2": "*12–16: 7 danni",
+            "roll2": "*12 – 16: 7 danni",
             "roll3": "*17 o superiore: 9 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -55,7 +55,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 4 danni",
-            "roll2": "*12–16: 6 danni",
+            "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -79,7 +79,7 @@
             "keywords": "Magic, Melee, Strike, Void",
             "name": "Grasp of Beyond (Signature)",
             "roll1": "*11 o inferiore: 8 danni da corruzione",
-            "roll2": "*12–16: 11 danni da corruzione",
+            "roll2": "*12 – 16: 11 danni da corruzione",
             "roll3": "*17 o superiore: 14 danni da corruzione",
             "target": "1 Creatura",
             "type": "Azione"
@@ -87,7 +87,7 @@
         "Healing Grace (Manovra)": {
             "char": null,
             "distance": "Ranged 10",
-            "effect": "Il bersaglio può spendere un Recupero (Recovery). <p>Spendi 1+: <br>Per ogni Piety che decidi di spendere, puoi aggiungere uno dei seguenti effetti: <p>-Puoi bersagliare un alleato aggiuntivo entro gittata. <br>-Puoi terminare un effetto su un bersaglio che termini con un tiro salvezza o che termini alla fine del turno. <br>-Un bersaglio prono può rialzarsi. <br>-Il bersaglio può spendere 1 Recupero aggiuntivo.",
+            "effect": "Il bersaglio può spendere un Recupero (Recovery). <p>Spendi 1+: <br>Per ogni Pietà che decidi di spendere, puoi aggiungere uno dei seguenti effetti: <p>-Puoi bersagliare un alleato aggiuntivo entro gittata. <br>-Puoi terminare un effetto su un bersaglio che termini con un tiro salvezza o che termini alla fine del turno. <br>-Un bersaglio prono può rialzarsi. <br>-Il bersaglio può spendere 1 Recupero aggiuntivo.",
             "keywords": "Magic, Ranged",
             "name": "Healing Grace (Manovra)",
             "roll1": null,
@@ -103,7 +103,7 @@
             "keywords": "Magic, Ranged, Strike",
             "name": "Hurl Element (Azione)",
             "roll1": "*11 o inferiore: 7 danni",
-            "roll2": "*12–16: 9 danni",
+            "roll2": "*12 – 16: 9 danni",
             "roll3": "*17 o superiore: 11 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -111,11 +111,11 @@
         "Meteor (9)": {
             "char": "+ Reason (+4)",
             "distance": "Ranged 12",
-            "effect": "Effetto: <br>Il bersaglio cade e subisce danno come se la sua agilità fosse 0 subito dopo essere stato teletrasportato. Il danno che subisce dalla caduta è danno da fuoco, e ogni nemico entro 3 quadretti da dove cade il bersalgio subisce gli stessi danni. <br>Il terreno entro 3 quadretti da dove cade il bersaglio diventa terreno difficile.",
+            "effect": "Effetto: <br>Il bersaglio cade e subisce danno come se la sua agilità fosse 0 subito dopo essere stato teletrasportato. Il danno che subisce dalla caduta è danno da fuoco, e ogni nemico entro 3 quadretti da dove cade il bersaglio subisce gli stessi danni. <br>Il terreno entro 3 quadretti da dove cade il bersaglio diventa terreno difficile.",
             "keywords": "Area, Earth, Fire, Magic, Ranged, Void",
             "name": "Meteor (9)",
             "roll1": "*11 o inferiore: Teletrasporta 4 quadretti",
-            "roll2": "*12–16: Teletrasporta 6 quadretti",
+            "roll2": "*12 – 16: Teletrasporta 6 quadretti",
             "roll3": "*17 o superiore: Teletrasporta 8 quadretti",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -132,12 +132,12 @@
             "target": "Sé Stesso",
             "type": "Manovra"
         },
-        "Psychic Whisper (Maneuver)": {
+        "Psychic Whisper (Manovra)": {
             "char": null,
             "distance": "Ranged 10",
             "effect": "Invii un messaggio telepatico al bersaglio che richieda 10 secondi o meno per essere pronunciato.",
             "keywords": "Psionic",
-            "name": "Psychic Whisper (Maneuver)",
+            "name": "Psychic Whisper (Manovra)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
@@ -151,22 +151,22 @@
             "keywords": "Magic, Ranged, Strike, Void",
             "name": "Ray of Agonizing Self Reflection (Signature)",
             "roll1": "*11 o inferiore: 7 danni da corruzione; R < 2, slowed (save ends)",
-            "roll2": "*12–16: 9 danni da corruzione; R < 3, slowed (save ends)",
+            "roll2": "*12 – 16: 9 danni da corruzione; R < 3, slowed (save ends)",
             "roll3": "*17 o superiore: 11 danni da corruzione; R < 4, slowed (save ends)",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
         },
-        "Shared Void Sense (Maneuver)": {
+        "Shared Void Sense (Manovra)": {
             "char": null,
             "distance": "Ranged 12",
-            "effect": "Per ogni Vittoria in tuo possesso, puoi bersagliare una creatura aggiuntiva. Quella creatura ottiene l'effetto della tua feature A Beyonding of Vision fino alla fine del tuo prossimo turno, ma non ottiene l'utilizzo di Shared Void Sense.",
+            "effect": "Per ogni Vittoria in tuo possesso, puoi bersagliare una creatura aggiuntiva. Quella creatura ottiene l'effetto della tua funzione caratteristica A Beyonding of Vision (Sai sempre se un'area o un oggetto che osservi è magico o influenzato dalla magia e conosci le specifiche di ciò che quella magia può fare) fino alla fine del tuo prossimo turno, ma non ottiene l'utilizzo di Shared Void Sense.",
             "keywords": "Magic, Ranged, Void",
-            "name": "Shared Void Sense (Maneuver)",
+            "name": "Shared Void Sense (Manovra)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
             "target": "Speciale",
-            "type": "Maneuver"
+            "type": "Manovra"
         },
         "Subverted Perception of Space (9)": {
             "char": "+ Reason (+4)",
@@ -175,7 +175,7 @@
             "keywords": "Magic, Ranged, Strike, Void",
             "name": "Subverted Perception of Space (9)",
             "roll1": "*11 o inferiore: 14 danni da corruzione",
-            "roll2": "*12–16: 15 danni da corruzione; il bersaglio non può avere linea di effetto contro bersagli lontani 5 o più quadretti fino all'inizio del tuo prossimo turno.",
+            "roll2": "*12 – 16: 15 danni da corruzione; il bersaglio non può avere linea di effetto contro bersagli lontani 5 o più quadretti fino all'inizio del tuo prossimo turno.",
             "roll3": "*17 o superiore: 20 danni da corruzione; il bersaglio non può avere linea di effetto contro bersagli lontani 2 o più quadretti fino all'inizio del tuo prossimo turno.",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -187,7 +187,7 @@
             "keywords": "Fire, Magic, Ranged, Strike",
             "name": "The Flesh, a Crucible (3)",
             "roll1": "*11 o inferiore: 10 danni da fuoco",
-            "roll2": "*12–16: 13 danni da fuoco",
+            "roll2": "*12 – 16: 13 danni da fuoco",
             "roll3": "*17 o superiore: 16 danni da fuoco",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -195,7 +195,7 @@
         "There Is No Space Between (Manovra)": {
             "char": "+ Reason (+4)",
             "distance": "Ranged 12",
-            "effect": "Apri due portali di dimensioni 1 quadretto in spazi non occupati entro gittata, che durano fino a che non ti muovi oltre la gittata massima da un portale, termini questo effetto con una manovra, o stai morendo. Ogni portale deve essere piazzato a un altezza di non più di 1 quadretto dal suolo. Quando tu o un alleato toccate un portale, quella creatura può scegliere di essere teletrasportata istantaneamente in uno spazio non occupato a sua scelta entro 1 quadretto dall'altro portale. Se un nemico è spostato forzatamente in un portale, il loro movimento forzato termina e emerge dall'altro portale in uno spazio non occupato scelto dalla creatura che l'ha spostato. <p>All'inizio di ognuno dei tuoi turni finché i portali sono attivi, puoi aprire un nuovo portale connesso agli altri. Se tre o più portali sono presenti, tu e i tuoi alleati scegliete da quale portale emergere quando entrate in un altro portale, e una creatura che muove forzatamente un nemico attraverso un portale sceglie il portale di destinazione.",
+            "effect": "Apri due portali di dimensioni 1 quadretto in spazi non occupati entro gittata, che durano fino a che non ti muovi oltre la gittata massima da un portale, termini questo effetto con una manovra, o stai morendo. Ogni portale deve essere piazzato a un’altezza di non più di 1 quadretto dal suolo. Quando tu o un alleato toccate un portale, quella creatura può scegliere di essere teletrasportata istantaneamente in uno spazio non occupato a sua scelta entro 1 quadretto dall'altro portale. Se un nemico è spostato forzatamente in un portale, il loro movimento forzato termina e emerge dall'altro portale in uno spazio non occupato scelto dalla creatura che l'ha spostato. <p>All'inizio di ognuno dei tuoi turni finché i portali sono attivi, puoi aprire un nuovo portale connesso agli altri. Se tre o più portali sono presenti, tu e i tuoi alleati scegliete da quale portale emergere quando entrate in un altro portale, e una creatura che muove forzatamente un nemico attraverso un portale sceglie il portale di destinazione.",
             "keywords": "Magic, Ranged, Void",
             "name": "There Is No Space Between (Manovra)",
             "roll1": null,
@@ -211,7 +211,7 @@
             "keywords": "Fire, Magic, Ranged, Void",
             "name": "Translated Through Flame (5)",
             "roll1": "*11 o inferiore: 4 danni da fuoco",
-            "roll2": "*12–16: 6 danni da fuoco",
+            "roll2": "*12 – 16: 6 danni da fuoco",
             "roll3": "*17 o superiore: 9 danni da fuoco",
             "target": "Sé Stesso o Un Alleato",
             "type": "Azione"
@@ -221,7 +221,7 @@
         "Carica/Charge": {
             "char": null,
             "distance": null,
-            "effect": "Quando effettui l'azione di Carica, puoi muoverti fino alla tua velocità in linea retta senza evadere (shift), e puoi poi effettuare un free strike in mischia (melee free strike) contro una creatura quando termini il tuo movimento. Non puoi muoverti attraverso il terreno difficile come parte del tuo movimento con questa azione. Non puoi arrampicarti, nuotare o volare come parte del tuo movimento con questa azione a meno che tu non abbia quel tipo di movimento come parola chiave nel tuo movimento.",
+            "effect": "Quando effettui l'azione di Carica, puoi muoverti fino alla tua velocità in linea retta senza evadere (shift), e puoi poi effettuare un free strike in mischia (Melee free strike) contro una creatura quando termini il tuo movimento. Non puoi muoverti attraverso il terreno difficile come parte del tuo movimento con questa azione. Non puoi arrampicarti, nuotare o volare come parte del tuo movimento con questa azione a meno che tu non abbia quel tipo di movimento come parola chiave nel tuo movimento.",
             "keywords": null,
             "name": "Carica/Charge",
             "roll1": null,
@@ -233,7 +233,7 @@
         "Curare/Heal": {
             "char": null,
             "distance": null,
-            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e rimanere in grado di combattere. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina)/(save ends) che la affligge.",
+            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e rimanere in grado di combattere. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina) / (save ends) che la affligge.",
             "keywords": null,
             "name": "Curare/Heal",
             "roll1": null,
@@ -379,13 +379,13 @@
     },
     "Manovre": {
         "Afferrare/Grab": {
-            "char": "+ Tenacia (Might):",
+            "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
             "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
             "keywords": "Mischia",
             "name": "Afferrare/Grab",
             "roll1": "*11 o inferiore: Nessun effetto",
-            "roll2": "*12–16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
+            "roll2": "*12 – 16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
             "roll3": "*17 o superiore: Afferri il bersaglio.",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
@@ -393,7 +393,7 @@
         "Aiutare Attacco/Aid Attack": {
             "char": null,
             "distance": null,
-            "effect": "Scegli un nemico a te adiacente. Il prossimo power roll di un'ablità che un alleato effettua contro quella creatura prima dell'inizio del tuo prossimo turno ha un vantaggio (edge).",
+            "effect": "Scegli un nemico a te adiacente. Il prossimo power roll di un'abilità che un alleato effettua contro quella creatura prima dell'inizio del tuo prossimo turno ha un vantaggio (edge).",
             "keywords": null,
             "name": "Aiutare Attacco/Aid Attack",
             "roll1": null,
@@ -427,13 +427,13 @@
             "type": "Manovra"
         },
         "Liberarsi dall'Afferramento/Escape Grab": {
-            "char": "+ Tenacia (Might) o Agilità (Agility):",
+            "char": "+ Tenacia (Might) o Agilità (Agility)",
             "distance": null,
             "effect": "Mentre sei afferrato da un'altra creatura, puoi tentare di liberarti effettuando il test sopra (a cui non si applicano competenze). Subisci uno svantaggio (bane) se la creatura è di taglia superiore alla tua.",
             "keywords": null,
             "name": "Liberarsi dall'Afferramento/Escape Grab",
             "roll1": "*11 o inferiore: Non riesci a liberarti dall'afferramento.",
-            "roll2": "*12-16: Riesci a liberarti dall'afferramento, ma se lo fai, la creatura che ti sta afferando può effettuare un free strike contro di te prima che tu non sia più afferrato.",
+            "roll2": "*12 – 16: Riesci a liberarti dall'afferramento, ma se lo fai, la creatura che ti sta afferrando può effettuare un free strike contro di te prima che tu non sia più afferrato.",
             "roll3": "*17 o superiore: Riesci a liberarti dall'afferramento.",
             "target": null,
             "type": "Manovra"
@@ -441,7 +441,7 @@
         "Nascondersi/Hide": {
             "char": null,
             "distance": null,
-            "effect": "Usando la manovra di Nascondersi, tenti di nasconderti da altre creatura che non ti stanno osservando, purché tu abbia copertura o occultamento",
+            "effect": "Usando la manovra di Nascondersi, tenti di nasconderti da altre creature che non ti stanno osservando, purché tu abbia copertura o occultamento",
             "keywords": null,
             "name": "Nascondersi/Hide",
             "roll1": null,
@@ -475,13 +475,13 @@
             "type": "Manovra"
         },
         "Spinta/Push": {
-            "char": "+ Tenacia (Might):",
+            "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
             "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
             "keywords": "Mischia",
             "name": "Spinta/Push",
             "roll1": "*11 o inferiore: Spingi 1",
-            "roll2": "*12–16: Spingi 2",
+            "roll2": "*12 – 16: Spingi 2",
             "roll3": "*17 o superiore: Spingi 3",
             "target": "1 creatura non più di 1 taglia più grande di te",
             "type": "Manovra"
@@ -545,7 +545,7 @@
             "keywords": "Charge, Melee, Strike, Weapon",
             "name": "Free Strike (Melee)",
             "roll1": "*11 o inferiore: 6 danni + Kit",
-            "roll2": "*12–16: 9 danni + Kit",
+            "roll2": "*12 – 16: 9 danni + Kit",
             "roll3": "*17 o superiore: 11 danni + Kit",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
@@ -557,7 +557,7 @@
             "keywords": "Ranged, Strike, Weapon",
             "name": "Free Strike (Ranged)",
             "roll1": "*11 o inferiore: 6 danni",
-            "roll2": "*12–16: 8 danni",
+            "roll2": "*12 – 16: 8 danni",
             "roll3": "*17 o superiore: 10 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"

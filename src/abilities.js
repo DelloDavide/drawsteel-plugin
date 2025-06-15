@@ -143,7 +143,7 @@ function createCard(data, abilityCard) {
 
   const elements = {
     title: createElement('h3', data.name || 'Nome Sconosciuto'),
-    typeBadge: createElement('div', (data.type && data.type.length > 0) ? data.type[0].toUpperCase() : 'A', { id: 'abilityTypeBadge' })
+    typeBadge: createElement('div', getAbilityBadge(data.name, data.type), { id: 'abilityTypeBadge' })
   };
 
   Object.values(elements).forEach(element => abilityCard.appendChild(element));
@@ -176,6 +176,45 @@ function createCard(data, abilityCard) {
   if (data.effect) {
     abilityCard.appendChild(createSection('Effect', data.effect, 'full-width', '', { textAlign: 'center', paddingRight: '0' }));
   }
+}
+
+function getAbilityBadge(name, type) {
+  const nameLower = name?.toLowerCase() || '';
+  const typeLower = type?.toLowerCase() || '';
+
+  // Check for numbers in parentheses (Heroic Ability)
+  const numberMatch = name.match(/\((\d+)\)/i);
+  if (numberMatch) {
+    return numberMatch[1];
+  }
+
+  // Check for Free Strike
+  if (nameLower.includes('free strike')) {
+    return 'FS';
+  }
+
+  // Check for Signature
+  if (nameLower.includes('(signature)')) {
+    return 'S';
+  }
+
+  // Check for Manovra
+  if (typeLower === 'manovra' || nameLower.includes('(manovra)')) {
+    return 'M';
+  }
+
+  // Check for Azione Innescata Gratuita
+  if (nameLower.includes('(azione innescata gratuita)') || typeLower === 'azione innescata gratuita') {
+    return 'FT';
+  }
+
+  // Check for Azione Innescata
+  if (nameLower.includes('(azione innescata)') || typeLower === 'azione innescata') {
+    return 'T';
+  }
+
+  // Default case
+  return 'A';
 }
 
 function createElement(tag, content, attributes = {}) {

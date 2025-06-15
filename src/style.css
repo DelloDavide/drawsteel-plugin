@@ -242,8 +242,6 @@ select#abilityNamesSelect:focus {
   font-size: inherit;
   font-weight: normal;
   text-align: center;
-  width: 40px;
-  height: 40px;
   min-width: 40px;
   max-width: 40px;
 }
@@ -334,6 +332,9 @@ button:focus-visible {
   font-size: 1.5em;
   text-align: center;
   text-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  padding-right: 55px;
+  box-sizing: border-box;
+  word-break: break-word;
 }
 
 #abilityCardPopover {
@@ -362,6 +363,9 @@ button:focus-visible {
   font-size: 1.5em;
   text-align: center;
   text-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  padding-right: 55px;
+  box-sizing: border-box;
+  word-break: break-word;
 }
 
 #abilityCardSidebar {
@@ -390,6 +394,9 @@ button:focus-visible {
   font-size: 1.5em;
   text-align: center;
   text-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  padding-right: 55px;
+  box-sizing: border-box;
+  word-break: break-word;
 }
 
 .card-section {
@@ -407,7 +414,7 @@ button:focus-visible {
 .card-label {
   font-weight: bold;
   color: #76ff03;
-  text-align: right;
+  text-align: left;
   padding-right: 10px;
   font-size: 0.95em;
 }
