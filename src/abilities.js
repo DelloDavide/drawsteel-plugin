@@ -198,6 +198,11 @@ function getAbilityBadge(name, type) {
     return 'S';
   }
 
+  // Check for Manovra Gratuita
+  if (nameLower.includes('(manovra gratuita)') || typeLower === 'manovra gratuita') {
+    return 'FM';
+  }
+
   // Check for Manovra
   if (typeLower === 'manovra' || nameLower.includes('(manovra)')) {
     return 'M';
