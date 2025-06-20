@@ -537,7 +537,81 @@
             "type": null
         }
     },
+    "Regole Generiche": {
+        "Gettoni Eroe/Hero Token": {
+            "char": null,
+            "distance": null,
+            "effect": "I gettoni eroe sono una risorsa gestita dai giocatori, accessibile a tutti i personaggi e condivisa tra di loro. All'inizio di una nuova sessione, il gruppo ottiene un numero di gettoni eroe pari al numero di personaggi presenti nel gruppo. <br>I giocatori possono ottenere altri gettoni durante il gioco effettuando rischiando la propria vita per salvare gli altri. Il Regista ha l'ultima parola sull'attribuzione dei gettoni eroe. <p>Quando i gettoni eroe sono disponibili, possono essere spesi nei seguenti modi. Un solo gettone può essere speso per turno o per test: <p>-Puoi spendere un gettone eroe per ottenere due impeti (surges). <br>-Puoi spendere un gettone eroe quando fallisci un tiro salvezza per superarlo. <br>-Quando fallisci o ottieni un successo con una conseguenza su un test, puoi spendere un gettone eroe per trasformare quel fallimento in un successo e eliminare qualunque conseguenza. <br>-Puoi spendere 2 gettoni eroe nel tuo turno o quando subisci danno (nessuna azione richiesta) per recuperare Stamina pari al valore di un Recupero (Recovery) senza spendere un Recupero.",
+            "keywords": null,
+            "name": "Gettoni Eroe/Hero Token",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Potency": {
+            "char": null,
+            "distance": null,
+            "effect": "Molti effetti infliggono condizioni e effetti di stato unici sugli Eroi e sui nemici. Ma le creature hanno una possibilità di resistere a questi effetti. Una creatura con un alto punteggio di Might dovrebbe essere più difficile da buttare prona di una creatura che ha mancanze in quella caratteristica. <p>Questi effetti hanno una potency, e si applicano sul bersaglio solo se il valore di potency dell'effetto è maggiore della caratteristica indicata del bersaglio. <p>Una potency appare sempre nel testo come una lettera maiuscola, seguita dal simbolo di minore di (<) e un singolo numero; per esempio M < 1 o R < 3. La lettera indica quale caratteristica è usata per resistere all'effetto (M per Might, A per Agility, R per Reason, I per Intuition, P per Presence), e il numero indica il punteggio minimo che il bersaglio deve avere in quella caratteristica per resistere all'effetto. <p>Molte delle tue abilità hanno una potency. La caratteristica che un bersaglio utilizza per resistere alla tua potency è determinata dall'abilità utilizzata, e il valore della tua potency è basato su una delle tue caratteristiche e determinato dalla tua scelta di classe durante la creazione del personaggio. <p>Hai valori di potency deboli, medi, e forti. Tutti questi valori aumentano con l'aumento di livello del tuo Eroe. <p>-Il tuo valore di potency debole è equivalente al tuo punteggio di caratteristica più alto -2. <br>-Il tuo valore di potency debole è equivalente al tuo punteggio di caratteristica più alto -1. <br>-Il tuo valore di potency debole è equivalente al tuo punteggio di caratteristica più alto.",
+            "keywords": null,
+            "name": "Potency",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Recuperi/Recoveries": {
+            "char": null,
+            "distance": null,
+            "effect": "I Recuperi (Recoveries) rappresentano il numero di volte che il tuo personaggio è in grado di prendere un attimo fiato e continuare a combattere. Finire i Recuperi indica che il tuo personaggio ha raggiunto il suo limite. Puoi spendere i tuoi Recuperi con la manovra di Riprendere Fiato o grazie al magico aiuto di un Conduit, una scarica di adrenalina di un Tactician, o le parole ispiratrici di un Troubadour. <br>Quando spendi un Recupero, recuperi Stamina equivalente al tuo Valore di Recupero (Recovery Value), che è sempre un terzo della tua Stamina massima. <p>Durante il combattimento l'unico modo di usare un Recupero è la manovra di Riprendere Fiato, o attraverso l'abilità di un alleato. Al di fuori del combattimento e altre situazioni pericolose, puoi spendere i Recuperi a piacimento. <p>Ottieni tutti i tuoi recuperi quando completi un Riposo.",
+            "keywords": null,
+            "name": "Recuperi/Recoveries",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Riposo": {
+            "char": null,
+            "distance": null,
+            "effect": "Un Riposo è un periodo rilassamento e rigenerazione che permette agli Eroi di recuperare Stamina e Recoveries. Durante un Riposo, devi spendere 24 ore ininterrotte per dormire, mangiare, medicare le tue ferite e rilassarti in generale in un luogo sicuro. <p>Puoi anche effettuare un'Attività di Riposo, come effettuare un tiro su un progetto, cambiare il tuo kit, o altre opzioni che potrebbero essere rese disponibili dalla tua classe. <p>Dopo 24 ore, il tuo Riposo termina. Puoi effettuare quanti riposi vuoi di fila per continuare a svolgere Attività di Riposo; sappi solo che mentre passi il tempo riposando, i nemici stanno ancora agendo nell'ombra. <p>Quando termini un Riposo, ottieni tutti i tuoi Recuperi e la tua Stamina, e le tue Vittorie vengono convertite in Esperienza. È meglio effettuare un Riposo in un luogo sicuro mentre non ti trovi in un ambiente ostile o sei a rischio di essere attaccato. Se il tuo Riposo è interrotto da un attacco nemico, un tremore nella terra, uno sciame di insetti pungenti, e simili serie distrazioni, il Riposo termina prima e non ottieni nessun beneficio dall'averlo svolto. <p>Le classiche 8 ore di sonno che una persona svolge ogni notte non contano come un Riposo. Le regole presumono che tutti gli Eroi si prendono il tempo di dormire, mangiare, e svolgere il resto delle loro funzioni necessarie alla vita anche se non stanno svolgendo un Riposo.",
+            "keywords": null,
+            "name": "Riposo",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        },
+        "Surges": {
+            "char": null,
+            "distance": null,
+            "effect": "Diverse abilità conferiscono Surges ai personaggi. Puoi tenerne traccia sulla tua scheda del personaggio. <p>Le Surges possono essere usate in combattimento per infliggere danni aggiuntivi o aumentare il valore delle tue potency: <p>-Quando infliggi danno con il power roll di un'abilità, puoi spendere fino a tre Surges per aumentare il danno che infliggi ad una creatura o un oggetto bersagliato dall'abilità di un valore pari alla tua caratteristica più alta per ogni impeto speso. <br>-Quando bersagli una o più creature con un'abilità dotata di potency, puoi spendere due Surges per aumentare di 1 la potency per una delle creature bersaglio di quell'effetto. Non puoi aumentare la potency di più di 1 con le Surges, ma puoi spendere Surges aggiuntive per aumentare il numero dei bersagli per cui aumenti la potency. <p>Dopo aver speso una Surge, questa viene consumata e scompare. Alla fine del combattimento, tutte le Surges scompaiono.",
+            "keywords": null,
+            "name": "Surges",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": null,
+            "type": null
+        }
+    },
     "Thragor Mornspire": {
+        "Battle Cry (3)": {
+            "char": null,
+            "distance": "Sé Stesso",
+            "effect": null,
+            "keywords": "Ranged",
+            "name": "Battle Cry (3)",
+            "roll1": "*11 o inferiore: il bersaglio ottiene una surge",
+            "roll2": "*12 – 16: il bersaglio ottiene due surge",
+            "roll3": "*17 o superiore: il bersaglio ottiene tre surge",
+            "target": "Sé Stesso",
+            "type": "Manovra"
+        },
         "Free Strike (Melee)": {
             "char": "+ 4",
             "distance": "Melee 1",
@@ -562,27 +636,27 @@
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
         },
-        "Pain for Pain (Signature)": {
-            "char": "+ 4",
-            "distance": "Melee 1",
-            "effect": "Se il bersaglio di ha infilitto danni dalla fine del tuo ultimo turno, questo strike infligge danno aggiuntivo pari al tuo punteggio di Reason o Agility (a tua scelta).",
-            "keywords": "Melee, Strike, Weapon",
-            "name": "Pain for Pain (Signature)",
-            "roll1": "*11 o inferiore: 7 danni + Kit",
-            "roll2": "*12 – 16: 9 danni + Kit",
-            "roll3": "*17 o superiore: 13 danni + Kit",
-            "target": "1 Creatura",
-            "type": "Azione"
+        "Frontal Assault (7)": {
+            "char": null,
+            "distance": "Sé Stesso",
+            "effect": "Fino alla fine dell'incontro o fino a che non diventi morente, quando tu o un alleato infliggete danno ad un bersaglio da te marchiato, chi infligge danno può spingere il bersaglio fino a 2 quadretti, poi evadere (shift) di 2 quadretti. In aggiunta, se un alleato usa l'azione di Carica per attaccare un bersaglio da te marchiato, può usare un'abilità signature o eroica al posto di un free strike.",
+            "keywords": null,
+            "name": "Frontal Assault (7)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Sé Stesso",
+            "type": "Manovra"
         },
-        "Unmooring (Signature)": {
+        "Have At Thee! (5)": {
             "char": "+ 4",
             "distance": "Melee 1",
-            "effect": null,
-            "keywords": "Melee, Psionic, Strike, Weapon",
-            "name": "Unmooring (Signature)",
-            "roll1": "*11 o inferiore: 7 danni + Kit, stabilità ridotta di 2 (EoT)",
-            "roll2": "*12 – 16: 11 danni + Kit, stabilità ridotta di 3 (EoT)",
-            "roll3": "*17 o superiore: 13 danni + Kit, stabilità ridotta di 4 (EoT)",
+            "effect": "Effetto: <br>Puoi terminare la condizione di taunted sul bersaglio come manovra gratuita nel tuo turno.",
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Have At Thee! (5)",
+            "roll1": "*11 o inferiore: 7 danni + Kit; taunted (save ends)",
+            "roll2": "*12 – 16: 11 danni + Kit; taunted (save ends)",
+            "roll3": "*17 o superiore: 16 danni + Kit; taunted (save ends)",
             "target": "1 Creatura",
             "type": "Azione"
         },
@@ -610,6 +684,18 @@
             "target": "1 Creatura",
             "type": "Manovra"
         },
+        "Move Or Die, Folks! (Azione)": {
+            "char": null,
+            "distance": "Ranged 10",
+            "effect": "Il bersaglio può usare un'azione innescata gratuita per effettuare un'azione, un'azione di movimento o una manovra.",
+            "keywords": "Ranged",
+            "name": "Strike Now! (Azione)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "1 Alleato",
+            "type": "Azione"
+        },
         "Out of Position (Azione Innescata Gratuita)": {
             "char": null,
             "distance": "Sé Stesso",
@@ -621,6 +707,18 @@
             "roll3": null,
             "target": "Sé Stesso",
             "type": "Azione Innescata Gratuita"
+        },
+        "Pain for Pain (Signature)": {
+            "char": "+ 4",
+            "distance": "Melee 1",
+            "effect": "Se il bersaglio di ha infilitto danni dalla fine del tuo ultimo turno, questo strike infligge danno aggiuntivo pari al tuo punteggio di Reason o Agility (a tua scelta).",
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Pain for Pain (Signature)",
+            "roll1": "*11 o inferiore: 7 danni + Kit",
+            "roll2": "*12 – 16: 9 danni + Kit",
+            "roll3": "*17 o superiore: 13 danni + Kit",
+            "target": "1 Creatura",
+            "type": "Azione"
         },
         "Parry (Azione Innescata)": {
             "char": null,
@@ -634,6 +732,18 @@
             "target": "Sé Stesso o un alleato",
             "type": "Azione Innescata"
         },
+        "Squad! On Me! (5)": {
+            "char": null,
+            "distance": "Burst 1",
+            "effect": "Fino all'inizio del tuo prossimo turno, ogni bersaglio ottiene un bonus alla sua Stabilità pari al tuo punteggio di Might. Inoltre, ogni bersaglio ottiene due surge.",
+            "keywords": "Area",
+            "name": "Squad! On Me! (5)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Sé Stesso e tutti gli alleati nell'area",
+            "type": "Manovra"
+        },
         "Strike Now! (Azione)": {
             "char": null,
             "distance": "Ranged 10",
@@ -646,16 +756,16 @@
             "target": "1 Alleato",
             "type": "Azione"
         },
-        "Battle Cry (3)": {
+        "This Is What We Planned For (5)": {
             "char": null,
-            "distance": "Sé Stesso",
-            "effect": null,
+            "distance": "Ranged 10",
+            "effect": "Ogni bersaglio che non ha ancora svolto il suo turno in questo round può effettuare il suo turno in qualunque ordine subito dopo il tuo.",
             "keywords": "Ranged",
-            "name": "Battle Cry (3)",
-            "roll1": "*11 o inferiore: il bersaglio ottiene una surge",
-            "roll2": "*12 – 16: il bersaglio ottiene due surge",
-            "roll3": "*17 o superiore: il bersaglio ottiene tre surge",
-            "target": "Sé Stesso",
+            "name": "This Is What We Planned For (5)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "2 Alleati",
             "type": "Manovra"
         },
         "To Me, Squad! (9)": {
@@ -670,53 +780,17 @@
             "target": "1 Creatura",
             "type": "Azione"
         },
-        "Have At Thee! (5)": {
+        "Unmooring (Signature)": {
             "char": "+ 4",
             "distance": "Melee 1",
-            "effect": "Effetto: <br>Puoi terminare la condizione di taunted sul bersaglio come manovra gratuita nel tuo turno.",
-            "keywords": "Melee, Strike, Weapon",
-            "name": "Have At Thee! (5)",
-            "roll1": "*11 o inferiore: 7 danni + Kit; taunted (save ends)",
-            "roll2": "*12 – 16: 11 danni + Kit; taunted (save ends)",
-            "roll3": "*17 o superiore: 16 danni + Kit; taunted (save ends)",
+            "effect": null,
+            "keywords": "Melee, Psionic, Strike, Weapon",
+            "name": "Unmooring (Signature)",
+            "roll1": "*11 o inferiore: 7 danni + Kit, stabilità ridotta di 2 (EoT)",
+            "roll2": "*12 – 16: 11 danni + Kit, stabilità ridotta di 3 (EoT)",
+            "roll3": "*17 o superiore: 13 danni + Kit, stabilità ridotta di 4 (EoT)",
             "target": "1 Creatura",
             "type": "Azione"
-        },
-        "Squad! On Me! (5)": {
-            "char": null,
-            "distance": "Burst 1",
-            "effect": "Fino all'inizio del tuo prossimo turno, ogni bersaglio ottiene un bonus alla sua Stabilità pari al tuo punteggio di Might. Inoltre, ogni bersaglio ottiene due surge.",
-            "keywords": "Area",
-            "name": "Squad! On Me! (5)",
-            "roll1": null,
-            "roll2": null,
-            "roll3": null,
-            "target": "Sé Stesso e tutti gli alleati nell'area",
-            "type": "Manovra"
-        },
-        "This Is What We Planned For (5)": {
-            "char": null,
-            "distance": "Ranged 10",
-            "effect": "Ogni bersaglio che non ha ancora svolto il suo turno in questo round può effettuare il suo turno in qualunque ordine subito dopo il tuo.",
-            "keywords": "Ranged",
-            "name": "This Is What We Planned For (5)",
-            "roll1": null,
-            "roll2": null,
-            "roll3": null,
-            "target": "2 Alleati",
-            "type": "Manovra"
-        },
-        "Frontal Assault (7)": {
-            "char": null,
-            "distance": "Sé Stesso",
-            "effect": "Fino alla fine dell'incontro o fino a che non diventi morente, quando tu o un alleato infliggete danno ad un bersaglio da te marchiato, chi infligge danno può spingere il bersaglio fino a 2 quadretti, poi evadere (shift) di 2 quadretti. In aggiunta, se un alleato usa l'azione di Carica per attaccare un bersaglio da te marchiato, può usare un'abilità signature o eroica al posto di un free strike.",
-            "keywords": null,
-            "name": "Frontal Assault (7)",
-            "roll1": null,
-            "roll2": null,
-            "roll3": null,
-            "target": "Sé Stesso",
-            "type": "Manovra"
         },
         "You Can Sleep When You'Re Dead (9)": {
             "char": null,
@@ -728,18 +802,6 @@
             "roll2": null,
             "roll3": null,
             "target": "Sé Stesso e tutti gli alleati nell'area",
-            "type": "Azione"
-        },
-        "Move Or Die, Folks! (Azione)": {
-            "char": null,
-            "distance": "Ranged 10",
-            "effect": "Il bersaglio può usare un'azione innescata gratuita per effettuare un'azione, un'azione di movimento o una manovra.",
-            "keywords": "Ranged",
-            "name": "Strike Now! (Azione)",
-            "roll1": null,
-            "roll2": null,
-            "roll3": null,
-            "target": "1 Alleato",
             "type": "Azione"
         }
     }
