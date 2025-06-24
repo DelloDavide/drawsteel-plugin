@@ -657,6 +657,18 @@
             "roll3": "*17 o superiore: 12 damage; M < 2, bleeding (save ends)",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
+        },
+        "Un Cavaliere - Spada della Giustizia (Signature)": {
+            "char": "+ Presence (+3)",
+            "distance": "Melee 1",
+            "effect": "Se il bersaglio diventa Winded o è ridotto a 0 Stamina da questo Strike, ottieni 1 Surge.",
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Un Cavaliere - Spada della Giustizia (Signature)",
+            "roll1": "*11 o inferiore: 7 danni",
+            "roll2": "*12 – 16: 9 danni",
+            "roll3": "*17 o superiore: 12 danni",
+            "target": "1 Creatura",
+            "type": "Azione"
         }
     },
     "M'kell": {
