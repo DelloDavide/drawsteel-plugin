@@ -211,7 +211,7 @@
         "Campo Nullo (Manovra)": {
             "char": null,
             "distance": "Aura 1",
-            "effect": " Ogni bersaglio riduce le proprie potency di 1. Una volta come manovra gratuita nel tuo turno, puoi spendere 1 disciplina e dare al tuo campo nullo uno dei seguenti effetti aggiuntivi fino all'inizio del tuo turno successivo: <br>- Gravitic Disruption: quando un bersaglio subisce danni, puoi farlo slidare di 2. <br>- Inertial Anchor: ogni bersaglio che inizia il proprio turno nell'area non può spostarsi. <br>- Synaptic Break: quando un bersaglio è soggetto a una potency, la potency viene aumentata di 1. <p>Questa abilità rimane attiva anche dopo la fine degli incontri. finisce se stai morendo o se lo finisci volontariamente (non è richiesta alcuna azione).",
+            "effect": "Ogni bersaglio riduce le proprie potency di 1. Una volta come manovra gratuita nel tuo turno, puoi spendere 1 disciplina e dare al tuo campo nullo uno dei seguenti effetti aggiuntivi fino all'inizio del tuo turno successivo: <br>- Gravitic Disruption: quando un bersaglio subisce danni, puoi farlo slidare di 2. <br>- Inertial Anchor: ogni bersaglio che inizia il proprio turno nell'area non può spostarsi. <br>- Synaptic Break: quando un bersaglio è soggetto a una potency, la potency viene aumentata di 1. <p>Questa abilità rimane attiva anche dopo la fine degli incontri. finisce se stai morendo o se lo finisci volontariamente (non è richiesta alcuna azione).",
             "keywords": "Psionica",
             "name": "Campo Nullo (Manovra)",
             "roll1": null,
@@ -247,7 +247,7 @@
         "Disgregatore Arcano (5)": {
             "char": "+ Intuizione",
             "distance": "Mischia",
-            "effect": " Mentre è indebolito in questo modo, il bersaglio subisce danni pari al tuo punteggio di intuition quando usa un potere soprannaturale o un'abilità che costa malizia.",
+            "effect": "Mentre è indebolito in questo modo, il bersaglio subisce danni pari al tuo punteggio di intuition quando usa un potere soprannaturale o un'abilità che costa malizia.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Disgregatore Arcano (5)",
             "roll1": "*11 o inferiore: 11 psychic damage; M < 0, weakened (save ends)",
@@ -283,7 +283,7 @@
         "Passo Inerziale (Signature)": {
             "char": "+ Agilità",
             "distance": "Mischia 1",
-            "effect": " Puoi aumentare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. ",
+            "effect": "Puoi aumentare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. ",
             "keywords": "Melee, Strike, Psionic, Weapon",
             "name": "Passo Inerziale (Signature)",
             "roll1": "*11 o inferiore: 8 danni",
@@ -295,7 +295,7 @@
         "Scudo Inerziale (Azione Innescata)": {
             "char": null,
             "distance": "Me stesso",
-            "effect": " Innesco: <br>Subisci danni. <p>Effetto: <br>dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te.",
+            "effect": "Innesco: <br>Subisci danni. <p>Effetto: <br>dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te.",
             "keywords": "Psionic",
             "name": "Scudo Inerziale (Azione Innescata)",
             "roll1": null,
@@ -625,7 +625,7 @@
         "Make Peace With Your God! (5)": {
             "char": null,
             "distance": "Sé Stesso",
-            "effect": " Il prossimo tiro abilità che effettui in questo turno ottiene automaticamente un risultato di livello 3. Ottieni una surge.",
+            "effect": "Il prossimo tiro abilità che effettui in questo turno ottiene automaticamente un risultato di livello 3. Ottieni una surge.",
             "keywords": null,
             "name": "Make Peace With Your God! (5)",
             "roll1": null,
@@ -646,10 +646,22 @@
             "target": "1 creatura",
             "type": "Azione"
         },
+        "Wrecking Ball (5)": {
+            "char": "+ Might (+2)",
+            "distance": "Sé Stesso",
+            "effect": "Effetto: <br>ti muovi in linea retta fino al massimo della tua velocità. Durante questo movimento, puoi attraversare strutture comuni, comprese le pareti, che costituiscono terreno difficile per te. Distruggi automaticamente ogni casella di struttura che attraversi e lasci dietro di te una casella di terreno difficile. Inoltre, effettui un tiro che ha come bersaglio ogni nemico a cui ti sei trovato adiacente durante il movimento.",
+            "keywords": "Melee, Weapon",
+            "name": "Wrecking Ball (5)",
+            "roll1": "*11 o inferiore: Push 1",
+            "roll2": "*12 – 16: Push 2",
+            "roll3": "*17 o superiore: Push 3",
+            "target": "Sé Stesso",
+            "type": "Manovra"
+        },
         "Your Entrails Are Your Extrails! (3)": {
             "char": "+ Might (+2)",
             "distance": "Melee 2",
-            "effect": " Mentre sanguina, il bersaglio subisce danni pari al tuo punteggio di forza alla fine dei tuoi turni.",
+            "effect": "Mentre sanguina, il bersaglio subisce danni pari al tuo punteggio di forza alla fine dei tuoi turni.",
             "keywords": "Melee, Strike, Weapon",
             "name": "Your Entrails Are Your Extrails! (3)",
             "roll1": "*11 o inferiore: 7 damage; M < 0, bleeding (save ends)",
