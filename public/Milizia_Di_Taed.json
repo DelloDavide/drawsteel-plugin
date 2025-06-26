@@ -673,7 +673,7 @@
         "Un Cavaliere - Spada della Giustizia (Signature)": {
             "char": "+ Presence (+3)",
             "distance": "Melee 1",
-            "effect": "Se il bersaglio diventa Winded o è ridotto a 0 Stamina da questo Strike, ottieni 1 Surge.",
+            "effect": "Quando un bersaglio non-minion è ridotto a 0 Stamina da questo Strike, ottieni 1 Surge.",
             "keywords": "Melee, Strike, Weapon",
             "name": "Un Cavaliere - Spada della Giustizia (Signature)",
             "roll1": "*11 o inferiore: 7 danni",
