@@ -6,8 +6,8 @@ Per usare su OwlBear il Plugin: https://drawsteel-plugin.onrender.com/manifest.j
 
 # TODO
 
-Migliorare il codice e renderlo più robusto e modulare
-Porting a Typescript
+-   Migliorare il codice e renderlo più robusto e modulare
+-   Porting a Typescript
 
 ## License
 
