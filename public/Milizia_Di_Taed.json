@@ -1122,7 +1122,7 @@
             "roll2": "R < 1, spaventato dell'alleato innescante (save ends)",
             "roll3": "R < 2, spaventato dell'alleato innescante (save ends)",
             "target": "1 Nemico",
-            "type": "Azione"
+            "type": "Azione Innescata"
         },
         "Now! (5)": {
             "char": null,
