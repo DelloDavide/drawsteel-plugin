@@ -1115,7 +1115,7 @@
         "No Dying on My Watch (5)": {
             "char": "+ Might (+ 2)",
             "distance": "Ranged 5",
-            "effect": "Ti muovi fino alla tua velocità verso il bersaglio, terminando il tuo movimento in un quadretto adiacente ad esso più vicino possibile se puoi. L'alleato innescante può spendere un Recupero (Recovery), e ottiene 5 Stamina Temporanea per ogni nemico a cui passi adiacente mentre ti muovi verso il bersaglio. Puoi poi effettuare un power roll contro il bersaglio.",
+            "effect": "Innesco: <br>Il bersaglio infligge danno a un alleato. <p>Effetto: <br>Ti muovi fino alla tua velocità verso il bersaglio, terminando il tuo movimento in un quadretto adiacente ad esso più vicino possibile se puoi. L'alleato innescante può spendere un Recupero (Recovery), e ottiene 5 Stamina Temporanea per ogni nemico a cui passi adiacente mentre ti muovi verso il bersaglio. Puoi poi effettuare un power roll contro il bersaglio.",
             "keywords": "Ranged, Strike, Weapon",
             "name": "No Dying on My Watch (5)",
             "roll1": "R < 0, spaventato dell'alleato innescante (save ends)",
