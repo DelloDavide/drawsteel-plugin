@@ -646,6 +646,18 @@
             "target": "1 creatura",
             "type": "Azione"
         },
+        "Un Cavaliere - Spada della Giustizia (Signature)": {
+            "char": "+ Presence (+3)",
+            "distance": "Melee 1",
+            "effect": "Quando un bersaglio non-minion è ridotto a 0 Stamina da questo Strike, ottieni 1 Surge.",
+            "keywords": "Melee, Strike, Weapon",
+            "name": "Un Cavaliere - Spada della Giustizia (Signature)",
+            "roll1": "*11 o inferiore: 7 danni",
+            "roll2": "*12 – 16: 9 danni",
+            "roll3": "*17 o superiore: 12 danni",
+            "target": "1 Creatura",
+            "type": "Azione"
+        },
         "Wrecking Ball (5)": {
             "char": "+ Might (+2)",
             "distance": "Sé Stesso",
@@ -668,18 +680,6 @@
             "roll2": "*12 – 16: 9 damage; M < 1, bleeding (save ends)",
             "roll3": "*17 o superiore: 12 damage; M < 2, bleeding (save ends)",
             "target": "1 Creatura o Oggetto",
-            "type": "Azione"
-        },
-        "Un Cavaliere - Spada della Giustizia (Signature)": {
-            "char": "+ Presence (+3)",
-            "distance": "Melee 1",
-            "effect": "Quando un bersaglio non-minion è ridotto a 0 Stamina da questo Strike, ottieni 1 Surge.",
-            "keywords": "Melee, Strike, Weapon",
-            "name": "Un Cavaliere - Spada della Giustizia (Signature)",
-            "roll1": "*11 o inferiore: 7 danni",
-            "roll2": "*12 – 16: 9 danni",
-            "roll3": "*17 o superiore: 12 danni",
-            "target": "1 Creatura",
             "type": "Azione"
         }
     },
@@ -1099,6 +1099,30 @@
             "roll3": null,
             "target": "1 Creatura",
             "type": "Manovra"
+        },
+        "My Life for Yours (Azione Innescata)": {
+            "char": null,
+            "distance": "Ranged 10",
+            "effect": "Innesco: <br>Il bersaglio inizia il proprio turno o subisce danno. <p>Effetto: <br>Spendi un Recupero (Recovery) e il bersaglio recupera Stamina pari al tuo Valore di Recupero.",
+            "keywords": "Magic, Ranged",
+            "name": "My Life for Yours (Azione Innescata)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Sé Stesso o un alleato",
+            "type": "Azione Innescata"
+        },
+        "No Dying on My Watch (5)": {
+            "char": "+ Might (+ 2)",
+            "distance": "Ranged 5",
+            "effect": "Ti muovi fino alla tua velocità verso il bersaglio, terminando il tuo movimento in un quadretto adiacente ad esso più vicino possibile se puoi. L'alleato innescante può spendere un Recupero (Recovery), e ottiene 5 Stamina Temporanea per ogni nemico a cui passi adiacente mentre ti muovi verso il bersaglio. Puoi poi effettuare un power roll contro il bersaglio.",
+            "keywords": "Ranged, Strike, Weapon",
+            "name": "No Dying on My Watch (5)",
+            "roll1": "R < 0, spaventato dell'alleato innescante (save ends)",
+            "roll2": "R < 1, spaventato dell'alleato innescante (save ends)",
+            "roll3": "R < 2, spaventato dell'alleato innescante (save ends)",
+            "target": "1 Nemico",
+            "type": "Azione"
         },
         "Now! (5)": {
             "char": null,
