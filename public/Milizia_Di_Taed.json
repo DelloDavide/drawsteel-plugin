@@ -225,7 +225,7 @@
             "distance": "Mischia 1",
             "effect": "Prima che la spinta abbia effetto, puoi teletrasportare il bersaglio in un quadretto a te adiacente, opposto a quello in cui si trovava in precedenza. Se il bersaglio non può essere teletrasportato, allora ignorano la spinta.",
             "keywords": "Melee, Psionic, Strike, Weapon",
-            "name": "Colpo Cinetico (Signature)",
+            "name": "Colpo Invertitore di Fase (Signature)",
             "roll1": "*11 o inferiore: 7 danni; spingi 2",
             "roll2": "*12 – 16: 9 danni; spingi 4",
             "roll3": "*17 o superiore: 11 danni; spingi 6",
