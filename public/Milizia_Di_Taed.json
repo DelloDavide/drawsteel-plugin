@@ -220,15 +220,15 @@
             "target": "Tutti i nemici",
             "type": "Manovra"
         },
-        "Colpo Cinetico (Signature)": {
+        "Colpo Invertitore di Fase (Signature)": {
             "char": "+ Agilità",
             "distance": "Mischia 1",
-            "effect": null,
+            "effect": "Prima che la spinta abbia effetto, puoi teletrasportare il bersaglio in un quadretto a te adiacente, opposto a quello in cui si trovava in precedenza. Se il bersaglio non può essere teletrasportato, allora ignorano la spinta.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Colpo Cinetico (Signature)",
-            "roll1": "*11 o inferiore: 7 danni; Provocato/Taunted (EoT)",
-            "roll2": "*12 – 16: 8 danni; Provocato/Taunted (EoT); slitta 1",
-            "roll3": "*17 o superiore: 9 danni; Provocato/Taunted (EoT); slitta 2",
+            "roll1": "*11 o inferiore: 7 danni; spingi 2",
+            "roll2": "*12 – 16: 9 danni; spingi 4",
+            "roll3": "*17 o superiore: 11 danni; spingi 6",
             "target": "1 creatura o oggetto",
             "type": "Azione"
         },
@@ -294,7 +294,7 @@
         },
         "Scudo Inerziale (Azione Innescata)": {
             "char": null,
-            "distance": "Me stesso",
+            "distance": "Sé Stesso",
             "effect": "Innesco: <br>Subisci danni. <p>Effetto: <br>dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te.",
             "keywords": "Psionic",
             "name": "Scudo Inerziale (Azione Innescata)",
@@ -315,6 +315,18 @@
             "roll3": "*17 o superiore: 16 danni",
             "target": "1 creatura o oggetto",
             "type": "Azione"
+        },
+        "Scudo Cinetico (5)": {
+            "char": "+ Intuizione",
+            "distance": "Sé Stesso",
+            "effect": "Mentre possiedi questa Stamina temporanea, non puoi essere sanguinante.",
+            "keywords": "Psionic",
+            "name": "Scudo Cinetico (5)",
+            "roll1": "*11 o inferiore: Ottieni 10 Stamina temporanea",
+            "roll2": "*12 – 16: Ottieni 15 Stamina temporanea",
+            "roll3": "*17 o superiore: Ottieni 20 Stamina temporanea",
+            "target": "Sé Stesso",
+            "type": "Manovra"
         }
     },
     "Condizioni": {
