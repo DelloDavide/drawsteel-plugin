@@ -24,6 +24,18 @@
             "target": "Ogni nemico nell'area",
             "type": "Azione"
         },
+        "O Flower Aid, O Earth Defend (5)": {
+            "char": null,
+            "distance": "Cubo 3 entro 10",
+            "effect": "Fino all'inizio del tuo prossimo turno, l'area ottiene i seguenti effetti: <br>-Tu e ogni alleato nell'area potete spendere un qualsiasi numero di Recuperi (Recovery) all'inizio del vostro turno una volta come manovra gratuita. <br>-L'area è terreno difficile per i nemici. <br>-Qualunque nemico entri nell'area per la prima volta in un turno o comincia il suo turno nell'area subisce danno pari al tuo punteggio di Reason. <p>Persistente 1: L'area permane fino all'inizio del tuo prosismo turno. <br>Puoi muovere l'area fino a 5 quadretti come manovra. <br>Questa abilità termina se perdi linea di effetto con la sua area.",
+            "keywords": "Area, Earth, Green, Magic, Ranged",
+            "name": "O Flower Aid, O Earth Defend (5)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Speciale",
+            "type": "Manovra"
+        },
         "Detonate Sigil (Azione)": {
             "char": "+ Reason (+2)",
             "distance": "Ranged 10",
@@ -488,6 +500,18 @@
             "target": "Sé Stesso",
             "type": "Azione Innescata"
         },
+        "Blessing of Fate and Destiny (5)": {
+            "char": null,
+            "distance": "Ranged 10",
+            "effect": "Scegli uno dei seguenti effetti, che dura fino alla fine dell'incontro o fino a quando non diventi morente: <br>-Quando un bersaglio effettua un power roll, possono tirare tre dadi e scegliere quali due utilizzare. <br>-Quando un bersaglio effettua un power roll, deve tirare tre dadi e utilizzare i due risultati inferiori.",
+            "keywords": "Magic, Ranged",
+            "name": "Blessing of Fate and Destiny (5)",
+            "roll1": null,
+            "roll2": null,
+            "roll3": null,
+            "target": "Tre Creature, incluso te stesso",
+            "type": "Azione"
+        },
         "Healing Grace (Manovra)": {
             "char": null,
             "distance": "Ranged 10",
@@ -500,15 +524,15 @@
             "target": "Sé Stesso o un alleato",
             "type": "Manovra"
         },
-        "Holy Lash (Signature)": {
+        "Blessed Light (Signature)": {
             "char": "+ Intuition (+2)",
             "distance": "Ranged 10",
-            "effect": null,
+            "effect": "Un alleato a tua scelta entro la distanza ottiene un numero di Surge pari al livello del tier ottenuto.",
             "keywords": "Magic, Ranged, Strike",
-            "name": "Holy Lash (Signature)",
-            "roll1": "*11 o inferiore: 5 danni sacri; tira verticale 2",
-            "roll2": "*12 – 16: 7 danni sacri; tira verticale 3",
-            "roll3": "*17 o superiore: 10 danni sacri; tira verticale 4",
+            "name": "Blessed Light (Signature)",
+            "roll1": "*11 o inferiore: 5 danni sacri",
+            "roll2": "*12 – 16: 7 danni sacri",
+            "roll3": "*17 o superiore: 10 danni sacri",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
         },
@@ -524,32 +548,32 @@
             "target": "Ogni nemico nell'area",
             "type": "Azione"
         },
-        "Ray of Wrath (Azione)": {
+        "Ray of Wrath (Azione) (Ranged Free Strike)": {
             "char": "+ Intuition (+2)",
             "distance": "Ranged 10",
-            "effect": "Puoi far infliggere danno sacro da questa abilità.",
+            "effect": "Puoi far infliggere danno sacro da questa abilità. <p>Puoi utilizzare questa abilità come ranged free strike.",
             "keywords": "Magic, Ranged, Strike",
-            "name": "Ray of Wrath (Azione)",
+            "name": "Ray of Wrath (Azione) (Ranged Free Strike)",
             "roll1": "*11 o inferiore: 4 danni",
             "roll2": "*12 – 16: 6 danni",
             "roll3": "*17 o superiore: 8 danni",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
         },
-        "Violence Will Not Aid Thee! (3)": {
+        "Judgment's Hammer (3)": {
             "char": "+ Intuition (+2)",
             "distance": "Ranged 10",
             "effect": "La prima volta nel turno che il bersaglio infligge danno a un'altra creatura, il bersaglio di questa abilità subisce 1d10 danni da fulmine (tiro salvezza termina).",
             "keywords": "Magic, Ranged, Strike",
-            "name": "Violence Will Not Aid Thee! (3)",
-            "roll1": "*11 o inferiore: 5 danni da fulmine",
-            "roll2": "*12 – 16: 8 danni da fulmine",
-            "roll3": "*17 o superiore: 11 danni da fulmine",
-            "target": "1 Creatura",
+            "name": "Judgment's Hammer (3)",
+            "roll1": "*11 o inferiore: 5 danni sacri, A < 0, Prono",
+            "roll2": "*12 – 16: 8 danni sacri, A < 1, Prono",
+            "roll3": "*17 o superiore: 11 danni sacri, A < 2, Prono e non può rialzarsi (save ends)",
+            "target": "1 Creatura o Oggetto",
             "type": "Azione"
         },
         "Word of Judgment (Azione Innescata)": {
-            "char": "+ Intuition (+2)",
+            "char": null,
             "distance": "Ranged 10",
             "effect": "Innesco: <br>Il bersaglio subisce danno da un'abilità che richiede un power roll. <p>: Effetto: <br>Il power roll subisce uno svantaggio (bane) contro il bersaglio. <p>Spendi 1: <br>Il power roll subisce un doppio svantaggio (double bane) contro il bersaglio.",
             "keywords": "Magic, Ranged",
