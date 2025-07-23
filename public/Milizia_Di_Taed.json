@@ -563,7 +563,7 @@
         "Judgment's Hammer (3)": {
             "char": "+ Intuition (+2)",
             "distance": "Ranged 10",
-            "effect": "La prima volta nel turno che il bersaglio infligge danno a un'altra creatura, il bersaglio di questa abilità subisce 1d10 danni da fulmine (tiro salvezza termina).",
+            "effect": null,
             "keywords": "Magic, Ranged, Strike",
             "name": "Judgment's Hammer (3)",
             "roll1": "*11 o inferiore: 5 danni sacri, A < 0, Prono",
