@@ -405,7 +405,7 @@
         "Sanguinante/Bleeding": {
             "char": null,
             "distance": null,
-            "effect": "Mentre sei sanguinante, ogni qualvolta effettui una prova di Tenacia (Might) o Agilità (Agility), effettui un colpo a distanza, o usi un'azione, manovra o un'azione innescata (triggered action), perdi 1d6 Stamina dopo che il test, azione, manovra o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo.",
+            "effect": "Mentre sei sanguinante, ogni qualvolta effettui un test o prova di abilità con Might o Agility, usi una main action o un'azione innescata (triggered action), perdi 1d6 + tuo livello Stamina dopo che il test, azione, manovra o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo.",
             "keywords": null,
             "name": "Sanguinante/Bleeding",
             "roll1": null,
