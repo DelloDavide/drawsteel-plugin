@@ -3,7 +3,7 @@
         "Arcane Trick (Azione)": {
             "char": null,
             "distance": "Sé Stesso",
-            "effect": "Scegli uno dei seguenti effetti: <p>-Teletrasporti un oggetto non impugnato né indossato di taglia 1T o 1S da uno spazio entro 1 quadretto da te a uno spazio non occupato entro 1 quadretto da te.",
+            "effect": "Scegli uno dei seguenti effetti: <p>-Teletrasporti un oggetto di taglia 1S o inferiore da uno spazio a te adiacente a uno spazio non occupato a te adiacente. <br>-Fino all'inizio del tuo prossimo turno, una parte del tuo corpo emette scintille innocue che illuminano ogni quadretto a te adiacente. <br>-Accendi o spegni (a tua scelta) tutte le fonti mondane di luce di taglia 1L o più piccole a te adiacenti. <br>-Trasformi fino a 0,5 chili di cibo commestibile che tocchi per renderlo delizioso o disgustoso. <br>-Fino all'inizio del tuo prossimo turno, fai emettere al tuo corpo un particolare odore che hai già sentito una volta. Questo odore può essere sentito da ogni creatura entro 5 quadretti da te, ma non può imporre condizioni o altri effetti sulle altre creature. <br>-Piazzi una piccola iscrizione magica sulla sueprficie di un oggetto mondano che stai toccando, o può rimuovere un'iscrizione creata da te o da un'altra creatura con Arcane Trick. <br>-Tocchi un oggetto di taglia 1T e lo ricopri con un'illusione che lo fa sembrare un altro oggetto. Ogni creatura che lo maneggia capisce che si tratta di un'illusione. L'illusione termina quando smetti di toccare l'oggetto.",
             "keywords": "Magic",
             "name": "Arcane Trick (Azione)",
             "roll1": null,
@@ -27,7 +27,7 @@
         "O Flower Aid, O Earth Defend (5)": {
             "char": null,
             "distance": "Cubo 3 entro 10",
-            "effect": "Fino all'inizio del tuo prossimo turno, l'area ottiene i seguenti effetti: <br>-Tu e ogni alleato nell'area potete spendere un qualsiasi numero di Recuperi (Recovery) all'inizio del vostro turno una volta come manovra gratuita. <br>-L'area è terreno difficile per i nemici. <br>-Qualunque nemico entri nell'area per la prima volta in un turno o comincia il suo turno nell'area subisce danno pari al tuo punteggio di Reason. <p>Persistente 1: L'area permane fino all'inizio del tuo prosismo turno. <br>Puoi muovere l'area fino a 5 quadretti come manovra. <br>Questa abilità termina se perdi linea di effetto con la sua area.",
+            "effect": "Fino all'inizio del tuo prossimo turno, l'area ottiene i seguenti effetti: <br>-Una volta, come manovra gratuita all'inizio del tuo turno, permetti a te e i tuoi alleati nell'area di spendere un qualsiasi numero di Recovery. <br>-L'area è terreno difficile per i nemici. <br>-Qualunque nemico entri nell'area per la prima volta in un round di combattimento o comincia il suo turno nell'area subisce danno pari al tuo punteggio di Reason. <p>Persistente 1: L'area permane fino all'inizio del tuo prossimo turno. Puoi muovere l'area fino a 5 quadretti come manovra. <br>Questa abilità termina se perdi linea di effetto con la sua area.",
             "keywords": "Area, Earth, Green, Magic, Ranged",
             "name": "O Flower Aid, O Earth Defend (5)",
             "roll1": null,
@@ -44,7 +44,7 @@
             "name": "Detonate Sigil (Azione)",
             "roll1": "*11 o inferiore: 6 danni; Slitta 1",
             "roll2": "*12 – 16: 8 danni; Slitta 2",
-            "roll3": "*17 o superiore: 11 danni; Slitta 3",
+            "roll3": "*17 o superiore: 10 danni; Slitta 3",
             "target": "1 Creatura con il tuo sigillo",
             "type": "Azione"
         },
@@ -87,7 +87,7 @@
         "Grasp of Beyond (Signature)": {
             "char": "+ Reason (+2)",
             "distance": "Melee 1",
-            "effect": "Puoi teletrasportarti di un numero di quadretti pari al tuo punteggio di Reason.",
+            "effect": "Puoi teletrasportarti di un numero di quadretti fino al tuo punteggio di Reason.",
             "keywords": "Magic, Melee, Strike, Void",
             "name": "Grasp of Beyond (Signature)",
             "roll1": "*11 o inferiore: 6 danni da corruzione",
@@ -99,7 +99,7 @@
         "Hurl Element (Azione)": {
             "char": "+ Reason (+2)",
             "distance": "Ranged 10",
-            "effect": "Quando effettui questo strike, scegli il danno tra uno dei seguenti tipi: acido, freddo, corruzione, fuoco, fulmine, veleno o sonico.",
+            "effect": "Quando effettui questo strike, scegli il danno tra uno dei seguenti tipi: acido, freddo, corruzione, fuoco, fulmine, veleno o sonico. <br>+1 danni se scegli danni da fuoco.",
             "keywords": "Magic, Ranged, Strike",
             "name": "Hurl Element (Azione)",
             "roll1": "*11 o inferiore: 5 danni",
@@ -111,8 +111,8 @@
         "Practical Magic (Manovra)": {
             "char": null,
             "distance": "Sé Stesso",
-            "effect": "Scegli uno dei seguenti effetti: <p>-Usi la manovra di Spinta, ma la sua gittata diventa la gittata della tua abilità Hurl Element, e utilizzi il tuo punteggio di Reason invece di Might. <br>-Scegli una creatura entro la gittata della tua abilità Hurl Element e infliggile danno pari al tuo punteggio di Reason. Il tipo di danno può essere acido, freddo, corruzione, fuoco, fulmine, veleno o sonico. <br>-Ti teletrasporti di un numero di quadretti pari al tuo punteggio di Reason.",
-            "keywords": "Magic, Ranged",
+            "effect": "Scegli uno dei seguenti effetti: <p>-Usi la manovra di Spinta, ma la sua gittata diventa la gittata della tua abilità Hurl Element, e utilizzi il tuo punteggio di Reason invece di Might per il power roll. <br>-Scegli una creatura entro la gittata della tua abilità Hurl Element e un tipo di danno tra: acido, freddo, corruzione, fuoco, fulmine, veleno o sonico. Quella creatura subisce danno del tipo scelto pari al tuo punteggio di Reason. <br>-Ti teletrasporti di un numero di quadretti pari al tuo punteggio di Reason. Puoi spendere Essence per teletrasportarti di 1 quadretto aggiuntivo per ogni Essence che spendi.",
+            "keywords": "Magic",
             "name": "Practical Magic (Manovra)",
             "roll1": null,
             "roll2": null,
@@ -135,7 +135,7 @@
         "The Flesh, a Crucible (3)": {
             "char": "+ Reason (+2)",
             "distance": "Ranged 10",
-            "effect": "Persistente 1: Se il bersaglio è ancora entro gittata all'inizio del tuo turno, effettua un power roll per utilizzare nuovamente questa abilità.",
+            "effect": "Persistente 1: Se il bersaglio è  entro gittata all'inizio del tuo turno, puoi effettuare nuovamente il power roll senza spendere Essence (nessuna azione richiesta).",
             "keywords": "Fire, Magic, Ranged, Strike",
             "name": "The Flesh, a Crucible (3)",
             "roll1": "*11 o inferiore: 9 danni da fuoco",
@@ -155,25 +155,13 @@
             "roll3": "*17 o superiore: 11 danni da fuoco; Spingi 4",
             "target": "1 Creatura o Oggetto",
             "type": "Azione"
-        },
-        "Ward of Surprising Reactivity (Azione Innescata)": {
-            "char": null,
-            "distance": "Sé Stesso",
-            "effect": "Innesco: <br>Una creatura a te adiacente ti infligge danno. <p>Effetto: <br>Spingi quella creatura di un numero di quadretti pari al doppio del tuo punteggio di Reason.",
-            "keywords": null,
-            "name": "Ward of Surprising Reactivity (Azione Innescata)",
-            "roll1": null,
-            "roll2": null,
-            "roll3": null,
-            "target": "Sé Stesso",
-            "type": "Azione Innescata"
         }
     },
     "Azioni": {
         "Carica/Charge": {
             "char": null,
             "distance": null,
-            "effect": "Quando effettui l'azione di Carica, puoi muoverti fino alla tua velocità in linea retta senza evadere (shift), e puoi poi effettuare un free strike in mischia (melee free strike) contro una creatura quando termini il tuo movimento. Non puoi muoverti attraverso il terreno difficile come parte del tuo movimento con questa azione. Non puoi arrampicarti, nuotare o volare come parte del tuo movimento con questa azione a meno che tu non abbia quel tipo di movimento come parola chiave nel tuo movimento.",
+            "effect": "Quando effettui l'azione di Carica, puoi muoverti fino alla tua velocità in linea retta, poi effettuare un free strike in mischia contro una creatura quando termini il tuo movimento. Se hai un'abilità con la parola chiave Charge, puoi usare quell'abilità contro il bersaglio invece del free strike. <br>Non puoi muoverti attraverso il terreno difficile come parte del tuo movimento con questa azione. Non puoi arrampicarti, nuotare o volare come parte del tuo movimento con questa azione a meno che tu non abbia quel tipo di movimento come parola chiave nel tuo movimento.",
             "keywords": null,
             "name": "Carica/Charge",
             "roll1": null,
@@ -185,7 +173,7 @@
         "Curare/Heal": {
             "char": null,
             "distance": null,
-            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e rimanere in grado di combattere. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina) / (save ends) che la affligge.",
+            "effect": "Usi la tua azione per utilizzare tecniche di primo soccorso o parole ispiratrici per aiutare una creatura adiacente a stare meglio e restare in combattimento. La creatura può spendere un Recupero (Recovery) per recuperare Stamina, o può effettuare un tiro salvezza contro un effetto (tiro termina) / (save ends) che la affligge.",
             "keywords": null,
             "name": "Curare/Heal",
             "roll1": null,
@@ -197,7 +185,7 @@
         "Difesa/Defend": {
             "char": null,
             "distance": null,
-            "effect": "Quando effettui l'azione di Difesa, tutti i power roll delle abilità contro di te subiscono un doppio svantaggio (double bane) fino all'inizio del tuo prossimo turno. Non ottieni i benefici di questa azione quando un nemico è provocato da te.",
+            "effect": "Quando effettui l'azione di Difesa, tutti i power roll delle abilità contro di te subiscono un doppio svantaggio (double bane) fino all'inizio del tuo prossimo turno. Inoltre, ottieni un double edge sui test per resitere a effetti ambientali o ai tratti e alle abilità di una creatura. Non ottieni i benefici di questa azione quando un nemico è provocato da te.",
             "keywords": null,
             "name": "Difesa/Defend",
             "roll1": null,
@@ -223,36 +211,24 @@
         "Campo Nullo (Manovra)": {
             "char": null,
             "distance": "Aura 1",
-            "effect": "Ogni bersaglio riduce le proprie potency di 1. Una volta come manovra gratuita nel tuo turno, puoi spendere 1 disciplina e dare al tuo campo nullo uno dei seguenti effetti aggiuntivi fino all'inizio del tuo turno successivo: <br>- Gravitic Disruption: quando un bersaglio subisce danni, puoi farlo slidare di 2. <br>- Inertial Anchor: ogni bersaglio che inizia il proprio turno nell'area non può spostarsi. <br>- Synaptic Break: quando un bersaglio è soggetto a una potency, la potency viene aumentata di 1. <p>Questa abilità rimane attiva anche dopo la fine degli incontri. finisce se stai morendo o se lo finisci volontariamente (non è richiesta alcuna azione).",
+            "effect": "Ogni bersaglio riduce le proprie potency di 1. Una volta come manovra gratuita nel tuo turno, puoi spendere 1 disciplina e dare al tuo campo nullo uno dei seguenti effetti aggiuntivi fino all'inizio del tuo turno successivo: <br>- Gravitic Disruption: la prima volta in un turno che un bersaglio subisce danni, puoi farlo slidare di 2. <br>- Inertial Anchor: ogni bersaglio che inizia il proprio turno nell'area non può shiftare. <br>- Synaptic Break: quando tu o un alleato usate un'abilità contro un bersaglio che ha un effetto con potency, la potency è aumentata di 1. <p>Questa abilità rimane attiva anche dopo la fine di un combattimento. Termina se sei morente o se la termini volontariamente (non è richiesta alcuna azione).",
             "keywords": "Psionica",
             "name": "Campo Nullo (Manovra)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
-            "target": "Tutti i nemici",
+            "target": "Tutti i nemici nell'area",
             "type": "Manovra"
         },
         "Colpo Invertitore di Fase (Signature)": {
             "char": "+ Agilità",
             "distance": "Mischia 1",
-            "effect": "Prima che la spinta abbia effetto, puoi teletrasportare il bersaglio in un quadretto a te adiacente, opposto a quello in cui si trovava in precedenza. Se il bersaglio non può essere teletrasportato, allora ignorano la spinta.",
+            "effect": "Prima che la spinta abbia effetto, teletrasporti il bersaglio in un quadretto a te adiacente, opposto a quello in cui si trovava in precedenza. Se il bersaglio non può essere teletrasportato, non puoi spingerlo.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Colpo Invertitore di Fase (Signature)",
             "roll1": "*11 o inferiore: 7 danni; spingi 2",
             "roll2": "*12 – 16: 9 danni; spingi 4",
             "roll3": "*17 o superiore: 11 danni; spingi 6",
-            "target": "1 creatura o oggetto",
-            "type": "Azione"
-        },
-        "Dardo Psionico (Azione)": {
-            "char": "+ Intuizione",
-            "distance": "Distanza 10",
-            "effect": null,
-            "keywords": "Psionic, Ranged, Strike",
-            "name": "Dardo Psionico (Azione)",
-            "roll1": "*11 o inferiore: 5 danni psichici; slitta 1",
-            "roll2": "*12 – 16: 8 danni psichici; slitta 2",
-            "roll3": "*17 o superiore: 10 danni psichici; slitta 3",
             "target": "1 creatura o oggetto",
             "type": "Azione"
         },
@@ -262,9 +238,9 @@
             "effect": "Mentre è indebolito in questo modo, il bersaglio subisce danni pari al tuo punteggio di intuition quando usa un potere soprannaturale o un'abilità che costa malizia.",
             "keywords": "Melee, Psionic, Strike, Weapon",
             "name": "Disgregatore Arcano (5)",
-            "roll1": "*11 o inferiore: 11 psychic damage; M < 0, weakened (save ends)",
-            "roll2": "*12 – 16: 15 psychic damage; M < 1, weakened (save ends)",
-            "roll3": "*17 o superiore: 19 psychic damage; M < 2, weakened (save ends)",
+            "roll1": "*11 o inferiore: 11 danni psichici; M < 0, weakened (save ends)",
+            "roll2": "*12 – 16: 15 danni psichici; M < 1, weakened (save ends)",
+            "roll3": "*17 o superiore: 19 danni psichici; M < 2, weakened (save ends)",
             "target": "1 creatura",
             "type": "Azione"
         },
@@ -295,7 +271,7 @@
         "Passo Inerziale (Signature)": {
             "char": "+ Agilità",
             "distance": "Mischia 1",
-            "effect": "Puoi aumentare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. ",
+            "effect": "Puoi shiftare fino alla metà della tua velocità prima o dopo aver effettuato il colpo. ",
             "keywords": "Melee, Strike, Psionic, Weapon",
             "name": "Passo Inerziale (Signature)",
             "roll1": "*11 o inferiore: 8 danni",
@@ -307,13 +283,13 @@
         "Scudo Inerziale (Azione Innescata)": {
             "char": null,
             "distance": "Sé Stesso",
-            "effect": "Innesco: <br>Subisci danni. <p>Effetto: <br>dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te.",
+            "effect": "Innesco: <br>Subisci danni. <p>Effetto: <br>Dimezzi il danno. <p>Spendi 1: <br>Diminuisci di 1 la potency di un effetto associato al danno per te stesso.",
             "keywords": "Psionic",
             "name": "Scudo Inerziale (Azione Innescata)",
             "roll1": null,
             "roll2": null,
             "roll3": null,
-            "target": "Io",
+            "target": "Sé Stesso",
             "type": "Azione Innescata"
         },
         "Spina Temporale (3)": {
@@ -331,7 +307,7 @@
         "Scudo Cinetico (5)": {
             "char": "+ Intuizione",
             "distance": "Sé Stesso",
-            "effect": "Mentre possiedi questa Stamina temporanea, non puoi essere sanguinante.",
+            "effect": "Mentre possiedi questa Stamina temporanea, non puoi essere sanguinante neanche se sei morente.",
             "keywords": "Psionic",
             "name": "Scudo Cinetico (5)",
             "roll1": "*11 o inferiore: Ottieni 10 Stamina temporanea",
@@ -345,7 +321,7 @@
         "Afferrato/Grabbed": {
             "char": null,
             "distance": null,
-            "effect": "Mentre sei afferrato, la tua velocità è 0, non puoi essere spostato forzatamente, non puoi usare la manovra di Spinta, e subisci uno svantaggio (bane) sulle abilità che non bersagliano la creatura che ti sta afferrando. Se la creatura che ti sta afferrando si muove, vieni spostato insieme ad essa. Se la taglia della creatura è equivalente o inferiore alla tua, la sua velocità è dimezzata mentre ti stanno afferrando. <br>La creatura che ti sta afferrando può usare una manovra per spostarti in un quadretto non occupato a sé adiacente. <br>La creatura che ti sta afferrando può terminare l'afferramento in qualunque momento (nessuna azione richiesta). Puoi anche tentare di liberarti da un afferramento usando la manovra Liberarsi dall'Afferramento (Escape Grab). Se ti teletrasporti o se la creatura che ti sta afferrando viene spostata forzatamente in un quadretto che non ti è adiacente, non sei più afferrato.",
+            "effect": "Mentre sei afferrato, la tua velocità è 0, non puoi essere spostato forzatamente tranne che dalla creatura, oggetto o effetto che ti sta afferrando, non puoi usare la manovra di Knockback, e subisci uno svantaggio (bane) sulle abilità che non bersagliano la creatura che ti sta afferrando. Se la creatura che ti sta afferrando si muove, vieni spostato insieme ad essa. Se la taglia della creatura è equivalente o inferiore alla tua, la sua velocità è dimezzata mentre ti stanno afferrando. <br>La creatura che ti sta afferrando può usare una manovra per spostarti in un quadretto non occupato a sé adiacente. <br>La creatura che ti sta afferrando può terminare l'afferramento in qualunque momento (nessuna azione richiesta). Puoi anche tentare di liberarti da un afferramento usando la manovra Liberarsi dall'Afferramento (Escape Grab). Se ti teletrasporti o se la creatura che ti sta afferrando viene spostata forzatamente in un quadretto che non ti è adiacente, non sei più afferrato. <br>Una creatura può afferrare solo creature della sua taglia o inferiore. Se una creatura ha un punteggio di Might pari o superiore a 2, possono afferrare qualunque creatura più grande di sé con taglia equivalente o inferiore al suo punteggio di Might. <br>A meno che non sia specificato altrimenti, una creatura può afferrare solo un'altra creatura alla volta.",
             "keywords": null,
             "name": "Afferrato/Grabbed",
             "roll1": null,
@@ -369,7 +345,7 @@
         "Prono/Prone": {
             "char": null,
             "distance": null,
-            "effect": "Mentre sei prono, sei sdraiato a terra, i tuoi attacchi singoli (strike) subiscono svantaggio (bane), mentre le abilità in mischia usate contro di te ottengono vantaggio (edge). Puoi muoverti trascinandoti per terra, che costa 1 quadretto di movimento aggiuntivo per ogni quadretto percorso. Non puoi arrampicarti, nuotare, saltare o volare mentre sei prono. Se ti stai arrampicando o stai volando o saltando quando vieni buttato prono, precipiti. <br>Mentre sei prono, puoi rialzarti spendendo una manovra, a meno che l'abilità o l'effetto che ha imposto la condizione non specifichi altrimenti. Puoi usare una manovra per permettere a una creatura prona adiacente di rialzarsi.",
+            "effect": "Mentre sei prono, sei sdraiato a terra, i tuoi strike subiscono svantaggio (bane), mentre le abilità in mischia usate contro di te ottengono vantaggio (edge). Puoi muoverti strisciando per terra, che costa 1 quadretto di movimento aggiuntivo per ogni quadretto percorso. Non puoi arrampicarti, nuotare, saltare o volare mentre sei prono. Se ti stai arrampicando o stai volando o saltando quando vieni buttato prono, precipiti. <br>Mentre sei prono, puoi rialzarti spendendo una manovra, a meno che l'abilità o l'effetto che ha imposto la condizione non specifichi altrimenti. Puoi usare una manovra per permettere a una creatura prona adiacente di rialzarsi.",
             "keywords": null,
             "name": "Prono/Prone",
             "roll1": null,
@@ -381,7 +357,7 @@
         "Provocato/Taunted": {
             "char": null,
             "distance": null,
-            "effect": "Se sei provocato, hai un doppio svantaggio (double bane) ai power roll che non bersagliano la creatura che ti ha provocato, fintanto che hai linea visiva su quella creatura. Se subisci la condizione di provocato mentre sei già provocato da un'altra creatura, la nuova condizione sostituisce quella precedente.",
+            "effect": "Se sei provocato, hai un doppio svantaggio (double bane) ai power roll che non bersagliano la creatura che ti ha provocato, fintanto che hai linea di effetto su quella creatura. Se subisci la condizione di provocato mentre sei già provocato da un'altra creatura, la nuova condizione sostituisce quella precedente.",
             "keywords": null,
             "name": "Provocato/Taunted",
             "roll1": null,
@@ -405,7 +381,7 @@
         "Sanguinante/Bleeding": {
             "char": null,
             "distance": null,
-            "effect": "Mentre sei sanguinante, ogni qualvolta effettui un test o prova di abilità con Might o Agility, usi una main action o un'azione innescata (triggered action), perdi 1d6 + tuo livello Stamina dopo che il test, azione, manovra o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo.",
+            "effect": "Mentre sei sanguinante, ogni qualvolta effettui un test o prova di abilità con Might o Agility, usi una azione principale o un'azione innescata (triggered action), perdi 1d6 + tuo livello Stamina dopo che il test, azione o azione innescata si risolve. Questa perdita di Stamina non può essere ridotta in alcun modo. <p>Subisci danno da questa condizione anche quando usi la tua azione principale al di fuori del tuo turno.",
             "keywords": null,
             "name": "Sanguinante/Bleeding",
             "roll1": null,
@@ -429,7 +405,7 @@
         "Stordito/Dazed": {
             "char": null,
             "distance": null,
-            "effect": "Mentre sei stordito, puoi fare solo una cosa nel tuo turno: una manovra, un'azione, o un'azione di movimento. Inoltre non puoi usare azioni innescate, azioni innescate gratuite, o manovre gratuite.",
+            "effect": "Mentre sei stordito, puoi fare solo una cosa nel tuo turno: una manovra, un'azione principale, o un'azione di movimento. Inoltre non puoi usare azioni innescate, azioni innescate gratuite, o manovre gratuite.",
             "keywords": null,
             "name": "Stordito/Dazed",
             "roll1": null,
@@ -649,7 +625,7 @@
         "Lines of Force (Azione Innescata)": {
             "char": null,
             "distance": "Melee 1",
-            "effect": "Innesco: <br>Il bersaglio verrebbe spostato forzatamente. <p>Effetto: <br>Puoi selezionare invece un nuovo bersaglio della stessa dimensione o più piccolo entro la distanza, da sottoporre a movimento forzato e puoi invece trasformare quel movimento forzato in una spinta. Diventi la fonte del movimento forzato e decidi dove si trova la destinazione del nuovo bersaglio. Inoltre, la distanza di movimento forzato ottiene un bonus pari al tuo punteggio di Might. <p>Spendi 1: <br>La distanza di movimento forzato ottiene invece un bonus pari al doppio del tuo punteggio di Might.",
+            "effect": "Innesco: <br>Il bersaglio verrebbe spostato forzatamente. <p>Effetto: <br>Puoi selezionare invece un nuovo bersaglio della stessa taglia o più piccolo entro la distanza, da sottoporre a movimento forzato e puoi invece trasformare quel movimento forzato in una spinta. Diventi la fonte del movimento forzato e decidi dove si trova la destinazione del nuovo bersaglio. Inoltre, la distanza di movimento forzato ottiene un bonus pari al tuo punteggio di Might. <p>Spendi 1 Ferocity: <br>La distanza di movimento forzato ottiene invece un bonus pari al doppio del tuo punteggio di Might.",
             "keywords": "Magic, Melee",
             "name": "Lines of Force (Azione Innescata)",
             "roll1": null,
@@ -661,7 +637,7 @@
         "Make Peace With Your God! (5)": {
             "char": null,
             "distance": "Sé Stesso",
-            "effect": "Il prossimo tiro abilità che effettui in questo turno ottiene automaticamente un risultato di livello 3. Ottieni una surge.",
+            "effect": "Ottieni una surge, e il prossimo tiro abilità che effettui in questo turno ottiene automaticamente un risultato di tier 3.",
             "keywords": null,
             "name": "Make Peace With Your God! (5)",
             "roll1": null,
@@ -697,7 +673,7 @@
         "Wrecking Ball (5)": {
             "char": "+ Might (+2)",
             "distance": "Sé Stesso",
-            "effect": "Effetto: <br>ti muovi in linea retta fino al massimo della tua velocità. Durante questo movimento, puoi attraversare strutture comuni, comprese le pareti, che costituiscono terreno difficile per te. Distruggi automaticamente ogni casella di struttura che attraversi e lasci dietro di te una casella di terreno difficile. Inoltre, effettui un tiro che ha come bersaglio ogni nemico a cui ti sei trovato adiacente durante il movimento.",
+            "effect": "Effetto: <br>Ti muovi in linea retta fino al massimo della tua velocità. Durante questo movimento, puoi attraversare strutture mondane, comprese le pareti, che costituiscono terreno difficile per te. Distruggi automaticamente ogni casella di struttura che attraversi e lasci dietro di te una casella di terreno difficile. Inoltre, effettui un tiro che ha come bersaglio ogni nemico a cui ti sei trovato adiacente durante il movimento.",
             "keywords": "Melee, Weapon",
             "name": "Wrecking Ball (5)",
             "roll1": "*11 o inferiore: Push 1",
@@ -709,7 +685,7 @@
         "Your Entrails Are Your Extrails! (3)": {
             "char": "+ Might (+2)",
             "distance": "Melee 2",
-            "effect": "Mentre sanguina, il bersaglio subisce danni pari al tuo punteggio di forza alla fine dei tuoi turni.",
+            "effect": "Mentre sanguina, il bersaglio subisce danni pari al tuo punteggio di forza alla fine di ogni suo turno.",
             "keywords": "Melee, Strike, Weapon",
             "name": "Your Entrails Are Your Extrails! (3)",
             "roll1": "*11 o inferiore: 7 damage; M < 0, bleeding (save ends)",
@@ -845,13 +821,13 @@
         "Afferrare/Grab": {
             "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
-            "effect": "Se la creatura è di taglia inferiore alla tua, ottieni un vantaggio (edge) sul power roll. Puoi afferrare solo una creatura alla volta in questo modo.",
-            "keywords": "Mischia",
+            "effect": "Puoi bersagliare solo creature della tua taglia o inferiore. Se il tuo punteggio di Might è 2 o superiore, puoi bersagliare qualunque creatura la cui taglia sia pari o inferiore al tuo punteggio di Might.",
+            "keywords": "Melee, Weapon",
             "name": "Afferrare/Grab",
             "roll1": "*11 o inferiore: Nessun effetto",
             "roll2": "*12 – 16: Puoi afferrare il bersaglio, ma se lo fai, esso può effettuare un free strike in mischia contro di te subito prima di essere afferrato.",
             "roll3": "*17 o superiore: Afferri il bersaglio.",
-            "target": "1 creatura non più di 1 taglia più grande di te",
+            "target": "1 creatura",
             "type": "Manovra"
         },
         "Aiutare Attacco/Aid Attack": {
@@ -893,12 +869,12 @@
         "Liberarsi dall'Afferramento/Escape Grab": {
             "char": "+ Tenacia (Might) o Agilità (Agility)",
             "distance": null,
-            "effect": "Mentre sei afferrato da un'altra creatura, puoi tentare di liberarti effettuando il test sopra (a cui non si applicano competenze). Subisci uno svantaggio (bane) se la creatura è di taglia superiore alla tua.",
+            "effect": "Subisci un bane su questa manovra se la tua taglia è inferiore a quella della creatura, oggetto o effetto che ti sta afferrando.",
             "keywords": null,
             "name": "Liberarsi dall'Afferramento/Escape Grab",
-            "roll1": "*11 o inferiore: Non riesci a liberarti dall'afferramento.",
+            "roll1": "*11 o inferiore: Nessun effetto",
             "roll2": "*12 – 16: Riesci a liberarti dall'afferramento, ma se lo fai, la creatura che ti sta afferrando può effettuare un free strike contro di te prima che tu non sia più afferrato.",
-            "roll3": "*17 o superiore: Riesci a liberarti dall'afferramento.",
+            "roll3": "*17 o superiore: Non sei più afferrato",
             "target": null,
             "type": "Manovra"
         },
@@ -917,7 +893,7 @@
         "Rialzarsi/Stand Up": {
             "char": null,
             "distance": null,
-            "effect": "Puoi usare questa manovra per rialzarti se sei prono, terminando così la condizione. In alternativa, puoi usare questa manovra per aiutare una creatura prona adiacente a rialzarsi.",
+            "effect": "Puoi usare questa manovra per rialzarti se sei prono, terminando così la condizione. In alternativa, puoi usare questa manovra per aiutare una creatura prona adiacente consenziente a rialzarsi.",
             "keywords": null,
             "name": "Rialzarsi/Stand Up",
             "roll1": null,
@@ -929,7 +905,7 @@
         "Riprendere Fiato/Catch Breath": {
             "char": null,
             "distance": null,
-            "effect": "Utilizzando la manovra di Riprendere Fiato, spendi un Recupero (Recovery) per recuperare Stamina equivalente al tuo valore di recupero. <br>Se sei morente, non puoi effettuare la manovra di Riprendere Fiato, ma altre creature possono aiutarti a spendere i tuoi recuperi in altro modo.",
+            "effect": "Utilizzando la manovra di Riprendere Fiato, spendi un Recupero (Recovery) per recuperare Stamina equivalente al tuo valore di recupero. <br>Se sei morente, non puoi effettuare la manovra di Riprendere Fiato, ma altre creature possono aiutarti a spendere le tue Recovery in altro modo.",
             "keywords": null,
             "name": "Riprendere Fiato/Catch Breath",
             "roll1": null,
@@ -938,16 +914,16 @@
             "target": null,
             "type": "Manovra"
         },
-        "Spinta/Push": {
+        "Knockback": {
             "char": "+ Tenacia (Might)",
             "distance": "Mischia 1",
-            "effect": "Ottieni un vantaggio (edge) sul power roll se la taglia della creatura è più piccola della tua.",
-            "keywords": "Mischia",
-            "name": "Spinta/Push",
+            "effect": "Puoi bersagliare solo creature della tua taglia o inferiore. Se il tuo punteggio di Might è 2 o superiore, puoi bersagliare qualunque creatura la cui taglia sia pari o inferiore al tuo punteggio di Might.",
+            "keywords": "Melee, Weapon",
+            "name": "Knockback",
             "roll1": "*11 o inferiore: Spingi 1",
             "roll2": "*12 – 16: Spingi 2",
             "roll3": "*17 o superiore: Spingi 3",
-            "target": "1 creatura non più di 1 taglia più grande di te",
+            "target": "1 creatura",
             "type": "Manovra"
         },
         "Utilizzare Consumabile/Use Consumable": {
@@ -967,7 +943,7 @@
         "Avanzare/Advance": {
             "char": null,
             "distance": null,
-            "effect": "Quando effettui l'azione di Avanzare, puoi muoverti di un numero di quadretti pari alla tua velocità. Puoi suddividere questo movimento come preferisci tra manovre e altre azioni.",
+            "effect": "Quando effettui l'azione di movimento di Avanzare, puoi muoverti di un numero di quadretti pari alla tua velocità. Puoi suddividere questo movimento come preferisci tra manovre e altre azioni.",
             "keywords": null,
             "name": "Avanzare/Advance",
             "roll1": null,
@@ -979,7 +955,7 @@
         "Cavalcare/Ride": {
             "char": null,
             "distance": null,
-            "effect": "Puoi effettuare l'azione di movimento di Cavalcare solo mentre sei in groppa a un'altra creatura. Quando effettui l'azione di Cavalcare, permetti alla tua cavalcatura di muoversi un numero di quadretti pari alla sua velocità. In alternativa, puoi usare questa azione di movimento per permettere alla tua cavalcatura di effettuare l'azione di Disingaggio come azione innescata gratuita (free triggered action). Una cavalcatura può essere mossa con questa azione di movimento solo una volta per round.",
+            "effect": "Puoi effettuare l'azione di movimento di Cavalcare solo mentre sei in groppa a un'altra creatura. Quando effettui l'azione di Cavalcare, permetti alla tua cavalcatura di muoversi un numero di quadretti pari alla sua velocità. In alternativa, puoi usare questa azione di movimento per permettere alla tua cavalcatura di effettuare l'azione di Disingaggio come azione innescata gratuita (free triggered action). Una creatura può usare l'azione di movimento di Cavalcare solo una volta per round. Una cavalcatura può essere mossa con questa azione di movimento solo una volta per round. Puoi suddividere questo movimento come preferisci tra manovre e altre azioni.",
             "keywords": null,
             "name": "Cavalcare/Ride",
             "roll1": null,
@@ -1005,7 +981,7 @@
         "Gettoni Eroe/Hero Token": {
             "char": null,
             "distance": null,
-            "effect": "I gettoni eroe sono una risorsa gestita dai giocatori, accessibile a tutti i personaggi e condivisa tra di loro. All'inizio di una nuova sessione, il gruppo ottiene un numero di gettoni eroe pari al numero di personaggi presenti nel gruppo. <br>I giocatori possono ottenere altri gettoni durante il gioco effettuando rischiando la propria vita per salvare gli altri. Il Regista ha l'ultima parola sull'attribuzione dei gettoni eroe. <p>Quando i gettoni eroe sono disponibili, possono essere spesi nei seguenti modi. Un solo gettone può essere speso per turno o per test: <p>-Puoi spendere un gettone eroe per ottenere due impeti (surges). <br>-Puoi spendere un gettone eroe quando fallisci un tiro salvezza per superarlo. <br>-Quando fallisci o ottieni un successo con una conseguenza su un test, puoi spendere un gettone eroe per trasformare quel fallimento in un successo e eliminare qualunque conseguenza. <br>-Puoi spendere 2 gettoni eroe nel tuo turno o quando subisci danno (nessuna azione richiesta) per recuperare Stamina pari al valore di un Recupero (Recovery) senza spendere un Recupero.",
+            "effect": "I gettoni eroe sono una risorsa gestita dai giocatori, accessibile a tutti i personaggi e condivisa tra di loro. All'inizio di una nuova sessione, il gruppo ottiene un numero di gettoni eroe pari al numero di personaggi presenti nel gruppo. <br>I giocatori possono ottenere altri gettoni durante il gioco effettuando azioni eroiche, rischiando la propria vita per salvare gli altri. Il Regista ha l'ultima parola sull'attribuzione dei gettoni eroe. <p>Quando i gettoni eroe sono disponibili, possono essere spesi nei seguenti modi. Un solo gettone può essere speso per turno o per test: <p>-Puoi spendere un gettone eroe per ottenere due Surge. <br>-Puoi spendere un gettone eroe quando fallisci un tiro salvezza per superarlo. <br>-Puoi spendere un gettone eroe per ritirare un test. Devi usare il nuovo tiro. <br>-Puoi spendere 2 gettoni eroe nel tuo turno o quando subisci danno (nessuna azione richiesta) per recuperare Stamina pari al valore di un Recupero (Recovery) senza spendere un Recupero. <p>Puoi usare solo un effetto dei gettoni eroe per turno o per test.",
             "keywords": null,
             "name": "Gettoni Eroe/Hero Token",
             "roll1": null,
@@ -1053,7 +1029,7 @@
         "Surges": {
             "char": null,
             "distance": null,
-            "effect": "Diverse abilità conferiscono Surges ai personaggi. Puoi tenerne traccia sulla tua scheda del personaggio. <p>Le Surges possono essere usate in combattimento per infliggere danni aggiuntivi o aumentare il valore delle tue potency: <p>-Quando infliggi danno con il power roll di un'abilità, puoi spendere fino a tre Surges per aumentare il danno che infliggi ad una creatura o un oggetto bersagliato dall'abilità di un valore pari alla tua caratteristica più alta per ogni impeto speso. <br>-Quando bersagli una o più creature con un'abilità dotata di potency, puoi spendere due Surges per aumentare di 1 la potency per una delle creature bersaglio di quell'effetto. Non puoi aumentare la potency di più di 1 con le Surges, ma puoi spendere Surges aggiuntive per aumentare il numero dei bersagli per cui aumenti la potency. <p>Dopo aver speso una Surge, questa viene consumata e scompare. Alla fine del combattimento, tutte le Surges scompaiono.",
+            "effect": "Diverse abilità conferiscono Surges ai personaggi. Puoi tenerne traccia sulla tua scheda del personaggio. <p>Le Surges possono essere usate in combattimento per infliggere danni aggiuntivi o aumentare il valore delle tue potency: <p>-Quando infliggi danno con il power roll di un'abilità, puoi spendere fino a tre Surges per aumentare il danno che infliggi ad una creatura o un oggetto bersagliato dall'abilità di un valore pari alla tua caratteristica più alta per ogni Surge spesa. <br>-Quando bersagli una o più creature con un'abilità dotata di potency, puoi spendere due Surges per aumentare di 1 la potency per una delle creature bersaglio di quell'effetto. Non puoi aumentare la potency di più di 1 con le Surges, ma puoi spendere Surges aggiuntive per aumentare il numero dei bersagli per cui aumenti la potency. <p>Dopo aver speso una Surge, questa viene consumata e scompare. Alla fine del combattimento, tutte le Surges scompaiono.",
             "keywords": null,
             "name": "Surges",
             "roll1": null,
@@ -1174,8 +1150,8 @@
         },
         "Parry (Azione Innescata)": {
             "char": null,
-            "distance": "Melee 1",
-            "effect": "Innesco: <br>Una creatura infligge danno al bersaglio. <p>Effetto: <br>Il danno è dimezzato. Se qualunque effetto del danno applicava una potency, diminuisci la potency di 1. <p>Spendi 1: <br>Il bersaglio può evadere (shift) un numero di quadretti pari al tuo punteggio di Reason.",
+            "distance": "Melee 2",
+            "effect": "Innesco: <br>Una creatura infligge danno al bersaglio. <p>Effetto: <br>Puoi shiftare di 1 quadretto. Se il bersaglio sei tu, o se termini lo shift adiacente al bersaglio, esso subisce la metà dei danni. Se il danno ha un effetto con potency associata, essa è ridotta di 1. <br>Spendi 1 Focus: La distanza di questa abilità diventa Melee 1 + il tuo punteggio di Reason, e puoi shiftare di un numero di quadretti fino al tuo punteggio di Reason invece di 1 solo quadretto.",
             "keywords": "Melee, Weapon",
             "name": "Parry (Azione Innescata)",
             "roll1": null,
